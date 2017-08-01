@@ -1,0 +1,54 @@
+<!------------anuncio----------->
+<script language="JavaScript">
+var ultimo=-1, dBanner;
+function carrega(x) {dBanner=x;Banners()}
+function Banners()
+{
+<!---1---------extra--------------------->
+
+var MNews = new Array();
+MNews[0]= '<A HREF="http://www.extra.com.br/?utm_source=zanox&utm_medium=afiliados&utm_campaign=banner_inst&zanpid=2262923584353940480" target="_blank"> <IMG SRC="http://ad.zanox.com/ppv/?41365105C2044074659" WIDTH="300" HEIGHT="250" BORDER="0" ALT="extra tem"></a>';
+<!---1---------extra--------------------->
+
+<!---2-----casa bahia------------------------->
+MNews[1]= '<A HREF="http://www.casasbahia.com.br/?utm_source=zanox&utm_medium=afiliados&utm_campaign=banner_inst&zanpid=2275033400056673280" target="_blank"><IMG SRC="http://ad.zanox.com/ppv/?41365736C2074024737" WIDTH="300" HEIGHT="250" BORDER="0" ALT="smartfone lg"></a>'
+<!---2-----casa bahia------------------------->
+
+<!---3-------eletronica uniao----------------->
+MNews[2]= '<A HREF="#" target="_blank"><IMG SRC="http://rawgit.com/soanatareportagens/codigosnr/master/pub/eletr%20uniao2%2017%201%20GIF%20350x240%20gif.gif" WIDTH="300" HEIGHT="250" BORDER="0" ALT="mudar para ifone"></a>'
+<!---3-------eletronica uniao----------------->
+
+<!---4-----------crv------------------->
+MNews[3]= '<A HREF="http://www.crvcorretora.com.br/" target="_blank"><IMG SRC="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/pub/crv%20350%20x%20250%20png.png" WIDTH="300" HEIGHT="250" BORDER="0" ALT="pneus"></a>'
+<!---4-----------crv------------------->
+
+<!---5--------netfarma---------------------->
+MNews[4]= '<A HREF="http://ad.zanox.com/ppc/?41794541C511797084T" target="_blank"><IMG SRC="http://ad.zanox.com/ppv/?41794541C511797084" WIDTH="300" HEIGHT="250" BORDER="0" ALT="pneus"></a>'
+<!---5--------netfarma---------------------->
+
+<!---6------------------------------>
+MNews[5]= '<A HREF="http://ad.zanox.com/ppc/?42115287C128699477T" target="_blank"><IMG SRC="http://ad.zanox.com/ppv/?42115287C128699477" WIDTH="300" HEIGHT="250" BORDER="0" ALT="Avira"></a>'
+<!---6------------------------------>
+
+<!---7------------------------------>
+MNews[6]= '<a href="http://ad.zanox.com/ppc/?43311876C808801671T"target="_blank"><img src="http://ad.zanox.com/ppv/?43311876C808801671" align="bottom" width="300" height="250" border="0" hspace="1" alt="300x250 - Americanas vermelho"></a>'
+<!---7------------------------------>
+
+<!---8------------------------------>
+MNews[7]= '<a href="http://ad.zanox.com/ppc/?43311877C298515858T"target="_blank"><img src="http://ad.zanox.com/ppv/?43311877C298515858" align="bottom" width="300" height="250" border="0" hspace="1" alt="americanas Automotivo 300x250"></a>'
+<!---8------------------------------>
+
+<!---9-------------Marquinho Motos BR----------------->
+MNews[8]= '<A HREF="http://ad.zanox.com/ppc/?42433392C481038869T" target="_blank"><IMG SRC="http://ad.zanox.com/ppv/?42433392C481038869" WIDTH="300" HEIGHT="250" BORDER="0" ALT="Marquinho Motos BR"></a>'
+<!---9----------Marquinho Motos BR-------------------->
+while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
+dBanner.innerHTML=MNews[Numero];
+
+setTimeout("Banners()",10000);
+}
+</script></head>
+<body bgcolor="#FFFFFF" topmargin=0 leftmargin=0 text="#000000" onLoad=carrega(this.divBanner)>
+<table width="300" border="0" cellspacing="0" cellpadding="0" height="250" bordercolor="#000000">
+<tr>
+<td>
+<div align="center" id=divBanner></div>
