@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.4.4
+ * jQuery JavaScript Library v1.4.4 A
  * http://jquery.com/
  *
  * Copyright 2010, John Resig
