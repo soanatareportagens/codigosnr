@@ -13,3 +13,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif
 publiciddade 310 x 260 000webhostapp
 https://soanatareportagens.
 000webhostapp.com/posts/banners/banner%20reflessprog350x250.html
+
+af menu1cod1 js
+https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8aed83718f/js/af%20menu1cod1.js
