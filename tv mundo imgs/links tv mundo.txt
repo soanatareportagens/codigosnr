@@ -19,3 +19,6 @@ https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8a
 
 recentpost1 1
 https://rawgit.com/soanatareportagens/codigosnr/master/js/recentepost1%201a.js
+
+recentpost1 2
+https://rawgit.com/soanatareportagens/codigosnr/master/js/recentepost1%202.js
