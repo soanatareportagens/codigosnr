@@ -128,4 +128,143 @@ setTimeout(function() {
 
 <!----------mostrar ocultat div Fim------------>      
 <!------------------seu conteudo Fim canal 1----------------------> 
+<!---
+-
+-
+-
+-
+-
+-
+----------------------------Canal 2 abaixo------------------------->
+														      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Ocultando uma div com jQuery</title> 
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#Canal2').hide(); 
+
+$('a#exibir').click(function(){ 
+
+$('#Canal2').show('slow'); 
+
+}); 
+
+$('a#ocultar').click(function(){ 
+
+$('#Canal2').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+</head> 
+<body> 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#Canal2 { 
+border:1px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibir" href="#">Canal 2</a> |||| <a href="#" id="ocultar">Fechar Canal 2</a>
+<div id="Canal2"> 
+<!------------------seu conteudo ini canal 2---------------------->
+<!----------mostrar ocultat div inin------------>
+<div style="text-align: center;">
+  <style type="text/css">
+<!--
+#popjan {border: 6px solid #fff;
+background-color: #ffffff;
+width:100%px;
+top: 0px; left: 50px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div2');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
+</script>
+
+<div id="fechar div2"> <span style="color: #2f4456;; font-size: 22px;"><br/><br/><br/> <b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span>
+<!------------ cod publicidade ini -------------->
+<br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="350" height="250" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog300x250--->
+</div>
+<!------------ cod publicidade Fim-------------->
+</div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';">
+<!-----------Video do canal 2 inin----------->
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/j4oeiwdFwg8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-----------Video do canal 2 Fim----------->
+
+<!---------cristo----------> 
+
+<!----------mostrar ocultat div Fim------------>      
+<!------------------seu conteudo Fim canal 2----------------------> 
+
 
