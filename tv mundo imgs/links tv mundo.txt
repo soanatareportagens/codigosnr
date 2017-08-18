@@ -25,3 +25,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/js/recentepost1%202.js
 
 updn mod1
 https://rawgit.com/soanatareportagens/codigosnr/master/js/updn%20mod1.js
+
+exibocultdiv1
+https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js
