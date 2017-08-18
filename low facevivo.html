@@ -1,982 +1,133 @@
-<style type='text/css'>
-#inftemp { 
-height: 37px; 
-position: fixed; 
-top: 0; 
-left:0; 
-z-index: 95469148; 
-background: #2f4456; 
-width: 100%; 
-border-width: 1px 0; 
-border-style: solid; 
-border-color: #EBEBEB; 
-border-bottom: 3px solid gainsboro; 
--moz-box-shadow: 0px 6px 30px #c9c9c9; 
--webkit-box-shadow: 0px 6px 30px #c9c9c9; 
-box-shadow: 0px 6px 30px #c9c9c9; 
-}
-#inftemp ul { 
-padding-top: 3px; 
-color: #555; 
-margin-top: 8px; 
-}
-.inftempativo a:link { 
-color: #c60; 
-}
-#inftemp li { 
-list-style-type: none; 
-display: inline; 
-color: #ffffff; 
-cursor: pointer; 
-line-height: 20px; 
-text-align: center; 
-font-size: 14px; 
-font-weight: bold; 
-}
-#inftemp li a { 
-color: #FFFFFF; 
--webkit-transition: All 0.3s ease; 
--moz-transition: All 0.3s ease; 
--o-transition: All 0.3s ease; 
-text-decoration: none; 
-padding-left: 20px; 
-}
-#inftemp li a:hover { 
-color: #000000; 
--webkit-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
--moz-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
--o-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
-text-decoration: none; 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Ocultando uma div com jQuery</title> 
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#Canal1').hide(); 
+
+$('a#exibir').click(function(){ 
+
+$('#Canal1').show('slow'); 
+
+}); 
+
+$('a#ocultar').click(function(){ 
+
+$('#Canal1').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+</head> 
+<body> 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#Canal1 { 
+border:1px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
 } 
 </style> 
-<div id='inftemp'> 
-<!----------------------Marquee ini------------------------>
-<div style="text-align: center;">  
-<script type="text/javascript">  
-// O altimo Banners naa deve utilizar virgula (,) no final da linha
-var imgs1 = new Array(
-<!-----------moveis projetado3-------------->
-"https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" <!-------------servicos de alvenaria2------------>
-);
-// Neste Array, voca vai colocar as URLs, links de destinos dos sites quando clicarem em um
-// O altimo Link do site nao deve utilizar virgula (,) no final da linha
-var lnks1 = new Array(
-"http://vulcovulco.blogspot.com./#"<!-----------6vulcovulco-------------->
-);
-// Deve-se seguir o mesmo padra das Array acima, a altima linha correspondente ao altimo
-// banner, deve ser finalizada sem a virgula (,) no final da linha.
-var alt1 = new Array(
-"google+",
-"2twiter",
-"3curtir snr",
-"4add snr",
-"5whatsapp",
-"6vulcovulco"
-);
-var currentAd1 = 0;
-// Nesta varia correspondente
-// total de banners que voca adicionou.
-var imgCt1 = 1; <!---------numero de banneres----------->
-function cycle1() {
-  if (currentAd1 == imgCt1) {
-    currentAd1 = 0;
-  }
-  
-var banner1 = document.getElementById('adBanner1');
-var link1 = document.getElementById('adLink1');
-  banner1.src=imgs1[currentAd1]
-  banner1.alt=alt1[currentAd1]
-  document.getElementById('adLink1').href=lnks1[currentAd1]
-  currentAd1++;
-}
-// Nesta linha de comando abaixo, sera configurado para mudar de banner a cada
-// 10 segundos (11000), sa alterar este valor, caso queira um intervalo maior entre os banners
-window.setInterval("cycle1()",50000);
-</script>
-<!-- Nas 2 linhas abaixo, voca carregado
-Altere somente o LINK do site, a 
-exibido dentro de: [ src="" ]
- -->
-<a href="#" id="adLink" target="_blank">
-<iframe width="100%" height="30" src="https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" id="adBanner1" border="0" /></iframe></a>
- </div>
-<!----------------------Marquee fim------------------------>
-</div>
-  <fimtextoaovivo.........................................................../></fimtextoaovivo...........................................................></iniciotextoaovivo......................................................></script></div></div></div></iniciotextoaovivo......................................................>
-	<!-------------------TV------------->
-	<div style="text-align: center;">
- <br/><div style="float: left; width: 60%">
-<!-------------------TV------------->	
-
-<script type='text/javascript' src='https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/vivo%20face1%201js.js'>
-	 </script>	 
-
-<script type='text/javascript'>
-
-</script>
-<style type="text/css">
-#fancybox-content{background-color:#fff}
-#fancybox-content{border-color:#fff}#fancybox-outer{background-color:#fff}
-#fancybox-content{color:inherit}
-</style>
-</head>
-
-<body class="ms_examples-template-default single single-ms_examples postid-2744">
-<nav class="js-menu sliding-menu-content">
-
-</nav>
-
-<div class="js-menu-screen menu-screen"></div>
-
-<div id="page" class="hfeed site">
-    <!-- <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->       
-                     
-<!-- meta slider -->
-<div style="max-width: 1000px;" class="metaslider metaslider-flex metaslider-182 ml-slider nav-hidden">
-    <style type="text/css" id="metaslider-css-182">
-        #metaslider_182_filmstrip.flexslider .slides li {margin-right: 5px;}
- 
-	.metaslider-182 .flexslider .flex-control-paging li a,
-	.metaslider-182 .flexslider .flex-control-paging li a:hover {
-		padding: 0;
-		box-shadow: none;
-		text-indent: -9999px;
-		border-style: solid;
-		display: inline-block;
-		border-color: rgba(0,0,0,1);
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-width: 0px;
-		border: 0px solid rgba(0,0,0,1);
-		line-height: 12px;
-		width: 12px;
-		height: 12px;
-		margin: 0 4px;
-		background: rgb(0,0,0);
-		background: rgba(0,0,0,0.5);
-		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5)));
-		background: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-		background: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-		background: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-		background: -o-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-		background: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-	}
-
-	.metaslider-182 .flexslider .flex-control-paging li {
-		margin: 0;
-		text-indent: 0;
-		width: auto;
-	}
-
-	.metaslider-182 .flexslider .flex-control-paging li a.flex-active {
-		border: 0px solid rgba(0,0,0,1);
-		background: rgb(0,0,0);
-		background: rgba(0,0,0,1);
-		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
-		background: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1));
-		background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1));
-		background: -ms-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1));
-		background: -o-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1));
-		background: linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1));
-	}
-
-	.metaslider-182 .flexslider .flex-control-paging {
-		line-height: 12px;
-		z-index: 99;
-		padding: 0;
-		text-align: left;
-		margin: 10px 0px;
-		width: 100%;
-		top: auto;
-		right: auto;
-		bottom: auto;
-		left: auto;
-		position: absolute;
-		text-align: center;
-	}
- 
-	.metaslider-182 .flexslider .caption-wrap {
-		opacity: 1;
-		margin: 0px 0px;
-		color: rgba(255,255,255,1);
-		background: rgb(0,0,0);
-		background: rgba(0,0,0,0.7);
-		width: 100%;
-		top: auto;
-		right: auto;
-		bottom: 0;
-		left: 0;
-		clear: none;
-		position: absolute;
-		border-radius: 0px;
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-	}
- 
-	.metaslider-182 .flexslider .flex-direction-nav .flex-prev {
-		background: transparent url(https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20esq%20min.gif) ;
-		margin-top: -40px;
-		width: 20px;
-		height: 20px;
-		opacity: 0;
-		left: 0px;
-		padding: 0;
-	}
-
-	.metaslider-182 .flexslider .flex-direction-nav .flex-next {
-		background: transparent url(https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif) ;
-		margin-top: -40px;
-		width: 20px;
-		height: 20px;
-		opacity: 0;
-		right: 0px;
-		padding: 0;
-	}
-
-	.metaslider-182 .flexslider:hover .flex-direction-nav .flex-prev {
-		left: 5px;
-		opacity: 0.7;
-	}
-
-	.metaslider-182 .flexslider:hover .flex-direction-nav .flex-next {
-		right: 5px;
-		opacity: 0.7;
-	}
-
-	.metaslider-182 {
-		margin-bottom: 32px;
-	}
-
-       </style>
-    <div id="metaslider_container_182">
-        <div id="metaslider_182" class="flexslider">
-            <ul class="slides">
- <!-----------------------------------------inicio videos imagens----------------------------------------------->
-		    		    <li style="display: block; width: 100%;" class="slide-183 ms-image">
-<iframe src='http://abcnews.go.com/video/embed?id=49230736' width='100%' height='540' scrolling='no' style='border:none;'></iframe><span style="color: #fff; font-size: 20px;">
-	 <b>Canal 1 - Johnny Depp aparece como o capitão Jack Sparrow no hospital infantil </b></span></a></li>
-<!-----------------------------------------1 Reservado----------------------------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/j4oeiwdFwg8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	<span style="color: #0000; font-size: 15px;"><b>Canal 2 - TV justiça  </b></span></a></li></li>
-    <!--------------------------------2 TV JUSTICA AO VIVO-------------------------------->
-	
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/qNTCxHys_Rw?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b>Canal 3 - TV Senado - Brasil </b></span></a></li>
-    <!---------------------------------3 TV Senado ao vivo-------------------------------->
-
-                <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/O83R4tsF8WI?4
-			autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" 
-			    allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b>
-Canal 4 - TV Câmara - Brasil </b></span></a></li></li>
-    <!-------------------------------------4 TV Camara----------------------------------->
-
-                <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/BlDMwmwiu-k?
-			autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b>
-Canal 5 - TV Canção Nova - Brasil </b></span></a></li></li>
-   <!---------------------------------5 TV Cancão Nova----------------------------------->
-		    
- <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/KGYAfqdCd00?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	 <span style="color: #0000; font-size: 15px;">
-		       <b> Canal 6 - Chef TV O Canal da Gastronomia - Brasil </b></span></a></li>
-   <!------------------------------6 Chef TV | Ao Vivo  [HD]----------------------------->
-
-                <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/K_6mqVcUwzg?
-			autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!-----------------------------7 euronews (em Inglês)------------------------------>
-		    
-		    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/F3uBJFwcgqo?
-			    autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!-----------------------------7 euronews (en español)------------------------------>
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/M_FxVQNXs0g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-<span style="color: #0000; font-size: 15px;"><b>Canal 8 - TV Pampa - Porto Alegre/RS - Brasil  </b></span></a></li>
-<!---------------------08 TV Pampa - Porto Alegre/RS - Brasil--------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/Fd-z9QbE7hk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
-</iframe></li>
-   <!------------------------09 HispanTV en vivo - FULL HD----------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/_2rA6cUIoI0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</li>
-   <!---------------------------10 DESENHOS 24 HORAS acima------------------------------>
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/jZ2aBW68NMg?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!-----------------------------11 DESENHOS 24 HORAS 2 acima-------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/0tek2aa8hAQ?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!---------------------------12 TN en Vivo - Argentina------------------------->
-
-<li><iframe width="100%" height="450" src="https://www.youtube.com/embed/9LHMuo64HnY?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!-------------------------------13 CNN LIVE-------------------------------->
-		    
-		    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/DcbNwtSB9Wo?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!-------------------------------13 Señal de CNN en Español-------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/2xG2lmWetCk?
-	rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
-   <!-----------------------------14 FOX News Live----------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/Kn1qUfJ7oe0?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe></li>
-   <!---------------------------------15 AMAZON SAT----------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/To9m2AeIj5A?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b> Canal 16 - Cidade alerta- TV Record Brasil </b></span>
-</a></li>
-<!--------------------------------16 cidade alerta--------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/hl48To9PSUg?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe></li>
-   <!-------------------------17 JOGO ABERTO - AO VIVO-------------------------->
-   
-<li><iframe width="100%" height="400" src="https://actualidad.rt.com/live-embed/?
-autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b> Canal 18 - RT em Espanha por enquanto não funciona no facebook.<br/>
-Você pode assistir clicando no link da TV mundo abaixo. </b></span></a></li>
-   <!-----------------------------18 RT en espanha HD---------------------------->
-	    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/dp6W0ZcYwE4?
-autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-   <!------------------------19 Al Jazeera English - Live------------------------>
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/_d3zugmf-2I?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
-	<span style="color: #0000; font-size: 15px;"><b> Canal 20 - TV Câmara Natal/RN - Brasil </b></span></a></li></li>
-   <!----------------------------20 TV Câmara Natal------------------------------>
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/wnQZOJ9w4ow?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</li>
-<!-----------------------------21 Sky News - Live-------------------------------->
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/hL0sEdVJs3U?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------22 FRANCE 24 Live a International Breaking News & Top stories------------>
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/a1InXljSOjU?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!--------------------------------23 Jornal da Cultura--------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/FIDjE4ytx_A?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!--------------------------------24 Fox Sports---------------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/KQbt7eRPl8Q?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b>
-Canal 25 Jogo Aberto - Ao Vivo  </b></span></a></li>
-<!----------------------------------25 Jogo Aberto - Ao Vivo-------------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/TQ6IArJ8JEY?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!----------------------------------26 C5N en VIVO------------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/9nMuTuy5SIs?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!-----------------------------27 KBS World 24 Korea----------------------------------->
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/9uFXw7vKz14?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 28 TV ABC News (Australia) --------------------------->
-	    
-<li><iframe scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen 
-src="http://www.fox25boston.com/popup-livestream"  width ="600" height="350"></iframe><span style="color: #fff; font-size: 20px;">
-	 <b>Canal 29 - Fox25 Boston News </b></span></a></li>
-<!--------------------------Canal 29 Do Vale Tv - Ao Vivo----------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/MyrkXKJfNV4?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!---------------------------Canal 30 India Today Live TV----------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/fl2VnBsvbEY?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe><span style="color: #0000; font-size: 15px;"><b> Canal 31 - Rede TVT - Brasil  </b></span></a></li></li>
-<!--------------------------Canal 31 Rede TVT - BRasil Seu Jornal------------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/gNqpBjj1f58?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	<span style="color: #0000; font-size: 15px;"><b> Canal 32 - Bom Dia Brasil - TV Globo - Brasil </b></span></a></li></li>
-<!-------------------------------Canal 32 Bom Dia Brasil----------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/aKFvunT3e7o?rel=0&amp;showinfo=0" frameborder="0" 
-allowfullscreen></iframe><span style=" color: #0000; font-size: 15px;"><b>Canal 33 - jornal hoje - Rede Globo Brasil </b></span></a></li>
-<!--------------------------------Canal 33 Jornal hoje------------------------------->
-
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/LFJlmHbkviA?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
-	<span style="color: #0000; font-size: 15px;"><b> Canal 34 - Jornal Nacional - TV Globo - Brasil </b></span></a></li></li>
-<!-------------------------------Canal 34 Jornal Nacional----------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/JRZ4eaV3UTo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</li>
-<!------------------------------Canal 35 Fantástico----------------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/ov4yEcA2mnE?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!-----------------------------Canal 36 Web TV Brasileira----------------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/ZQ6po4A488c?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!----------------------Canal 37 TRT WORLD - İstanbul TURKEY - INGLÊS-------------------->
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/QODxAkitxbQ?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 38 Africa24 Live (en français)------------------------>
-		    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/ngIRHruOVyU" frameborder="0" 
-	    allowfullscreen></iframe></li>
-<!------------------------Canal 39 Transmissão ao vivo do Canal rit t - canal Gospel------------------------>
-		    		        
-<li> <iframe width="970" height="400" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" 
-src="http://player.r7.com/video/i/52aaab49596f99dbbc02ab09?layout=wide540p&full=true" 
-mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe><span style="color: #0000; font-size: 15px;">
-<b> Canal 40 - TV Record 24 horas por enquanto não funciona no facebook.
-<br/> Você pode assistir clicando no link da TV mundo abaixo. </b></span></a></li></li>
-<!------------------------Canal 40 TV Record 24 hs------------------------>
-	    
-<li> <iframe width="970" height="400" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" 
-src="http://player.r7.com/video/i/54ae76aa2bc243235c0079d3?layout=wide540p&full=true" 
-mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe><span style="color: #0000; font-size: 15px;">
-<b> Canal 40 - Talentos e JR News por enquanto não funciona no facebook. 
-.<br/> Você pode assistir clicando no link da TV mundo abaixo. </b></span></a></li></li>
-<!------------------------Canal 40 Talentos e JR News------------------------>
-	    
-	    
-<li><iframe width="100%" height="400" src="https://www.youtube.com/embed/0F2Ahl6MUnk?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 41 IGREJA BATISTA BOAS NOVAS------------------------>
-	    
-	    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/0raY3aYVQSo?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 42 Aaj News Live - Pakistan ------------------------>
-	    	   
-		       <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/mvQWzeESvHY?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!----------Canal 43 CGTN Live CGTN is China's preeminent 24-hour English language television channel---------->
-		    
-		     <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/zghho0FINAk?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 43 CGTN en Español ------------------------>
-		    
-		    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/TSPAa8vpMZY?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 45 CHI vs. POR - Chile v Portugal FIFA Confederations Cup 2017 ------------------------>
-		    
-		    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/QNGVv-INfnA?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 46 JAPAN vs RUSSIA FIVB Volleyball World Grand Prix ------------------------>
-		    
-		   <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/Lu22Ds-XEHY?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!------------------------Canal 47 USA vs Japan - Women USA Volleyball Cup ------------------------>  
-		    
-		    <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/qiQN54MK_tI?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!---------------------Canal 48 Brasil x Bulgária - Vôlei Masculino - Liga Mundial 2017 (GRUPO 2) ----------------------->  
-		    
-		     <li><iframe width="100%" height="400" src="https://www.youtube.com/embed/tCX_WS9WYbM?
-	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe></li>
-<!---------------------Canal 49 CHINA X REP.DOMINICANA - Mundial de Vôlei Feminino - Final -----------------------> 		 
-		    
-            </ul>
-        
-	    </div>
-               <div id="metaslider_182_filmstrip" class="flexslider filmstrip">
-            <ul class='slides'>
-                <li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "LULA: NÃO EXISTE NINGUÉM NA FAMÍLIA MARINHO COM A MINHA HONESTIDADE ">
-Reservado<br/> [1]</a></li>
-<!-----------------------------------------1 Reservado----------------------------------------------->
-                <li class="ms-thumb slide-188" style="color: black; font-size: 12px;"title= "TV Justiça ao vivo ">
-TV justiça <br/>[2]</a></li>
-<!--------------------------------2 TV JUSTIÇA AO VIVO-------------------------------->
-                <li class="ms-thumb slide-189" style="color: black; font-size: 12px;"title= "TV Senado  ">TV Senado <br/>[3]</a></li>
-<!---------------------------------3 TV Senado ao vivo-------------------------------->
-
-                <li class="ms-thumb slide-187" style="color: black; font-size: 12px;"title= "TV Câmara ">TV Câmara <br/>[4]</a></li>
-<!-------------------------------------4 TV Câmara----------------------------------->
-
-                <li class="ms-thumb slide-185" style="color: black; font-size: 12px;"title= "TV Cancão Nova ">TV Cancão Nova [5]</a></li>
-<!---------------------------------5 TV Cancão Nova----------------------------------->
-                <li class="ms-thumb slide-186" style="color black; font-size: 12px;"title= "Chef TV ">Chef TV<br/> [6]</a></li>
-<!------------------------------6 Chef TV | Ao Vivo  [HD]----------------------------->
-
-                <li class="ms-thumb slide-184" style="color: black; font-size: 12px;"title= "euronews ">euronews Inglês<br/>[7]</a></li>
-<!-----------------------------euronews (em Inglês)------------------------------>
-
-<li class="ms-thumb slide-184" style="color: black; font-size: 15px;"title= "euronews ">euronews español<br/>[7]</a></li>
-<!-----------------------------7 euronews (en español)------------------------------>
-
-                <li class="ms-thumb slide-183" style="color black; font-size: 12px;"title= "TV Pampa - Porto Alegre/RS - Brasil ">TV Pampa <br/>[8]</a></li>
-<!---------------------08 TV Pampa - Porto Alegre/RS - Brasil--------------------->
-
- <li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "HispanTV - FULL HD ">HispanTV <br/>[9]</a></li>
-<!------------------------09 HispanTV en vivo - FULL HD----------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "DESENHOS 24 HORAS ">Desenhos 24 horas [10]</a></li>
-<!---------------------------10 DESENHOS 24 HORAS------------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "DESENHOS 24 HORAS 2 ">Desenhos 24 horas 2 [11]</a></li>
-<!-----------------------------11 DESENHOS 24 HORAS 2-------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "TN en Vivo - Argentina ">TN - Argentina <br/>[12]</a></li>
-<!---------------------------12 TN en Vivo - Argentina------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "CNN LIVE ">CNN<br/> [13]</a></li>
-<!-------------------------------13 CNN LIVE-------------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= 
-    "Señal de CNN en Español ">CNN en Español<br/> [13]</a></li>
-<!-------------------------------13 Señal de CNN en Español-------------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "FOX News Live ">Fox News <br/>[14]</a></li>
-<!-----------------------------14 FOX News Live----------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "AMAZON SAT - Brasil ">Amazon sat <br/>[15]</a></li>
-<!---------------------------------15 AMAZON SAT----------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "cidade alerta TV Record - Brasil ">cidade alerta<br/> [16]</a></li>
-<!--------------------------------16 cidade alerta--------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "JOGO ABERTO ">Jogo aberto [17]</a></li>
-  <!-------------------------17 JOGO ABERTO - AO VIVO-------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "RT en espanha HD ">RT en espanha <br/>[18]</a></li>
-<!-----------------------------18 RT en espanha HD---------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Al Jazeera English - Live ">Al Jazeera <br/>[19]</a></li>
-<!------------------------19 Al Jazeera English - Live------------------------>
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "TV Câmara Natal RN - Brasil ">TV Câmara Natal <br/>[20]</a></li>
-<!----------------------------20 TV Câmara Natal------------------------------>
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Sky News - Live">Sky News<br/> [21]</a></li>
-<!-----------------------------21 Sky News - Live-------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "FRANCE 24 Live a International Breaking News & Top stories">FRANCE 24<br/> [22]</a></li>
-<!------------22 FRANCE 24 Live a International Breaking News & Top stories------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Jornal da Cultura">Jornal da Cultura <br/>[23]</a></li>
-<!--------------------------------23 Jornal da Cultura--------------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Fox Sports">Fox Sports<br/> [24]</a></li>
-<!--------------------------------24 Fox Sports---------------------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 15px;"title= "Canal 25 Jogo Aberto - Ao Vivo">Jogo Aberto<br/> [25]</a></li>
-<!----------------------------------Canal 25 Jogo Aberto - Ao Vivo-------------------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "C5N en VIVO - Argentina">C5N en VIVO<br/> [26]</a></li>
-<!----------------------------------26 C5N en VIVO------------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "KBS World 24 Korea">KBS World <br/>[27]</a></li>
-<!-----------------------------27 KBS World 24 Korea----------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "TV ABC News (Austrália)">TV ABC News <br/>[28]</a></li>
-<!------------------------Canal 28 TV ABC News (Austrália) --------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Do Vale Tv">Do Vale Tv<br/> [29]</a></li>
-<!--------------------------Canal 29 Do Vale Tv - Ao Vivo----------------------------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "India Today Live TV">India Today <br/>[30]</a></li>
-<!---------------------------Canal 30 India Today Live TV----------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Rede TVT - Brasil">Rede TVT - Brasil <br/>[31]</a></li>
-<!--------------------------Canal 31 Rede TVT - Brasil------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Bom Dia Brasil">Bom Dia Brasil <br/>[32]</a></li>
-<!-------------------------------Canal 32 Bom Dia Brasil----------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Jornal hoje">Jornal hoje<br/> [33]</a></li>
-<!--------------------------------Canal 33 Jornal hoje------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Jornal Nacional">Jornal Nacional<br/> [34]</a></li>
-<!-------------------------------Canal 34 Jornal Nacional----------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Fantástico">Fantástico<br/> [35]</a></li>
-<!------------------------------Canal 35 Fantástico----------------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Web TV Brasileira">Web TV Brasileira <br/>[36]</a></li>
-<!-----------------------------Canal 36 Web TV Brasileira----------------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "TRT WORLD - İSTANBUL TURKEY - INGLÊS">TRT WORLD <br/>[37]</a></li>
-<!----------------------Canal 37 TRT WORLD - İstanbul TURKEY - INGLÊS-------------------->
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"title= "Africa24 Live (en français)">Africa24<br/> [38]</a></li>
-<!------------------------Canal 38 Africa24 Live (en français)------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 39 Transmissão ao vivo do Canal RIT - canal Gospel">RIT TV<br/> [39]</a></li>
-<!------------------------Canal 39 Transmissão ao vivo do Canal RIT - canal Gospel------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "TV Record 24 hs">TV Record 24 hs<br/> [40]</a></li>
-<!------------------------Canal 40 TV Record 24 hs------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Talentos e JR News">Record News<br/> [40]</a></li>
-<!------------------------Talentos e JR News------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 41 IGREJA BATISTA BOAS NOVAS">IGREJA BATISTA<br/> [41]</a></li>
-<!------------------------Canal 41 IGREJA BATISTA BOAS NOVAS------------------------>	    
-						 
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 42 Aaj News Live - Pakistan ">Aaj News - Pakistan<br/> [42]</a></li>
-<!------------------------Canal 42 Aaj News Live - Pakistan ------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 43 CGTN Live CGTN is China's preeminent 24-hour English language television channel ">
-	CGTN Live China's [43]</a></li>
-<!----------Canal 43 CGTN Live CGTN is China's preeminent 24-hour English language television channel---------->
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 43 CGTN en Español ">CGTN en Español<br/> [43]</a></li>
-<!------------------------Canal 43 CGTN en Español ------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 45 CHI vs. POR - Chile v Portugal FIFA Confederations Cup 2017  ">Chile v Portugal Cup 2017 [45]</a></li>
-<!------------------------Canal 45 CHI vs. POR - Chile v Portugal FIFA Confederations Cup 2017 ------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 46 JAPAN vs RUSSIA FIVB Volleyball World Grand Prix ">JAPAN vs RUSSIA<br/> [46]</a></li>
-<!------------------------Canal 46 JAPAN vs RUSSIA FIVB Volleyball World Grand Prix ------------------------>
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 47 USA vs Japan - Women USA Volleyball Cup ">USA vs Japan<br/> [47]</a></li>
-<!------------------------Canal 47 USA vs Japan - Women USA Volleyball Cup ------------------------> 
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 48 Brasil x Bulgária - Vôlei Masculino - Liga Mundial 2017 (GRUPO 2) ">Brasil x Bulgária<br/> [48]</a></li>
-<!---------------------Canal 48 Brasil x Bulgária - Vôlei Masculino - Liga Mundial 2017 (GRUPO 2) -----------------------> 
-
-<li class="ms-thumb slide-183" style="color: black; font-size: 12px;"
-    title= "Canal 49 CHINA X REP.DOMINICANA - Mundial de Vôlei Feminino - Final ">CHINA X REP.DOMINICANA<br/> [49]</a></li>
-<!---------------------Canal 49 CHINA X REP.DOMINICANA - Mundial de Vôlei Feminino - Final -----------------------> 
-
-            </ul>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var metaslider_182 = function($) {
-            
-            $('#metaslider_182_filmstrip').flexslider({
-                animation:'slide',
-                controlNav:false,
-                animationLoop:false,
-                slideshow:false,
-                itemWidth:75,
-                itemMargin:5,
-                asNavFor:'#metaslider_182'
-            });
-            $('#metaslider_182').flexslider({ 
-                slideshowSpeed:3000,
-                animation:"fade",
-                controlNav:false,
-                directionNav:false,
-                pauseOnHover:false,
-                direction:"horizontal",
-                reverse:false,
-                animationSpeed:600,
-                prevText:false,
-                nextText:false,
-                slideshow:false,
-                sync:'#metaslider_182_filmstrip',
-                before: function(slider) {
-                    if (slider.currentSlide + 1 == slider.count) { $('#metaslider_182_filmstrip').flexslider(0); }
-                }
-            });
-        };
-        var timer_metaslider_182 = function() {
-	            if ( typeof window.jQuery === 'undefined' ) {
-	                window.setTimeout(timer_metaslider_182, 100);
-	            } else {
-	                window.jQuery(function() { metaslider_182(window.jQuery) });
-	            }
-	        };
-	        timer_metaslider_182();
-    </script>
-</div>
-<!--// meta slider-->
-
-        <script type="text/javascript">
-        // <![CDATA[
-        var disqus_shortname = 'metaslider';
-        (function () {
-            var nodes = document.getElementsByTagName('span');
-            for (var i = 0, url; i < nodes.length; i++) {
-                if (nodes[i].className.indexOf('dsq-postid') != -1 && nodes[i].parentNode.tagName == 'A') {
-                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
-                    url = nodes[i].parentNode.href.split('#', 1);
-                    if (url.length == 1) { url = url[0]; }
-                    else { url = url[1]; }
-                    nodes[i].parentNode.href = url + '#disqus_thread';
-                }
-            }
-            var s = document.createElement('script');
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-        // ]]>
-        </script>
-        <script type="text/javascript">(function() {function addEventListener(element,event,handler) {
-	if(element.addEventListener) {
-		element.addEventListener(event,handler, false);
-	} else if(element.attachEvent){
-		element.attachEvent('on'+event,handler);
-	}
-}function maybePrefixUrlField() {
-	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-		this.value = "http://" + this.value;
-	}
-}
-
-var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-if( urlFields && urlFields.length > 0 ) {
-	for( var j=0; j < urlFields.length; j++ ) {
-		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
-	}
-}/* test if browser supports date fields */
-var testInput = document.createElement('input');
-testInput.setAttribute('type', 'date');
-if( testInput.type !== 'date') {
-
-	/* add placeholder & pattern to all date fields */
-	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
-	for(var i=0; i<dateFields.length; i++) {
-		if(!dateFields[i].placeholder) {
-			dateFields[i].placeholder = 'YYYY-MM-DD';
-		}
-		if(!dateFields[i].pattern) {
-			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
-		}
-	}
-}
-
-})();</script><link rel='stylesheet' id='metaslider-flex-slider-css'  href='https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/vivo%20face1.css' type='text/css' media='all' property='stylesheet' />
-
-<script type='text/javascript' src='https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/vivo%20face1%202js.js'></script>
-<script type='text/javascript'>
-</script>
-</div>
-<!------------ cod publicidade -------------->  
-   </div> <div style="float: Right; width: 37%">
-<!------------ cod publicidade -------------->
 <div style="text-align: center;">
-<br/><br/><br/>
-<span style="color: black; font-size: 30px;"><b>
-TV Mundo</b></span></div>
-	   <br/><br/>
-<!---ini---troca banner reflashprog300x250--->
-<iframe width="310" height="260" src="https://soanatareportagens.
-000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
-<br/>
-<!---Fim---troca banner reflashprog350x250--->
-</div>
-
-<! --------------comeca aqui marquee 1------------------->
-<div style="float:center; width:100%"> 
-<marquee  direction="left"   scrollamount="6" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()" bgcolor="#2f4456">
-<! -----------------marquee 1 ------------------->
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>TV Mundo
-<span style="color: #2f4456">..................................................................................................
-	
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>BBC News Live Stream - Canal 39
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>Africa24 - Canal 38
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>TRT WORLD 
-Turkey - Canal 37
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>Web TV Brasileira - Canal 36
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>tv abc news australia - Canal 35
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>Do Vale Tv - Canal 29
-<span style="color: #2f4456">..................................................................................................
-	
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>tv abc news australia - Canal 28
-<span style="color: #2f4456">..................................................................................................	
-		
-	<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>KBS World 24 HS Korea - Canal 27
-<span style="color: #2f4456">..................................................................................................
-	
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>C5N en VIVO 24 HS - Canal 26
-<span style="color: #2f4456">..................................................................................................
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>Globo News - Canal 25
-<span style="color: #2f4456">..................................................................................................
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>
- AMAZON SAT - canal 15
-<span style="color: #2f4456">..................................................................................................
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>FOX News - canal 14
-<span style="color: #2f4456">..................................................................................................
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>euronews - canal 7
- 
-
- <span style="color: #2f4456">..................................................................................................
-	 <a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>CNN canal 13
-
- <span style="color: #2f4456">..................................................................................................
-
-<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;"> <b>
-Cidade alerta ao vivo as 17:oo horas - canal 16
-
- <span style="color: #2f4456">..................................................................................................
-	 <a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
-
- <span style="color: #fff">TN - canal 12
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>TV Pampa - Porto Alegre/RS - Brasil - canal 8
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>Chef TV Brasil - canal 6
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>TV Cancao Nova - canal 5
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>TV CAmara - canal 4
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>TV Senado - canal 3
-
-
-<a href="#" target="_blank" > <span style="color: 4; font-size: 18px;"> <b>
- <span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 12px;"> <b>TV JUSTICA - canal 2
-</b></marquee></div>
-	 <!------------------------------marquee fim------------------------------>
-	 <div style="text-align: center;">
-<span style="color: #fff; font-size: 18px;"><b>
-Tecle F11 para ocupar toda a Tela - Tecle F11 para desfazer </b></span></div></a>
-
-<br/><br/></span></div></!></div></!></!...so>
-<!----
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
----------------------menu abaixo---------------->
-
-<!...so pagina inicial topo ...> 
-
-<div style="text-align: center;"> 
-<span style="color: red; font-size: 17px;"><b>
-
-<!---
--
--
--
--
--
--
--
--
--
--
--
----->
-<!-------------------TV menu------------->
- </div><div style="float: left; width: 60%">
-<!-----------------------------------------------------TV----------------------------------------------->	
-<div style="text-align: center;"><br/><br/><br/>
-<span style="color: black; font-size: 26px;"><b>
-O que deseja ver</b></span></div></a><br/><br/><br/>
-<div 
-
-<a href="http://soanatareportagens.blogspot.com.br/2017/02/leviata-espreita-filho-de-lobao-e.html#" rel="nofollow" target="_blank">
-
-<a href="#" onclick="window.open('https://rawgit.com/soanatareportagens/codigosnr/master/facevivo.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<a id="exibir" href="#">Canal 1</a> |||| <a href="#" id="ocultar">Fechar Canal 1</a>
+<div id="Canal1"> 
+<!------------------seu conteudo ini canal 1---------------------->
+<!----------mostrar ocultat div inin------------>
 <div style="text-align: center;">
-<span style="color: black; font-size: 26px;"><b>
-TV Mundo</b></span></div></a><br/><br/><br/>
-
-<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/filme.html#', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
-<div style="text-align: center;">
-<span style="color: black; font-size: 26px;"><b>
-Filmes</b></span></div></a><br/><br/><br/>
-
-<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/animais%20selvagens.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
-<div style="text-align: center;">
-<span style="color: black; font-size: 26px;"><b>
-Documentários</b></span></div></a><br/><br/><br/>
-
-<a href="#" onclick="window.open('http://linkspub.blogspot.jp/2017/04/radio-am-fm.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
-<div style="text-align: center;">
-<span style="color: black; font-size: 26px;"><b>
-Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
-
-<div style="text-align: center;">
-<a href="http://soanatareportagens.blogspot.com.br"style="color: black;  font-size: 26px; outline:rel="nofollow" target="_blank">
-<b>Noticias
-
-</div>
-<!------------ cod publicidade --------------> 
-  </div> </div> <div style="float: Right; width: 40%">
-<!-------------------------------- cod publicidade ---------------------------------->
-<div style="text-align: center;">  <br/><br/>
-<img src="https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/contato%20tv%20mundo%20telegram.jpg"border="0" width="310" height="153"
-<br/><br/><br/><br/>
-<!---ini---troca banner reflashprog300x250--->
-<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
-<!---Fim---troca banner reflashprog350x250--->
-</div>
-<!// end anuncios--> 
-</!></div><br/><br/><br/><br/><br/><br/>
-<!---
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--inserido tv mundo na pagina----------------------------------------------->
-<style>
-body { background-color:#fff; }
-.highlightme { background-color:#FFFF00; }
-p { background-color:#FFFFFF; }
-</style>	
-<!xxxxxxxxxxxxxxxxxxbloqueio botao direito inixxxxxxxxxxxxxxxxxx>
-<script language=JavaScript>
+  <style type="text/css">
 <!--
-var mensagem="";
-function clickIE() {if (document.all) {(mensagem);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(mensagem);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-document.oncontextmenu=new Function("return false")
-// --> 
+#popjan {border: 6px solid #fff;
+background-color: #ffffff;
+width:100%px;
+top: 0px; left: 50px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
 </script>
-<!xxxxxxxxxxxxxxxxxxbloqueio botao direito Fimxxxxxxxxxxxxxxxxxx>
+
+<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><br/><br/><br/> <b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span>
+<!------------ cod publicidade ini -------------->
+<br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="350" height="250" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog300x250--->
+</div>
+<!------------ cod publicidade Fim-------------->
+</div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';">
+<!-----------Video do canal 1 inin----------->
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/j4oeiwdFwg8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-----------Video do canal 1 Fim----------->
+
+<!---------cristo----------> 
+
+<!----------mostrar ocultat div Fim------------>      
+<!------------------seu conteudo Fim canal 1----------------------> 
 
