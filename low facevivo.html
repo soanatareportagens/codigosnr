@@ -40,7 +40,7 @@ return false;
 $(function(){
   var $conteudocanal1    = $('#conteudocanal1').width(); // largura total	
   var $bannercanal1	   = $('#bannercanal1'); // objeto banner
-  var $tempo	   = 15; // milisegundos
+  var $tempocanal1   = 15; // milisegundos
   var $intervalo;
  
   // evento click
@@ -55,11 +55,11 @@ $(function(){
   }
  
   // funcao para contagem
-  function contador(){
+  function contadorcanal1(){
      $intervalo = window.setInterval(function() {
-	var tempoContagem 	= $("#contador").html();
+	var tempoContagem 	= $("#contadorcanal1").html();
 	var atualizaContagem 	= eval(tempoContagem) - eval(1);
-	$("#contador").html(atualizaContagem);
+	$("#contadorcanal1").html(atualizaContagem);
  
 	// chegando em zero o contador é parado
 	if(atualizaContagem == 0){
@@ -68,7 +68,7 @@ $(function(){
      }, 2000);
   }
  
-  // funcao para limpar o contador 
+  // funcao para limpar o contador
   function pararContagem(){
      window.clearInterval($intervalo);
   }
@@ -76,9 +76,9 @@ $(function(){
   // deslocamento do banner
   $bannercanal1.animate({ left: ($conteudocanal1 /4)}, 900).show();
   // chamada da funcao que fará a contagem
-  contador();	
+  contadorcanal1();	
   // setando o tempo de execução do banner
-  setTimeout(fechar, $tempo*2000);
+  setTimeout(fechar, $tempocanal1*2000);
 });
 </script>
 <style type="text/css">
@@ -132,7 +132,7 @@ width="400" height="630" style="border:none;overflow:hidden" scrolling="no" fram
 <iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
 <!---Fim---troca banner reflashprog350x250--->
 
-      <p>Anuncio Fecha em  <span id="contador">15</span> segundos.</p>
+      <p>Anuncio Fecha em  <span id="contadorcanal1">15</span> segundos.</p>
 Abre apenas uma vez para todos os canais
    </div>
 </div>
@@ -321,7 +321,7 @@ Abre apenas uma vez para todos os canais
 -
 -
 -
------------------inicio canal3-------------->
+-----------------inicio canal3--------------> 
 
 
 
