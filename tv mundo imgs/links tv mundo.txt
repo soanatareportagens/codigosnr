@@ -28,3 +28,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/js/updn%20mod1.js
 
 exibocultdiv1
 https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js
+
+baner8seg.js
+https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js
