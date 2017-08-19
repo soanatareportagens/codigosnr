@@ -203,7 +203,7 @@ return false;
 $(function(){
   var $conteudocanal2    = $('#conteudocanal2').width(); // largura total	
   var $bannercanal2	   = $('#bannercanal2'); // objeto banner
-  var $tempo	   = 15; // milisegundos
+  var $tempocanal2	   = 15; // milisegundos
   var $intervalo;
  
   // evento click
@@ -218,11 +218,11 @@ $(function(){
   }
  
   // funcao para contagem
-  function contador(){
+  function contadorcanal2(){
      $intervalo = window.setInterval(function() {
-	var tempoContagem 	= $("#contador").html();
+	var tempoContagem 	= $("#contadorcanal2").html();
 	var atualizaContagem 	= eval(tempoContagem) - eval(1);
-	$("#contador").html(atualizaContagem);
+	$("#contadorcanal2").html(atualizaContagem);
  
 	// chegando em zero o contador é parado
 	if(atualizaContagem == 0){
@@ -239,9 +239,9 @@ $(function(){
   // deslocamento do banner
   $bannercanal2.animate({ left: ($conteudocanal2 /4)}, 900).show();
   // chamada da funcao que fará a contagem
-  contador();	
+  contadorcanal2();	
   // setando o tempo de execução do banner
-  setTimeout(fechar, $tempo*2000);
+  setTimeout(fechar, $tempocanal2*2000);
 });
 </script>
 <style type="text/css">
@@ -292,7 +292,7 @@ p.link{ text-align:center;clear:both }
 <iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
 <!---Fim---troca banner reflashprog350x250--->
 
-      <p>Anuncio Fecha em  <span id="contador">15</span> segundos.</p>
+      <p>Anuncio Fecha em  <span id="contadorcanal2">15</span> segundos.</p>
 Abre apenas uma vez para todos os canais
    </div>
 </div>
@@ -322,8 +322,3 @@ Abre apenas uma vez para todos os canais
 -
 -
 -----------------inicio canal3--------------> 
-
-
-
-
-
