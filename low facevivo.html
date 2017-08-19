@@ -1,131 +1,329 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<title>Ocultando uma div com jQuery</title> 
-<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
-<script type="text/javascript"> 
+<!---------------inicio canal1---------------> 
+<div style="text-align: center;"> 
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script>  
+<script>
 $(document).ready(function(){ 
 
-$('#Canal1').hide(); 
+$('#canal1').hide(); 
 
-$('a#exibir').click(function(){ 
+$('#ocultarcanal1').click(function(){ 
 
-$('#Canal1').show('slow'); 
+$('#canal1').hide('slow'); 
 
 }); 
 
-$('a#ocultar').click(function(){ 
+$('#mostrarcanal1').click(function(){ 
 
-$('#Canal1').hide('slow'); 
+$("#canal1").show(3000); 
 }) 
 return false; 
 
 }); 
 </script> 
+<script src=""></script>
+<p>
+<a href="#" id="mostrarcanal1"><b>Canal 1 Reservado  </a>   |||| 
+<a href="#" id="ocultarcanal1"> Fechar</a> 
 
-</head> 
-<body> 
-<?php 
+</p>
 
-include ("conn_db.php"); 
+<div id="canal1" style="background-color: #fff; color:fff; padding:1px;">
 
-$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
-$linha = mysql_num_rows($query); 
-if ($linha==0){ 
-echo "Não foi retornado nenhum registro"; 
-} 
-else{ 
-while ($dados = mysql_fetch_array($query)){ 
-?> 
-
-<style> 
-body { 
-font: 12px Verdana, Geneva, sans-serif; 
-
-} 
-#Canal1 { 
-border:1px solid #CCCC33; 
-padding:10px; 
-margin-top:10px; 
-width:100%; 
-} 
-</style> 
-<div style="text-align: center;">
-<a id="exibir" href="#">Canal 1</a> |||| <a href="#" id="ocultar">Fechar Canal 1</a>
-<div id="Canal1"> 
-<!------------------seu conteudo ini canal 1---------------------->
-<!----------mostrar ocultat div inin------------>
-<div style="text-align: center;">
-  <style type="text/css">
-<!--
-#popjan {border: 6px solid #fff;
-background-color: #ffffff;
-width:100%px;
-top: 0px; left: 50px;
-text-align: center;
-z-index: 450;position:fixed;visibility: visible;}
--->
-</style>
-<!--------------------nova div temp ini---------------------->
-    <div id="popjan">
-<!--------------------cronometro ini---------------------->
-<!---------------------fechar div ini----------------------->
-
-<script language="JavaScript">
-function fecha_banner()
-{
- var banner_obj = document.getElementById('fechar div');
- banner_obj.style.display = 'none';
-}
-setTimeout('fecha_banner()', 10000);
+<!-------------------------espaço do seu codigo ini-------------------------->
+<!-----------inicio baner temporizado cana1--------------->
+<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery - Banner Flutuante com Contagem de Tempo</title>
+<script src="https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js"></script>
+<script type="text/javascript">
+$(function(){
+  var $conteudocanal1    = $('#conteudocanal1').width(); // largura total	
+  var $bannercanal1	   = $('#bannercanal1'); // objeto banner
+  var $tempo	   = 8; // milisegundos
+  var $intervalo;
+ 
+  // evento click
+  $(".fechar").click(function(event){
+    event.preventDefault();
+    fechar(); // chamada a função
+  });
+ 
+  // funcao que fechará o banner
+  function fechar(){
+    $("#bannercanal1").hide();
+  }
+ 
+  // funcao para contagem
+  function contador(){
+     $intervalo = window.setInterval(function() {
+	var tempoContagem 	= $("#contador").html();
+	var atualizaContagem 	= eval(tempoContagem) - eval(1);
+	$("#contador").html(atualizaContagem);
+ 
+	// chegando em zero o contador é parado
+	if(atualizaContagem == 0){
+	  pararContagem();
+	}
+     }, 1000);
+  }
+ 
+  // funcao para limpar o contador 
+  function pararContagem(){
+     window.clearInterval($intervalo);
+  }
+ 
+  // deslocamento do banner
+  $bannercanal1.animate({ left: ($conteudocanal1 /10)}, 900).show();
+  // chamada da funcao que fará a contagem
+  contador();	
+  // setando o tempo de execução do banner
+  setTimeout(fechar, $tempo*2000);
+});
 </script>
-
-<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><br/><br/><br/> <b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span>
-<!------------ cod publicidade ini -------------->
-<br/>
+<style type="text/css">
+body{ font-family:Arial, Helvetica, sans-serif }
+#conteudocanal1{ 
+ margin:0 auto;
+ width:100%px; 
+ height:800px;
+ background-color:#fff;	
+}
+#bannercanal1{
+ position:absolute;  
+ top:110px;    
+ left:0;
+ float:left;
+ width:312px; /* largura */
+ height:355px; /* altura */
+ background-color:#fff; /* cor de fundo */
+ -webkit-border-radius: 8px; /* canto arredondado */
+ -moz-border-radius: 8px; /* canto arredondado */
+ border-radius: 8px; /* canto arredondado */
+ z-index:999999; /* posicionando sobre os demais */
+ display:none;
+ color:#0000;
+}
+#bannercanal1 a{ color:#fff;text-decoration:none } 
+#bannercanal1 p { padding: 5px 10px 0; }
+p.link{ text-align:center;clear:both }
+#fechar{ 
+ position:relative;
+ float:right; 
+ width:20px;
+ height:20px;
+ background-color:#fff;  
+ color:#fff;
+ text-align:center; 
+}
+</style>
+</head>
+<body>
+<div id="conteudocanal1">
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2F
+www.facebook.com%2Fdepmarcomaia%2Fvideos%2F1860109967337831%2F&show_text=0&width=476" 
+width="100%" height="530" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe><span style="color: #fff; font-size: 20px;"><br/>
+	 <b>Canal 1 - Temer não desistiu quer acabar com a sua aposentadoria </b></span></a>
+	<span style="color: #fff; font-size: 20px;"> <b>Canal 2 - TV justiça  </b></span></a>
+      <!------------------------Canal 1 reservado--------------------------->
+   <div id="bannercanal1">
+      <div id="fechar"><a href="#" title="Fechar" class="fechar">X</a></div>
 <!---ini---troca banner reflashprog300x250--->
-<iframe width="350" height="250" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
-<!---Fim---troca banner reflashprog300x250--->
-</div>
-<!------------ cod publicidade Fim-------------->
-</div>
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
 
-<!---------------------fechar div fim----------------------->
-<!--------------------cronometro fim---------------------->
-<div id="mime">
-<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
-</span></span></a>
-<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+      <p>Anuncio Fecha em  <span id="contador">15</span> segundos.</p>
+Abre apenas uma vez para todos os canais
+   </div>
+</div>
+</body>
+</html>  
+<!-----------fim baner temporizado canal1---------------> 
+ 
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo fim--------------------------> 
+</div>
+<!---------------Fim canal1---------------> 
+<!---
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+--------------------inicio canal 2--------------------->
 
+<div style="text-align: center;"> 
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script>  
 <script>
-// O HTML da div precisa estar acima.
-// Esconde a div no inacio
-var div = document.getElementById('mime');
-div.style.display = 'none';
+$(document).ready(function(){ 
 
-// Mostra a div apos 1 minuto
-setTimeout(function() {
-    div.style.display = 'block';
-}, 13000);
+$('#canal2').hide(); 
+
+$('#ocultarcanal2').click(function(){ 
+
+$('#canal2').hide('slow'); 
+
+}); 
+
+$('#mostrarcanal2').click(function(){ 
+
+$("#canal2").show(3000); 
+}) 
+return false; 
+
+}); 
 </script> 
-<!--------------------nova div temp fim---------------------->  
+<script src=""></script>
+<p>
+<a href="#" id="mostrarcanal2">Canal 2 TV Justiça - Brasil </a>   |||| 
+<a href="#" id="ocultarcanal2"> Fechar </a> 
+
+</p>
+
+<div id="canal2" style="background-color: #fff; color:fff; padding:1px;">
+
+<!-------------------------espaço do seu codigo ini-------------------------->
+<!-----------inicio baner temporizado canal2--------------->
+<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery - Banner Flutuante com Contagem de Tempo</title>
+<script src="https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js"></script>
+<script type="text/javascript">
+$(function(){
+  var $conteudocanal2    = $('#conteudocanal2').width(); // largura total	
+  var $bannercanal2	   = $('#bannercanal2'); // objeto banner
+  var $tempo	   = 8; // milisegundos
+  var $intervalo;
+ 
+  // evento click
+  $(".fechar").click(function(event){
+    event.preventDefault();
+    fechar(); // chamada a função
+  });
+ 
+  // funcao que fechará o banner
+  function fechar(){
+    $("#bannercanal2").hide();
+  }
+ 
+  // funcao para contagem
+  function contador(){
+     $intervalo = window.setInterval(function() {
+	var tempoContagem 	= $("#contador").html();
+	var atualizaContagem 	= eval(tempoContagem) - eval(1);
+	$("#contador").html(atualizaContagem);
+ 
+	// chegando em zero o contador é parado
+	if(atualizaContagem == 0){
+	  pararContagem();
+	}
+     }, 1000);
+  }
+ 
+  // funcao para limpar o contador 
+  function pararContagem(){
+     window.clearInterval($intervalo);
+  }
+ 
+  // deslocamento do banner
+  $bannercanal2.animate({ left: ($conteudocanal2 /10)}, 900).show();
+  // chamada da funcao que fará a contagem
+  contador();	
+  // setando o tempo de execução do banner
+  setTimeout(fechar, $tempo*2000);
+});
+</script>
+<style type="text/css">
+body{ font-family:Arial, Helvetica, sans-serif }
+#conteudocanal2{ 
+ margin:0 auto;
+ width:100%px; 
+ height:800px;
+ background-color:#fff;	
+}
+#bannercanal2{
+ position:absolute;  
+ top:110px;    
+ left:0;
+ float:left;
+ width:312px; /* largura */
+ height:355px; /* altura */
+ background-color:#fff; /* cor de fundo */
+ -webkit-border-radius: 8px; /* canto arredondado */
+ -moz-border-radius: 8px; /* canto arredondado */
+ border-radius: 8px; /* canto arredondado */
+ z-index:999999; /* posicionando sobre os demais */
+ display:none;
+ color:#0000;
+}
+#bannercanal2 a{ color:#fff;text-decoration:none } 
+#bannercanal2 p { padding: 5px 10px 0; }
+p.link{ text-align:center;clear:both }
+#fechar{ 
+ position:relative;
+ float:right; 
+ width:20px;
+ height:20px;
+ background-color:#fff;  
+ color:#fff;
+ text-align:center; 
+}
+</style>
+</head>
+<body>
+<div id="conteudocanal2">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/oq2f55e_RQ8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	<span style="color: #fff; font-size: 20px;"> <b>Canal 2 - TV justiça  </b></span></a>
+      <!------------------------Canal 2 TV Justiça - Brasil acima--------------------------->
+   <div id="bannercanal2">
+      <div id="fechar"><a href="#" title="Fechar" class="fechar">X</a></div>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+
+      <p>Anuncio Fecha em  <span id="contador">15</span> segundos.</p>
+Abre apenas uma vez para todos os canais
+   </div>
 </div>
-<!---------cristo---------->  
-	<script>
-		function exibe(){
-			document.getElementById('aaa').style.display="";
-		}
-		
-		window.onload = function(){
-			setTimeout("exibe()", 13000);
-		}
-	</script>
+</body>
+</html>  
+<!-----------fim baner temporizado canal2--------------->
+ 
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo fim fim canal2--------------------------> 
+</div>
 
-	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';">
-<!-----------Video do canal 1 inin----------->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/j4oeiwdFwg8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-<!-----------Video do canal 1 Fim----------->
 
-<!---------cristo----------> 
+<!---
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-----------------inicio canal3-------------->
 
-<!----------mostrar ocultat div Fim------------>      
-<!------------------seu conteudo Fim canal 1----------------------> 
+
+
+
 
