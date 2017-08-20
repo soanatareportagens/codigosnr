@@ -31,3 +31,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js
 
 baner8seg.js
 https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js
+
+ao vivo gif 1
+https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/aovivo1.gif
