@@ -3,16 +3,18 @@
 <script language="Javascript">
 function showDiv(div)
 {
-document.getElementById("plano1").className = "invisivel";
-document.getElementById("plano2").className = "invisivel";
-document.getElementById("plano3").className = "invisivel";
-document.getElementById("plano4").className = "invisivel";
-document.getElementById("plano5").className = "invisivel";
-document.getElementById("plano6").className = "invisivel";
-document.getElementById("plano7").className = "invisivel";
-document.getElementById("plano35").className = "invisivel";
-document.getElementById("plano40").className = "invisivel";
-document.getElementById("plano41").className = "invisivel";
+      document.getElementById("plano1").className = "invisivel";
+      document.getElementById("plano2").className = "invisivel";
+      document.getElementById("plano3").className = "invisivel";
+      document.getElementById("plano4").className = "invisivel";
+      document.getElementById("plano5").className = "invisivel";
+      document.getElementById("plano6").className = "invisivel";
+      document.getElementById("plano7").className = "invisivel";
+      document.getElementById("plano7a").className = "invisivel";
+      document.getElementById("plano8").className = "invisivel";
+      document.getElementById("plano35").className = "invisivel";
+      document.getElementById("plano40").className = "invisivel";
+      document.getElementById("plano41").className = "invisivel";
 
 document.getElementById(div).className = "visivel";
 }
@@ -32,6 +34,8 @@ document.getElementById(div).className = "visivel";
         <option value="plano5">Canal 5 - TV Canção Nova - Brasil</option>
         <option value="plano6">Canal 6 - Chef TV O Canal da Gastronomia - Brasil</option>
         <option value="plano7">Canal 7 - Euronews (em Inglês)</option>
+        <option value="plano7a">Canal 7 - Euronews (en español)</option>
+        <option value="plano8">Canal 8 - canal 8 TV Pampa - Porto Alegre/RS - Brasil</option>
         <option value="plano35">Canal 35 Fantástico</option>
         <option value="plano40">Canal 40 TV Record 24 hs - Brasil</option>
         <option value="plano41">Canal 41 Globo News ao vivo</option>
@@ -68,12 +72,22 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
 <div id="plano7" class="invisivel">
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/K_6mqVcUwzg?
 			autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
-</div><!--------------------------7 euronews (em Inglês) acima-------------------------->
+</div><!--------------------------canal 7 euronews (em Inglês) acima-------------------------->
+
+<div id="plano7a" class="invisivel">
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/F3uBJFwcgqo?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--------------------------canal 7a euronews (en español) acima-------------------------->
+
+<div id="plano8" class="invisivel">
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/1GxAK85Fl5A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--------------------------canal 8 TV Pampa - Porto Alegre/RS - Brasil-------------------------->
 
 <div id="plano35" class="invisivel">
 <iframe width="100%" height=450" src="https://www.youtube.com/embed/JRZ4eaV3UTo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </iframe>
 </div><!--------------------------Canal 35 Fantástico acima-------------------------->
+
 <div id="plano40" class="invisivel">
 <iframe width="800" height="450" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://player.r7.com/video/i/52aaab49596f99dbbc02ab09?layout=wide432p&full=true" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
 </div><!--------------------------Canal 40 TV Record 24 hs - Brasil acima-------------------------->
