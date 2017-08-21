@@ -1,3 +1,76 @@
+<!----popup em iframe ------>
+  <style type="text/css">
+<!--
+#popjan {border: 6px solid #;
+background-color: #ffffff;
+width:325px;
+top: 32px; left: 350px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
+</script>
+<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><br/><br/><br/> <b> Por favor, aguarde só alguns segundos...<br/><br/><img src="https://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span></div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';"><img src="https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif" width="25" height="25"/><span style="color: red; font-size: 15px;"><b>FECHAR PUBLICIDADE – CLIQUE AQUI</b></span></a>
+
+<!---------cristo----------> 
+</div>
+<div style="clear: both;">
+</div>
+<div style="margin: auto; text-align: center; width: 1200;">
+</div>
+<div style="clear: both;">
+</div><br/>
+<!-------internas------->           
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--------------------->
+</div>
+</div>
 <iframe width="100%" height="28" src="https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html"></iframe>
 
 <script language="Javascript">
@@ -37,6 +110,7 @@ function showDiv(div)
       document.getElementById("plano30").className = "invisivel";
       document.getElementById("plano31").className = "invisivel";
       document.getElementById("plano32").className = "invisivel";
+      document.getElementById("plano33").className = "invisivel";
       document.getElementById("plano35").className = "invisivel";
       document.getElementById("plano40").className = "invisivel";
       document.getElementById("plano41").className = "invisivel";
@@ -55,7 +129,7 @@ document.getElementById(div).className = "visivel";
 </div>
  <body>
 <select id="combobox" name="combobox" onChange="showDiv(this.value);">
-        <option value="plano1">...→ Selecione o canal aqui</option>
+        <option value="plano1">.......→ Selecione o canal aqui</option>
 	<option value="plano1">Canal 1 Reservado</option>
 	<option value="plano2">Canal 2 TV Justiça – Brasil</option>
 	<option value="plano3">Canal 3 TV Senado – Brasil</option>
@@ -90,6 +164,7 @@ document.getElementById(div).className = "visivel";
         <option value="plano30">Canal 30 India Today Live TV</option>
         <option value="plano31">Canal 31 Rede TVT - BRasil Seu Jornal</option>
         <option value="plano32">Canal 32 Bom Dia Brasil</option>
+        <option value="plano33">Canal 33 Jornal hoje</option>
         <option value="plano35">Canal 35 Fantástico</option>
         <option value="plano40">Canal 40 TV Record 24 hs - Brasil</option>
         <option value="plano41">Canal 41 Globo News - Brasil</option>
@@ -97,7 +172,7 @@ document.getElementById(div).className = "visivel";
         
  </select>
 <div style="text-align: center;">
-<div id="plano1" class="invisivel"><!obs colocando invisivel--->
+<div id="plano1" class=""><!obs colocando invisivel--->
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FConversa.Afiada.Oficial%2Fvideos%2F1947961595230692%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 </div><!--------------------------canl 1 acima-------------------------->
@@ -255,7 +330,11 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
   <div id="plano32" class="invisivel">
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/nhlARLd7MSY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div><!--------------------------Canal 32 Bom Dia Brasil acima-------------------------->
-
+                                           
+<div id="plano33" class="invisivel">
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/WoQxYhHMaO0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--------------------------Canal 33 Jornal hoje acima-------------------------->
+                                                                                                                                                    
 <div id="plano35" class="invisivel">
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/dZD0W7ROS4o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div><!--------------------------Canal 35 Fantástico acima-------------------------->
@@ -268,12 +347,13 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/2zfA8OC004E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div><!--------------------------Canal 41 Globo News ao vivo acima-------------------------->
 
-<div id="plano100" class="">
+<div id="plano100" class="invisivel">
                            <br/><br/><br/>
 <iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
 </div><!--------------------------anuncio-------------------------->
-                                                                                                                 
-  <br/><br/> <br/><br/><br/><br/><!--------------------------------------------------------------------->                                                                                                                      <!-------------------TV------------->
+                                                                                                               
+  <br/><br/><br/><br/><br/><br/><!------------------------------------------------------->                                  <br/><br/><br/>                                                                           
+                          <!-------------------TV menu------------->
  </b></span></div><div style="float: left; width: 60%">
 <!--------------------------------------------------->	
 <div style="text-align: center;"><br/>
