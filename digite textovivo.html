@@ -1,27 +1,34 @@
-
-<style>	
-body { background-color:#2f4456; }
-.highlightme { background-color:#FFFF00; }
-p { background-color:#FFFFFF; }
-</style>	
-<!--------------comeca aqui marquee 1------------------->
-<!<marquee  direction="alternate"   scrollamount="5" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()" bgcolor="#2f4456"/>
-<!-----------------marquee 1 ------------------->
- <b><!-----------hora ini---------->
-  <a href="http://bit.ly/2pvtFCF"> <span style="color: #fff; font-size: 18px;">
+<img src="https://yt3.ggpht.com/--WkEfg6H4j4/AAAAAAAAAAI/AAAAAAAAAAA/IDqFdlbb-og/s88-c-k-no-mo-rj-c0xffffff/photo.jpg
+' border="0" width="30" height="30" >          
+ <!------------------inicio texto piscando----------------->
+<div style="text-align: center;">
 <script type="text/javascript">
-var hora = new Date();
-document.write(hora.getHours()+" : "+hora.getMinutes()+" hs ");
+function piscando(){
+               
+                //Autor: Bruno Passos - Clandevelop Sistemas e Sites
+                //http://www.clandevelop-sistemas-e-sites.blogspot.com
+               
+                var tempo = 500; //1000 = 1s      
+               
+                blinks = document.getElementsByTagName("blink");    
+                for(var i=0;i<blinks.length;i++){
+                                if(blinks[i].getAttribute("style")=="VISIBILITY: hidden"){                              
+                                                blinks[i].setAttribute("style", "VISIBILITY: visible");                         
+                                }else{                   
+                                                blinks[i].setAttribute("style", "VISIBILITY: hidden");                       
+                                }
+                }                             
+                setTimeout('piscando()', tempo);            
+}
 </script>
-<!-----------hora Fim---------->
-<a href="http://bit.ly/2pvtFCF"><span style="color: #2f4456; font-size: 1px;">______________________<span style="color: #FFFF00; font-size: 18px;">
-<!-----------texto 1---------->
- <img src="https://yt3.ggpht.com/--WkEfg6H4j4/AAAAAAAAAAI/AAAAAAAAAAA/IDqFdlbb-og/s88-c-k-no-mo-rj-c0xffffff/photo.jpg
-' border="0" width="30" height="30" >
- Cidade alerta esta ao vivo agora canais 16 e 40
-<span style="color: #2f4456">..................................................................................................<a href="#" target="_blank" > <span style="color: #fff; font-size: 18px;">
-<!-----------texto 2---------->  </a></!></marquee> </div>
-<! -----------------marquee fim-------------------><br/>
- <script language="javascript">
-setTimeout("location.reload();", 30000);
-</script>
+</head>
+<body onload="piscando();"> 
+
+  <blink><a href="http://www.cineclan.com.br"><span style="color: red; font-size: 18px;"><b>
+Cidade alerta esta ao vivo agora canais 16 e 40
+ </b></span></a></blink>
+  <br />
+  <blink>
+    </body>
+</html>
+                             <!------------------fim texto piscando----------------->
