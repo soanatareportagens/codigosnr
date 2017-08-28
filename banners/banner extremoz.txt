@@ -1,0 +1,27 @@
+<!------------anuncio----------->
+<script language="JavaScript">
+var ultimo=-1, dBannerextremoz;
+function carrega(x) {dBannerextremoz=x;Banners()}
+function Banners()
+{
+var MNews = new Array();
+MNews[1]= '<A HREF="#" target="_blank"> <IMG SRC="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/pub/eletr%20uniao2%2017%201%20GIF%20350x240%20gif.gif" WIDTH="350" HEIGHT="260" BORDER="0" ALT="eletronica uniao"></a>';
+      <!---1---------eletronica uniao ascima--------------------->
+
+MNews[2]= '<A HREF="#" target="_blank"><IMG SRC="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/21151237_333204417121614_2664901678847462194_n.jpg?oh=c7d289d81f47903991c2e38ae8fa7be3&oe=5A5C9B6C" WIDTH="650" HEIGHT="400" BORDER="0" ALT="restaurante da ana"></a>';
+<!---2----------restaurante da ana  28-08-17 ascima-------------------->
+
+MNews[3]= '<A HREF="#" target="_blank"><IMG SRC="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/pub/crv%20350%20x%20250%20png.png" WIDTH="650" HEIGHT="400" BORDER="0" ALT="CRV serv "></a>'
+while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
+dBannerextremoz.innerHTML=MNews[Numero];
+      <!---3----------Ultimo banner CRV serv ascima-------------------->
+
+setTimeout("Banners()",11000);
+}
+</script></head>
+<body bgcolor="#FFFFFF" topmargin=0 leftmargin=0 text="#000000" onLoad=carrega(this.divBanner)>
+<table width="300" border="0" cellspacing="0" cellpadding="0" height="250" bordercolor="#000000">
+<tr>
+<td>
+<div align="center" id=divBanner></div>
+<!---Fim---troca banner reflashprog350x250--------------------->
