@@ -40,3 +40,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js
 
 ao vivo gif 1
 https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/aovivo1.gif
+
+http://scmplayer.net/script.js
+http://scmplayer.co/script.js
