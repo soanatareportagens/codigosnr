@@ -43,3 +43,6 @@ https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/aovivo1
 
 http://scmplayer.net/script.js
 http://scmplayer.co/script.js
+
+normalize.css
+https://rawgit.com/soanatareportagens/codigosnr/master/js/tv%20mundo%20ncanal/normalize.css
