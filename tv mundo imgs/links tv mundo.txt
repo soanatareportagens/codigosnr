@@ -46,3 +46,7 @@ http://scmplayer.co/script.js
 
 normalize.css
 https://rawgit.com/soanatareportagens/codigosnr/master/js/tv%20mundo%20ncanal/normalize.css
+
+ocultar mostrar
+ocultar tv mundo
+https://rawgit.com/soanatareportagens/codigosnr/master/js/ocultartvmundo.js
