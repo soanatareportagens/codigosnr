@@ -120,6 +120,103 @@ exibido dentro de: [ src="" ]
 <div id='navigation_up_down_35349'><script src='http://services.webestools.com/navigation_up_down/4-35349-right.js' type='text/javascript'/></div></script></div>
 <!---------------------texto vivo fixo topo fim------------------>
 
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudo').hide("slow"); 
+
+$('a#exibir').click(function(){ 
+
+$('#conteudo').show('3000'); 
+
+}); 
+
+$('a#ocultar').click(function(){ 
+
+$('#conteudo').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudo { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibir" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Menu</b></span></a> |||| <a href="#" id="ocultar"><span style="color: #000; font-size: 17px;"><b>Fechar Menu</b></span></a>
+<div id="conteudo"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 60%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<span style="color: black; font-size: 26px;"><b>
+Menu TV Mundo</b></span></div><br/><br/><br/>
+<a href="#" onclick="window.open('http://rawgit.com/soanatareportagens/codigosnr/master/facevivo.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+TV Mundo em Tela cheia</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/filme.html#', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Filmes</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/animais%20selvagens.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Documentários</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('http://linkspub.blogspot.jp/2017/04/radio-am-fm.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 40%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
 <!-----------ini div abre temp------------>
 	<script>
 		function exibe(){
