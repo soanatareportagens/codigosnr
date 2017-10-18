@@ -1,0 +1,1281 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>TV Mundo</title>
+<img src="https://lh3.googleusercontent.com/-FqUSTo9nvs4/WdwJmrF9VNI/AAAAAAAA8WU/QzXyxg-x4HAPuQ8Ugu3duJv9q_Y5DpetwCJoC/w530-h328-n-rw/21761588_1732536357051636_5155740534979738354_n.jpg"border="0" width="1" height="1"/>
+<iniciotextoaovivo ......................................................="">
+<style type='text/css'> 
+#inftemp { 
+height: 37px; 
+position: fixed; 
+top: 0; 
+left:0; 
+z-index: 95469148; 
+background: #2f4456; 
+width: 100%; 
+border-width: 1px 0; 
+border-style: solid; 
+border-color: #EBEBEB; 
+border-bottom: 3px solid gainsboro; 
+-moz-box-shadow: 0px 6px 30px #c9c9c9; 
+-webkit-box-shadow: 0px 6px 30px #c9c9c9; 
+box-shadow: 0px 6px 30px #c9c9c9; 
+}
+
+#inftemp ul { 
+padding-top: 3px; 
+color: #555; 
+margin-top: 8px; 
+}
+
+.inftempativo a:link { 
+color: #c60; 
+}
+
+#inftemp li { 
+list-style-type: none; 
+display: inline; 
+color: #ffffff; 
+cursor: pointer; 
+line-height: 20px; 
+text-align: center; 
+font-size: 14px; 
+font-weight: bold; 
+}
+
+#inftemp li a { 
+color: #FFFFFF; 
+-webkit-transition: All 0.3s ease; 
+-moz-transition: All 0.3s ease; 
+-o-transition: All 0.3s ease; 
+text-decoration: none; 
+padding-left: 20px; 
+}
+
+#inftemp li a:hover { 
+color: #000000; 
+-webkit-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-moz-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-o-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+text-decoration: none; 
+} 
+</style> 
+</iniciotextoaovivo>
+<div id="inftemp">
+<!----------------------Marquee ini------------------------>
+<div style="text-align: center;">
+<script type="text/javascript">  
+// O Último Banners não deve utilizar virgula (,) no final da linha
+var imgs1 = new Array(
+<!-----------moveis projetado3-------------->
+"https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" <!-------------servicos de alvenaria2------------>
+);
+
+// Neste Array, você vai colocar as URLs, links de destinos dos sites quando clicarem em um
+// O Último Link do site não deve utilizar virgula (,) no final da linha
+var lnks1 = new Array(
+"http://vulcovulco.blogspot.com./#"<!-----------6vulcovulco-------------->
+);
+
+// Deve-se seguir o mesmo padrão das Array acima, a última linha correspondente ao último
+// banner, deve ser finalizada sem a virgula (,) no final da linha.
+var alt1 = new Array(
+"google+",
+"2twiter",
+"3curtir snr",
+"4add snr",
+"5whatsapp",
+"6vulcovulco"
+);
+
+var currentAd1 = 0;
+
+// Nesta variável abaixo, que está marcada como 5, você deverá ALTERAR para o nº correspondente
+// total de banners que você adicionou.
+var imgCt1 = 1; <!---------numero de banneres----------->
+
+function cycle1() {
+  if (currentAd1 == imgCt1) {
+    currentAd1 = 0;
+  }
+  
+var banner1 = document.getElementById('adBanner1');
+var link1 = document.getElementById('adLink1');
+
+  banner1.src=imgs1[currentAd1]
+  banner1.alt=alt1[currentAd1]
+
+  document.getElementById('adLink1').href=lnks1[currentAd1]
+  currentAd1++;
+}
+
+// Nesta linha de comando abaixo, será responsável pelo intervalo de rotação, ou seja, tempo
+// que cada banner será exibido. Neste Exemplo está configurado para mudar de banner a cada
+// 10 segundos (11000), só alterar este valor, caso queira um intervalo maior entre os banners
+window.setInterval("cycle1()",50000);
+</script>
+<!-- Nas 2 linhas abaixo, você configura o BANNER PADRÃO, o que é exibido quando o site é carregado
+Altere somente o LINK do site, é o que está dentro de: [ href="" ] e o link da imagem/banner, que é o que é 
+exibido dentro de: [ src="" ]
+ -->
+<a href="https://www.blogger.com/blogger.g?blogID=6816021071014912153#" id="adLink" target="_blank">
+<iframe width="100%" height="35" src="https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html"/></iframe></a>
+ </div>
+<!----------------------Marquee fim------------------------></div>
+<div id='navigation_up_down_35349'><script src='https://rawgit.com/soanatareportagens/codigosnr/master/js/updn%20mod1.js' type='text/javascript'/></div></script></div>
+<!-------------------------------------------------texto vivo fixo topo fim--------------------------------------------------------->
+<br/><br/><br/>
+<!-------------------------------------------------texto vivo fixo topo fim--------------------------------------------------------->
+<!-------------------------------------------------ini menu tv mundo--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudo').hide("slow"); 
+
+$('a#exibir').click(function(){ 
+
+$('#conteudo').show('3000'); 
+
+}); 
+
+$('a#ocultar').click(function(){ 
+
+$('#conteudo').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudo { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibir" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Menu</b></span></a> |||| <a href="#" id="ocultar"><span style="color: #000; font-size: 17px;"><b>Fechar Menu</b></span></a>
+<div id="conteudo"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 60%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<span style="color: black; font-size: 26px;"><b>
+Menu TV Mundo</b></span></div><br/><br/><br/>
+<a href="#" onclick="window.open('http://rawgit.com/soanatareportagens/codigosnr/master/facevivo.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+TV Mundo em Tela cheia</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/filme.html#', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Filmes</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/animais%20selvagens.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Documentários</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('http://linkspub.blogspot.jp/2017/04/radio-am-fm.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 40%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+
+
+	<a id="download" style="display: none;"> 
+<div id="floatLayer" style="position:absolute; height:250px; left:400px; top:234px; width:300px">
+ <!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--------------------->
+<div style="position:relative; height:9px; left:298px; top:-270px; width:9px"><span onmouseup="document.getElementById('floatLayer').style.display='none'"><img alt="FECHAR" border="0" height="15" src="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fechar%201.jpg" width="15" /></span></div></div> 
+<!-----------fim div abre temp------------>
+<!-------------------------------------------------fim menu tv mundo--------------------------------------------------------->
+
+    <!-----------------ini ocultar tv mundo-------------->
+<div style="text-align: center;">
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8aed83718f/js/af%20menu1cod1.js"></script>
+<script>
+$(document).ready(function(){
+	$("#ocultartvmundo").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectostvmundo").hide("slow");
+	});
+
+	$("#mostrartvmundo").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectostvmundo").show(3000);
+	});
+});
+</script>
+<script src=""></script>
+
+<a href="#" id="mostrartvmundo"><span style="color: #000; font-size: 18px;"><b>Abrir TV Mundo</b></span></a>   |||| 
+<a href="#" id="ocultartvmundo"><span style="color: #000; font-size: 18px;"><b> Fechar TV Mundo</b></span></a> 
+
+<div id="capaefectostvmundo" style="background-color: #fff; color:fff; padding:0px;">
+                       <br/>
+  <!-----------espaço do seu codigo ini------------------->
+<!-------------------TV------------->
+<div style="text-align: center;">
+<div style="float: left; width: 70%;">
+	<script language="Javascript">
+function showDiv(div)
+{
+      document.getElementById("plano1").className = "invisivel";
+      document.getElementById("plano2").className = "invisivel";
+      document.getElementById("plano3").className = "invisivel";
+      document.getElementById("plano4").className = "invisivel";
+      document.getElementById("plano5").className = "invisivel";
+      document.getElementById("plano6").className = "invisivel";
+      document.getElementById("plano7").className = "invisivel";
+      document.getElementById("plano8").className = "invisivel";
+      document.getElementById("plano9").className = "invisivel";
+      document.getElementById("plano10").className = "invisivel";
+      document.getElementById("plano11").className = "invisivel";
+      document.getElementById("plano12").className = "invisivel";
+      document.getElementById("plano13").className = "invisivel";
+      document.getElementById("plano14").className = "invisivel";
+      document.getElementById("plano15").className = "invisivel";
+      document.getElementById("plano16").className = "invisivel";
+      document.getElementById("plano17").className = "invisivel";
+      document.getElementById("plano18").className = "invisivel";
+      document.getElementById("plano19").className = "invisivel";
+      document.getElementById("plano20").className = "invisivel";
+      document.getElementById("plano21").className = "invisivel";
+      document.getElementById("plano22").className = "invisivel";
+      document.getElementById("plano23").className = "invisivel";
+      document.getElementById("plano24").className = "invisivel";
+      document.getElementById("plano25").className = "invisivel";
+      document.getElementById("plano26").className = "invisivel";
+      document.getElementById("plano27").className = "invisivel";
+      document.getElementById("plano28").className = "invisivel";
+      document.getElementById("plano29").className = "invisivel";
+      document.getElementById("plano30").className = "invisivel";
+      document.getElementById("plano31").className = "invisivel";
+      document.getElementById("plano32").className = "invisivel";
+      document.getElementById("plano33").className = "invisivel";
+      document.getElementById("plano34").className = "invisivel";
+      document.getElementById("plano35").className = "invisivel";
+      document.getElementById("plano36").className = "invisivel";
+      document.getElementById("plano37").className = "invisivel";
+      document.getElementById("plano38").className = "invisivel";
+      document.getElementById("plano39").className = "invisivel";
+      document.getElementById("plano40").className = "invisivel";
+      document.getElementById("plano41").className = "invisivel";
+      document.getElementById("plano42").className = "invisivel";
+      document.getElementById("plano43").className = "invisivel";
+      document.getElementById("plano44").className = "invisivel";
+      document.getElementById("plano45").className = "invisivel";
+      document.getElementById("plano46").className = "invisivel";
+      document.getElementById("plano47").className = "invisivel";
+      document.getElementById("plano48").className = "invisivel";
+      document.getElementById("plano49").className = "invisivel";
+      document.getElementById("plano50").className = "invisivel";
+      document.getElementById("plano51").className = "invisivel";
+      document.getElementById("plano52").className = "invisivel";
+      document.getElementById("plano53").className = "invisivel";
+      document.getElementById("plano54").className = "invisivel";
+      document.getElementById("plano55").className = "invisivel";
+      document.getElementById("plano56").className = "invisivel";
+      document.getElementById("plano57").className = "invisivel";
+      document.getElementById("plano58").className = "invisivel";
+
+document.getElementById(div).className = "visivel";
+}
+</script>
+<style>
+.invisivel { display: none; }
+.visivel { visibility: visible; }
+</style>
+<div style="float: right; width: 15%">
+<img src="https://lh3.googleusercontent.com/-LulTPgMmXs8/WZo9KS95_8I/AAAAAAAACp4/cEOvz3ZcPFY6Zfv5T4eI4Qxb64ByDYmVQCJoC/w530-h173-rw/live1%2Bgif.gif'border="0" width="60" height="17" />
+</div><div style="float: right; width: 20%">
+<span style="color: #2f4456; font-size: 18px;"><b>
+TV MUNDO<br/>
+</b></span></div>
+<div style="float: left; width: 35%">
+<style type="text/css"></style>
+<select id="combobox" name="combobox" onchange="showDiv(this.value);">
+        <option value="plano1" />&nbsp; &nbsp;&nbsp;&nbsp;...→&nbsp; Selecione Um canal aqui
+	<option value="plano1" />Canal 1 Reservado
+	<option value="plano2" />Canal 2 TV Justiça – Brasil
+	<option value="plano3" />Canal 3 TV Senado – Brasil
+        <option value="plano4" />Canal 4 TODO MUNDO ODEIA O CHRIS
+        <option value="plano5" />Canal 5 TV Canção Nova - Brasil
+        <option value="plano6" />Canal 6 Chef TV O Canal da Gastronomia - Brasil
+        <option value="plano7" />Canal 7 Euronews (em Inglês)
+        <option value="plano8" />Canal 8 Euronews (em português)
+        <option value="plano9" />Canal 9 TV Pampa - Porto Alegre/RS - Brasil
+        <option value="plano10" />Canal 10 HispanTV en vivo - FULL HD
+        <option value="plano11" />Canal 11 DESENHOS 24 HORAS
+        <option value="plano12" />Canal 12 DESENHOS 24 HORAS 2
+        <option value="plano13" />Canal 13 TN en Vivo - Argentina
+        <option value="plano14" />Canal 14 CNN LIVE
+        <option value="plano15" />Canal 15 Señal de CNN en Español
+        <option value="plano16" />Canal 16 FOX News Live
+        <option value="plano17" />Canal 17 AMAZON SAT - Brasil
+        <option value="plano18" />Canal 18 Cidade Alerta- TV Record Brasil
+        <option value="plano19" />Canal 19 EBC TV Brasil
+        <option value="plano20" />Canal 20 RT en espanha HD
+        <option value="plano21" />Canal 21 Al Jazeera English - Live
+        <option value="plano22" />Canal 22 TV Câmara Natal
+        <option value="plano23" />Canal 23 Sky News Live
+        <option value="plano24" />Canal 24 FRANCE 24 Live
+        <option value="plano25" />Canal 25 Jornal da Cultura
+        <option value="plano26" />Canal 26 Fox Sports
+        <option value="plano27" />Canal 27 Jogo Aberto
+        <option value="plano28" />Canal 28 C5N en VIVO
+        <option value="plano29" />Canal 29 KBS World 24 Korea
+        <option value="plano30" />Canal 30 TV ABC News (Australia)
+        <option value="plano31" />Canal 31 Boston News
+        <option value="plano32" />Canal 32 India Today Live TV
+        <option value="plano33" />Canal 33 Seu Jornal Rede TVT - BRasil 
+        <option value="plano34" />Canal 34 Bom Dia Brasil
+        <option value="plano35" />Canal 35 Jornal hoje
+        <option value="plano36" />Canal 36 Jornal Nacional
+        <option value="plano37" />Canal 37 Fantástico
+        <option value="plano38" />Canal 38 Web TV Brasileira
+        <option value="plano39" />Canal 39 TRT WORLD - İstanbul TURKEY - INGLÊS
+        <option value="plano40" />Canal 40 Africa24 Live (en français)
+        <option value="plano41" />Canal 41 Transmissão ao vivo do Canal Rit TV                                 
+        <option value="plano42" />Canal 42 Fox 35 orlando.com 
+        <option value="plano43" />Canal 43 bn Play | Boas Novas - Brasil 
+        <option value="plano44" />Canal 44 Talentos e JR News - Brasil
+        <option value="plano45" />Canal 45 Polimer News - India 
+        <option value="plano46" />Canal 46 Globo News - Brasil
+        <option value="plano47" />Canal 47 TV Globo Brasil
+        <option value="plano48" />Canal 48 Aaj News Live - Pakistan
+        <option value="plano49" />Canal 49 CGTN Live CGTN is China's
+        <option value="plano50" />Canal 50 CGTN en Español
+        <option value="plano51" />Canal 51 Rádio TV - Pânico - Jovem Pan
+        <option value="plano52" />Canal 52 Rádio TV Mix limeira
+        <option value="plano53" />Canal 53 Rádio TV Sociedade da Bahia  
+        <option value="plano54" />Canal 54 Rádio TV Educadora AM
+        <option value="plano55" />Canal 55 Rádio TV Gospel
+	<option value="plano56" />Canal 56 Rádio TV AO VIVO Estereosom FM	         
+        <option value="plano57" />Canal 57 Rádio TV najuá 92.5
+        <option value="plano58" />Canal 58 Rádio TV Nova FM 104
+
+ </select>
+</div>      
+<div style="float: center; width: 100%">
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a>
+<div id="mat_olho" itemprop="description" style="background-color:#000; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: center;">
+<div id="plano1" class="invisivel"> 
+<div style="text-align: center;">
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPoliticaCompleta%2Fvideos%2F358630314577063%2F&show_text=0&width=476" 
+width="55%" height="520" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+</div></div><!------------canal 1 acima------------------->
+
+<div id="plano2" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/U5pnOweaH8Y?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canl 2 acima TV Justiça – Brasil acima--------->
+
+<div id="plano3" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/GIV-Rrmep44?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 3 acima tv senado – brasil acima----------->
+
+<div id="plano4" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/Y-2jourwWjA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+        </iframe>
+</div><!--Canal 4 acima TV camara – Brasil--------------->
+
+<div id="plano5" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/0J3BwHxqUbo?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 5 - tv cancao nova - brasil acima----------->
+
+<div id="plano6" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/_6tfWmwLZpw?rel=0&amp;showinfo=0" frameborder="0" 
+	    allowfullscreen></iframe>
+</div><!-canal 6 - chef tv o canal da gastronomia -brasil acima------------------------------------->
+
+<div id="plano7" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/K_6mqVcUwzg?
+			autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 7 euronews (em inglês) acima---------------->
+
+<div id="plano8" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/SyA-D7NUGvw?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 8 euronews (en español) (em português) acima------------->
+
+<div id="plano9" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/X_ZkLl1F3BY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 9 tv pampa - porto alegre/rs - brasil------->
+
+<div id="plano10" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/HEIO_tjD808?rel=0&amp;showinfo=0" frameborder="0" 
+allowfullscreen></iframe>
+</div><!-canal 10 hispantv en vivo - full hd-------------->
+
+<div id="plano11" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/65anfzE8ee8?rel=0&amp;showinfo=0" frameborder="0" 
+allowfullscreen></iframe>
+</div><!-canal 11 desenhos 24 horas----------------------->
+
+<div id="plano12" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/qkGUU8Ic6H0?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!----------canal 12 DESENHOS 24 HORAS 2------------>
+
+<div id="plano13" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/0tek2aa8hAQ?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 13 TN en Vivo - Argentina----------------->
+
+<div id="plano14" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/wdTAoC9T2Tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!------canal 14 CNN LIVE acima--------------->
+
+<div id="plano15" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/vbAJNtv5DS4?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 15 CNN LIVE espanhol acima-------------->
+
+<div id="plano16" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/V0ZjUcnQXvA?rel=0&amp;showinfo=0" frameborder="0" 2
+allowfullscreen></iframe>
+</div><!----canal 16 FOX News Live acima---------------->
+
+<div id="plano17" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/5qX2qLgDkeQ?rel=0&amp;showinfo=0" frameborder="0" 
+allowfullscreen></iframe>
+</div><!--canal 17 AMAZON SAT - Brasil acima----------->
+
+<div id="plano18" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/PCuq939C_P4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 18 cidade alerta- TV Record Brasil acima--->
+
+<div id="plano19" class="invisivel">
+<iframe width="90%" height="520" src="https://aovivo.ebc.com.br/embed-video.html" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 19 EBC TV Brasil----------------------->
+
+<div id="plano20" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/kFpzwhYhNg4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 18 RT en espanha HD-------------------->
+
+<div id="plano21" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/WAt9ZT2CQWg?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 21 Al Jazeera English - Live acima------>
+
+<div id="plano22" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/fJzvdqCdDR4?rel=0&amp;showinfo=0" frameborder="0" 
+	    allowfullscreen></iframe>
+</div><!--canal 22 TV Camara Natal ascima---------------->
+
+<div id="plano23" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/XOacA3RYrXk?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 23 Sky News - Live acima---------------->
+
+<div id="plano24" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/hL0sEdVJs3U?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 24 FRANCE 24 Live acima------------------>
+
+<div id="plano25" class="visivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/ypTb23O_3RQ?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 25 Jornal da Cultura acima---------------->
+
+<div id="plano26" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/npFFwT2knT4?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 26 Fox Sports acima---------------------->
+
+<div id="plano27" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/JLcJdph2Wpk?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 27 jogo aberto acima----------------------->
+
+<div id="plano28" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/JIDiAHGoTFM?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 28 c5n en vivo acima----------------------->
+
+<div id="plano29" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/9nMuTuy5SIs?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 27 kbs world 24 korea acima---------------->
+
+<div id="plano30" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/BAvMpdOckR8?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 30 tv abc news (australia) acima----------->
+
+<div id="plano31" class="invisivel"> 
+<iframe scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen 
+src="https://www.fox25boston.com/popup-livestream"  width ="80%" height="530"></iframe>
+</div><!-canal 31 fox25 boston news acima---------------->
+
+<div id="plano32" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/o5hVbQ7pyC0?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 32 India Today Live TV acima-------------->
+
+<div id="plano33" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/9QupxO7nang?
+rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 33 Rede TVT - BRasil Seu Jornal acima---->
+  
+  <div id="plano34" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/wH8JFKVSA3o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 34 bom dia brasil acima------------------>
+                                           
+<div id="plano35" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/nPnTTars52E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 35 jornal hoje acima------------------>
+	
+<div id="plano36" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/yIGPMEqWL-Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 36 Jornal Nacional acima----------------->  
+	
+	<div id="plano37" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/ZV0B318Q7HM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 37 fantástico acima--------------------->
+                                                                                                               <div id="plano38" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/jQiu1-Ionao?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 38 web tv brasileira acima---------------->
+                                                                                                               <div id="plano39" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/s8wRkNEON4Y?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 37 trt world - istanbul turkey - inglês acima---------------------->
+                                                                                                               <div id="plano40" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/A9JEwv_Vba4?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!---Canal 40 Africa24 Live (en français) acima---->
+                                                                                                               <div id="plano41" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/X_ZkLl1F3BY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 41 transmissão ao vivo do canal rit tv acima---------------------->
+
+<div id="plano42" class="invisivel">
+<iframe id="ls_embed_1505181558" src="https://livestream.com/accounts/6140902/events/2549335/player?width=640&height=360&enableInfoAndActivity=truee&autoPlay=ttrue&mute=false" width="98%" height="530" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+</div><!-canal 42 tv record 24 hs - brasil ascima-------------------------->
+  
+<div id="plano43" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/dIzzFGz9Xck?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!---Canal 43 bn Play | Boas Novas - Brasil ascima------>
+
+<div id="plano44" class="invisivel">
+<iframe width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://player.r7.com/video/i/54ae76aa2bc243235c0079d3?layout=wide540p&full=true" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
+</div><!--Canal 444 Talentos e JR News acima-------------->
+  
+  <div id="plano45" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/ey4vXW1sljc?
+      autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+      </div><!--------------------------canal 45 Polimer News - India  acima-------------------------->
+
+<div id="plano46" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/bkMmMUvwy8Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 46 Globo News ao vivo acima-------------->
+  
+<div id="plano47" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/Fgc1WYW-lT4?
+rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-------Canal 47 tv Globo ao vivo acima------->
+                                                                                                               <div id="plano48" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/0raY3aYVQSo?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 42 aaj news live - pakistan acima----------->
+  
+<div id="plano49" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/BUp_wZAxOpY?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 49 CGTN Live CGTN is China acima---------->
+  
+<div id="plano50" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/zghho0FINAk?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 50 CGTN en Español acima----------------->
+
+<div id="plano51" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/HBRMQTUFE84?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 51 Pânico Jovem Pan na Rádio de terça a sexta das 12h às 14h-------------------------->
+
+<div id="plano52" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/oiERFxgwW8g?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 52 Rádio TV Mix limeira------------------>
+
+<div id="plano53" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/bBt35J6VNvXY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 53 Rádio TV Sociedade da Bahia----------->
+
+<div id="plano54" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/RplY3KXzBaQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 54 Rádio TV Rádio Educadora AM----------->
+
+<div id="plano55" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/jropGlzRKKY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 55 Rádio TV Gospel---------------------->
+												      
+<div id="plano56" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/FahWw9bljlw?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 56 Rádio TV AO VIVO: Estereosom FM---------------------->
+
+<div id="plano57" class="invisivel">
+<iframe frameborder="0" width="100%" height="520" src="//www.dailymotion.com/embed/video/x5asxow" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x5asxow" target="_blank">Ao Vivo 92.5</a> <i>por <a href="http://www.dailymotion.com/najua92-5" target="_blank">najua92-5</a></i>
+</div><!--Canal 57 Rádio TV najua92.5---------------------->
+
+<div id="plano58" class="invisivel">
+<iframe frameborder="0" width="100%" height="520" src="//www.dailymotion.com/embed/video/x58ob7u" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x58ob7u" target="_blank">R&aacute;dio Nova FM 104,9 - AO VIVO</a> <i>por <a href="http://www.dailymotion.com/novafm104" target="_blank">novafm104</a></i>
+</div><!--Canal 58 Rádio TV Nova FM 104---------------------->
+                                                                                                               
+<br/><br/><!---------------------------------------------<p /> 
+<?php 
+}} 
+?> 
+</?php></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></div></div></div></a> 
+<!------------ cod publicidade --------------> 
+   </div></div></div>
+<div style="float: Right; width: 30%;">
+<!------------ cod publicidade -------------->
+<!---ini---troca banner reflashprog300x250--->
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<iframe allowfullscreen="" frameborder="0" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" width="310"></iframe>
+<!---Fim---troca banner reflashprog300x250--->
+</div>
+
+<div style="text-align: center;"> 
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script>  
+<script>
+$(document).ready(function(){ 
+
+$('#canal1').hide(); 
+
+$('#ocultarcanal1').click(function(){ 
+
+$('#canal1').hide('slow'); 
+
+}); 
+
+$('#mostrarcanal1').click(function(){ 
+
+$("#canal1").show(3000); 
+}) 
+return false; 
+
+}); 
+</script> 
+<script src=""></script>
+
+
+<div id="canal1" style="background-color: #fff; color:fff; padding:1px;">
+
+<!-------------------------espaço do seu codigo ini-------------------------->
+  <iframe width="100%" height="27" src="https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" id="adBanner1" border="0" /></iframe>
+<!-----------inicio baner temporizado cana1--------------->
+   <a href="#" id="adLink" target="_blank">
+JQuery - Banner Flutuante com Contagem de Tempo
+<script src="https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js"></script>
+<script type="text/javascript">
+$(function(){
+  var $conteudocanal1    = $('#conteudocanal1').width(); // largura total	
+  var $bannercanal1	   = $('#bannercanal1'); // objeto banner
+  var $tempocanal1   = 15; // milisegundos
+  var $intervalo;
+ 
+  // evento click
+  $(".fechar").click(function(event){
+    event.preventDefault();
+    fechar(); // chamada a função
+  });
+ 
+  // funcao que fechará o banner
+  function fechar(){
+    $("#bannercanal1").hide();
+  }
+ 
+  // funcao para contagem
+  function contadorcanal1(){
+     $intervalo = window.setInterval(function() {
+	var tempoContagem 	= $("#contadorcanal1").html();
+	var atualizaContagem 	= eval(tempoContagem) - eval(1);
+	$("#contadorcanal1").html(atualizaContagem);
+ 
+	// chegando em zero o contador é parado
+	if(atualizaContagem == 0){
+	  pararContagem();
+	}
+     }, 2000);
+  }
+ 
+  // funcao para limpar o contador
+  function pararContagem(){
+     window.clearInterval($intervalo);
+  }
+ 
+  // deslocamento do banner
+  $bannercanal1.animate({ center: ($conteudocanal1 /10)}, 900).show();
+  // chamada da funcao que fará a contagem
+  contadorcanal1();	
+  // setando o tempo de execução do banner
+  setTimeout(fechar, $tempocanal1*2000);
+});
+</script>
+<style type="text/css">
+body{ font-family:Arial, Helvetica, sans-serif }
+#conteudocanal1{ 
+ margin:0 auto;
+ width:100%px; 
+ height:800px;
+ background-color:#fff;	
+}
+#bannercanal1{
+ position:absolute;  
+ top:200px;    
+ left:50;
+ float:left;
+ width:312px; /* largura */
+ height:370px; /* altura */
+ background-color:#fff; /* cor de fundo */
+ -webkit-border-radius: 8px; /* canto arredondado */
+ -moz-border-radius: 8px; /* canto arredondado */
+ border-radius: 8px; /* canto arredondado */
+ z-index:999999; /* posicionando sobre os demais */
+ display:none;
+ color:black;
+}
+#bannercanal1 a{ color:#fff;text-decoration:none } 
+#bannercanal1 p { padding: 5px 10px 0; }
+p.link{ text-align:center;clear:both }
+#fechar{ 
+ position:relative;
+ float:right; 
+ width:20px;
+ height:20px;
+ background-color:#fff;  
+ color:black;
+ text-align:center; 
+}
+</style>
+</a>
+
+<div id="conteudocanal1">
+
+      <!------------------------Canal 1 reservado--------------------------->
+  
+</div>
+<!// end anuncios--> 
+</!></div>
+<!-------------------------espaço do seu codigo fim--------------------------> 
+
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----tapia fim ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </div>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 40px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a>
+<!--------------------------------------------------------ini vem &V tv---------------------------------------------------------------->
+<br/><br/><br/><br/>
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8aed83718f/js/af%20menu1cod1.js"></script>
+<script>
+$(document).ready(function(){
+	$("#ocultar2").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectos2").hide("slow");
+	});
+
+	$("#mostrar2").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectos2").show(3000);
+	});
+});
+</script>
+<script src=""></script>
+<p>
+<a href="#" id="mostrar2"><span style="color: #000; font-size: 17px;"><b>Abrir Vem & Vê TV</b></span></a>   |||| 
+<a href="#" id="ocultar2"><span style="color: #000; font-size: 17px;"><b> Fechar Vem & Vê TV</b></span></a> 
+
+</p>
+
+<div id="capaefectos2" style="background-color: #fff; color:fff; padding:1px;">
+
+<!-------------------------espaço do seu codigo ini-------------------------->
+
+<!...so pagina inicial topo ...>
+<div id="mat_olho" itemprop="description" style="background-color:#0B3861; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: center;">
+<div style="text-align: center;"> 
+<span style="color: #fff; font-size: 25px;"><b>Vem & Vê TV
+<!------------ cod publicidade -------------->
+<div style="float: left; width:39%"> 
+<!------------ cod publicidade -------------->
+<br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog300x250--->
+</div>
+<!// end anuncios--> <br/>
+</!></b></span></div>
+
+<!-------------------TV------------->
+<div style="float: Right; width: 60%"> 
+<!-------------------TV------------->
+
+ <embed src="http://www.vemevetv.com.br/flash/mediaplayer.swf" allowscriptaccess="always" allowfullscreen="true" flashvars="height=455&amp;width=565&amp;file=rtmp://srv-vvtv.sisdera.com/live&amp;id=vvtv2&amp;logo=images/logo_flash.png&amp;bufferlength=8&amp;start=true&amp;backcolor=0x000000&amp;frontcolor=0xFFFFFF&amp;lightcolor=0xFFFFFF&amp;screencolor=0x000000" width="100%" height="450"></embed>
+<!-------------------TV------------->
+<br/><br/><br/> 
+<!------ cod redes socias ini ------>
+<br/><br/><br/>
+<a href="#"><img width="80" height="50"src="https://lh4.googleusercontent.com/-0TXzbLdRkIs/TeoZRoWHHzI/AAAAAAAAAC4/3crx1hANPAs/h120/snR.jpg" /></a>
+<span style="color: #05394; font-size: 15px;"><b>SIGA-NOS →
+</b></span>
+<a href="https://telegram.me/soanatareportagens" title=telegram rel="nofollow" target="_blank"><img alt=" telegram" border="0" src="https://1.bp.blogspot.com/-VXdPRPxXXeQ/V27aNkDlmCI/AAAAAAAAWvE/48q4hTCQTRgzhIujzX6dhMbzOxwpMq-fACLcB/s1600/telegram.png" /></a><a href="https://plus.google.com/u/0/s/Robson%20snr" title=google+ rel="nofollow" target="_blank"><img alt=" Google+" border="0" src="https://1.bp.blogspot.com/-6l1pULyf9ec/V26n2mJ5GRI/AAAAAAAAWu4/5tpjpUjMvH8d2NWgAaNpNuyT44ngjqlmgCKgB/s1600/G%252B.gif" /></a><a href="https://twitter.com/soanatareportag" title=twitter ="nofollow" target="_blank"><img alt=" twitter" border="0" src="https://1.bp.blogspot.com/-qWBfx_0Uvt0/V26n9l8TAJI/AAAAAAAAWu4/xKUjAp0b7CIiWQIygis6K4eKGonSsaUZACKgB/s1600/tw.gif" /></a><a href="https://www.facebook.com/sga.agora/" title=facebook rel="nofollow" target="_blank"><img alt="facebook" border="0" src="https://2.bp.blogspot.com/-uBPKAPl1730/V26n5_lTdoI/AAAAAAAAWu4/EMRccjCXTuIK7RKjvWqDdb1O63siH-_sgCKgB/s1600/facebook.gif" /></a><a href="https://www.linkedin.com/in/soanatareportagens-snr-365373118?trk=nav_responsive_tab_profile" title=linkedin rel="nofollow" target="_blank"><img alt="https://www.linkedin.com/in/soanatareportagens-snr-365373118?trk=nav_responsive_tab_profile" border="0" src="https://1.bp.blogspot.com/-VgpNEHpbhnU/V26oDInHLiI/AAAAAAAAWu8/vaE3lvmwzrkltkTjXcBd2bMIEnb0mYu5QCKgB/s1600/in.gif" /><a href="https://www.instagram.com/soanatareportagens/" title=instagram rel="nofollow" target="_blank"><img alt=" instagram" border="0" src="https://2.bp.blogspot.com/-GiVOx5WD08I/V26oGUZS19I/AAAAAAAAWu8/AaUj54D0F9wl5vOqF1sSAPlGlHJ5jyhSwCKgB/s1600/instrag.gif" /></a><a href="http://www.tsu.co/soanatareportagens" title=tsu rel="nofollow" target="_blank"><img alt=" tsu" border="0" src="https://3.bp.blogspot.com/-vac5cgu-anY/V28VxLEczLI/AAAAAAAAWws/29gLLUOmFZ8QR1ps-tPsvAdkNIxM0wCwQCLcB/s1600/tsu.gif" /></a><a href="https://www.youtube.com/user/soanatareportagens" title=youtube rel="nofollow" target="_blank"><img alt="" border="0" src="https://3.bp.blogspot.com/--YmNsIG3_BI/V28abN_4ZmI/AAAAAAAAWw4/ny6CG1jO1m8SqSRRYqhX5WwUqA7UmuzugCKgB/s1600/youtube.gif" /></a></a>
+</div>
+
+<!---------- cod noticias ini --------->
+<div style="float: right; width:39%"><br/>
+<!---------- cod noticias ini --------->
+
+<span style="color: black; font-size: 14px;"><b>FHC se irrita com cartilha da CUT.
+Quem se aposenta antes dos 70 é vagabundo?
+<div style="text-align: center;"> 
+<!.......cor fim........>
+<a href="http://soanatareportagens.blogspot.com.br/2016/10/fhc-se-irrita-com-cartilha-da-cut.html#"><img src="http://www.conversaafiada.com.br/brasil/fhc-se-irrita-com-cartilha-da-cut/FHC%20e%20Temer.jpg/@@images/7091486d-fef0-478d-be51-db54bc9ba13b.jpeg"border="0" width="97%" height="150" onmouseout="this.src='http://www.conversaafiada.com.br/brasil/fhc-se-irrita-com-cartilha-da-cut/FHC%20e%20Temer.jpg/@@images/7091486d-fef0-478d-be51-db54bc9ba13b.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></b></span></div></div><span style="color: black;  font-size: 14px; outline:"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/><br/><br/>lida pelo jornal “
+O Globo” e pelo ex-presidente FHC, que ficaram especialmente impressionados com o trecho a seguir, contido na cartilha: “Michel Temer, que se aposentou aos 55 anos e recebe R$ 33 mil por mês, além do salário de presidente e outras mordomias, e FHC, que se aposentou aos 37 anos, depois de trabalhar só 12 anos como professor”....
+  <br/>
+<a href="http://soanatareportagens.blogspot.com.br/2016/10/fhc-se-irrita-com-cartilha-da-cut.html#
+"rel="nofollow"> Continue lendo...→</a></span>
+</!...so> <br/><br/>
+
+<!--------- cod noticias fim --------->
+<br/>
+<br/>
+<p /> 
+<?php 
+}} 
+?> 
+</?php></p></div>
+<!------------------fim vem &V t
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+--->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! -------------------------------------------------------gadegete 4 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 4 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Funaro: Cunha levou R$ 1 mi para comprar votos do impeachment de Dilma.76544444444444.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yOgKUO"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_571a3cfca87c4.jpg?1508054519"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_571a3cfca87c4.jpg?1508054519'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O operador financeiro Lúcio Funaro afirmou em depoimento à Procuradoria-Geral da República que repassou R$ 1 milhão para o ex-deputado Eduardo Cunha "comprar" votos a favor do impeachment de Dilma Rousseff, em 2016.
+Funaro disse que recebeu uma mensagem de Cunha, então presidente da Câmara, dias antes da votação no plenário, ocorrida em 17 de abril......
+ <br/>
+<a href="http://bit.ly/2yOgKUO"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 2------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 2------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>VÍDEO DE FUNARO COMPROVA DELAÇÃO DE JOESLEY E COMPLICA AINDA MAIS TEMER
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2zpXkmk"><img src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000565183.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000565183.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Os vídeos da delação de Lúcio Funaro complicam ainda mais a situação de Michel Temer, às vésperas da votação na Câmara dos Deputados; isso porque ele confirma praticamente tudo o que foi dito pelo empresário Joesley Batista, da JBS, a quem vendeu seu silêncio sobre os esquemas de propinas do PMDB; em vídeo anterior ao de Funaro, Josley relatou essa obstrução judicial a Temer e ouviu como resposta: 'tem que manter isso, viu?'; agora, os deputados honestos – ou dispostos a se reeleger em 2018 – não têm como votar contra o pedido de investigação formulado contra Temer...
+ <br/>
+<a href="http://bit.ly/2zpXkmk"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 3------------------------------->
+<div style="float:left; width:30%">
+<!----------------------post 3------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>PF faz buscas em gabinete de irmão de Geddel na Câmara.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yO6VX3"><img src="https://abrilveja.files.wordpress.com/2016/06/alx_img_0329-2_original.jpeg?quality=70&strip=info&w=1000&h=666&crop=1"border="0" width="97%" height="150" onmouseout="this.src='https://abrilveja.files.wordpress.com/2016/06/alx_img_0329-2_original.jpeg?quality=70&strip=info&w=1000&h=666&crop=1'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-Pc4lZ2v1f8s/Vtr9tHzuAqI/AAAAAAAANzs/1fYeY-fjQLASx0Q4rPhOD4WnoHwJr8fUQCPcB/s1600/veja%2Bbranco.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+A Polícia Federal cumpre, na manhã desta segunda-feira, um mandado de busca e apreensão no gabinete do deputado federal Lúcio Vieira Lima (PMDB-BA), na Câmara dos Deputados. Lúcio é irmão do ex-deputado e ex-ministro Geddel Vieira Lima (PMDB) e é investigado de ter ligação com os 51 milhões de reais encontrados em um apartamento ligado aos irmãos em Salvador (BA)...
+ <br/>
+<a href="http://bit.ly/2yO6VX3"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -----------------------------------------------------gadegete 4 fim ------------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;"><br/>
+<! -------------------------------------------------------gadegete 4 fim ----------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! -------------------------------------------------------gadegete 6 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 6 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Juíza que avalizou busca na casa de filho de Lula se diz enganada..
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2gbQngm"><img src="http://abrilveja.files.wordpress.com/2017/10/delegado_dr_rodrigo_luiz_galazzo__-591208.jpg?quality=70&strip=info&w=1000&h=666&crop=1"border="0" width="97%" height="150" onmouseout="this.src='http://abrilveja.files.wordpress.com/2017/10/delegado_dr_rodrigo_luiz_galazzo__-591208.jpg?quality=70&strip=info&w=1000&h=666&crop=1'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-Pc4lZ2v1f8s/Vtr9tHzuAqI/AAAAAAAANzs/1fYeY-fjQLASx0Q4rPhOD4WnoHwJr8fUQCPcB/s1600/veja%2Bbranco.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Mesmo sem nada encontrar, o delegado e sua equipe acharam por bem não sair do local de mãos abanando. Levaram então dois computadores, CDs, DVDs e pen drives que encontraram na casa — e ainda foram para um segundo endereço, onde também não acharam nada....No dia seguinte, a juíza que autorizou a busca e apreensão, Marta Pistelli, determinou que todos os objetos fossem devolvidos e se disse “enganada” pelos policiais. Afirmou que o pedido de busca não identificava o morador da residência e que autorizara que a polícia visitasse apenas um local, e não dois...
+ <br/>
+<a href="http://bit.ly/2gbQngm"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 2------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 2------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Temer corta para preservar a Escravidão!.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2ypDOs3"><img src="https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg"border="0" width="97%" height="150" onmouseout="this.src='https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O número de trabalhadores em condições análogas à escravidão resgatados no Brasil este ano despencou. Mas não há motivos para comemorar. A queda não é consequência do abandono da prática centenária de exploração ilegal. Apenas não há dinheiro para fiscalizar, segundo funcionários e entidades que atuam na área. Em 2016 foram resgatadas 885 pessoas. Até setembro deste ano foram apenas 167 libertados. A informação foi repassada à reportagem por um funcionário de alto escalão do Ministério do Trabalho, e confirmado pelo Sindicato Nacional dos Auditores Fiscais do Trabalho...
+ <br/>
+<a href="http://bit.ly/2ypDOs3"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 3------------------------------->
+<div style="float:left; width:30%">
+<!----------------------post 3------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Funaro contradiz ex-assessor e liga Temer a propina.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yiw8Iy"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_59d6c680dda7f.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_59d6c680dda7f.jpg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Ao falar sobre desvios na Caixa Econômica Federal, Funaro disse ter "certeza" que o ex-deputado Eduardo Cunha "dava um percentual também para o Michel Temer" do esquema que ele, Cunha, "capitaneava". Funaro disse ainda que o presidente atuou em defesa de interesses de empresas portuárias durante a tramitação da MP (Medida Provisória) dos Portos, em 2013...
+ <br/>
+<a href="http://bit.ly/2yiw8Iy"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -----------------------------------------------------gadegete 6 fim ------------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 10px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;"><br/>
+<! -------------------------------------------------------gadegete 6 fim ----------------------------------------------------------->
+<! -------------------------------------------------------gadegete 5 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! -------------------------------------------------------gadegete 5 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>ZANIN SE DIZ SURPRESO POR MORO RECUSAR PERITO NA ENTREGA DE RECIBOS.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2gE23Jr"><img src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564971.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564971.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O advogado Cristiano Zanin Martins reagiu com surpresa à decisão do juiz Sérgio Moro de recusar a presença de um perito para entregar os recibos originais de pagamentos de aluguéis do apartamento vizinho ao de Lula em São Bernardo do Campo (SP); "Surpreende a defesa o fato de o juiz não aceitar a realização de uma audiência para a entrega das vias originais dos recibos, atestando o estado em que os documentos serão apresentados para dar total transparência ao ato", disse Zanin em nota...
+ <br/>
+<a href="http://bit.ly/2gE23Jr"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 2------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 2------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Movimento pela queda de Temer ganha força no Plenário da Câmara.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2iahkFg"><img src="https://www.correiodobrasil.com.br/wp-content/uploads/2017/07/temer-maia.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.correiodobrasil.com.br/wp-content/uploads/2017/07/temer-maia.jpg'"onmouseover="this.src=&#39;https://www.correiodobrasil.com.br/wp-content/uploads/2016/03/xlogo.png.pagespeed.ic.baLi9PQk69.webp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Presidente da Câmara dos Deputados, Rodrigo Maia (DEM-RJ) tem, novamente, o controle da sucessão presidencial. Nem esconde mais o ambiente de estresse entre ele e o presidente de facto, Michel Temer. Ficou público o afastamento, no início desta semana, após a visível irritação com os líderes do governo, que retiraram seus deputados de Plenário. Evitaram, assim, o quórum necessário para a votação da medida provisória que trata do novo marco punitivo das instituições financeiras. Maia saiu em defesa do sistema financeiro e do presidente do Banco Central, Ilan Goldfajn...
+ <br/>
+<a href="http://bit.ly/2iahkFg"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 3------------------------------->
+<div style="float:left; width:30%">
+<!----------------------post 3------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Doria dá refugo aos pobres. Eles não precisam ter prazer na hora de comer.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2z6ubeK"><img src="http://www.viomundo.com.br/wp-content/uploads/2017/10/captura-de-tela-2017-10-13-axxs-08.33.09.png"border="0" width="97%" height="150" onmouseout="this.src='http://www.viomundo.com.br/wp-content/uploads/2017/10/captura-de-tela-2017-10-13-axxs-08.33.09.png'"onmouseover="this.src=&#39;http://www.viomundo.com.br/wp-content/themes/viomundo2016/img/logo-viomundo.png&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+‘Ração humana’ de Doria é retrocesso de 15 anos no combate à fome. A ideia é receber doações de sobras de alimentos que seriam descartados pela indústria ou comércio e processá-los para produzir um “granulado nutricional” que será distribuído à população de baixa renda. Os doadores vão receber benefícios econômicos e isenção de impostos...
+ <br/>
+<a href="http://bit.ly/2z6ubeK"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -----------------------------------------------------gadegete 5 fim ------------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;">
+<! -------------------------------------------------------gadegete 5 fim ----------------------------------------------------------->
+<br/></div>
+<! -----------------------------------------------------gadegete 1 ini ------------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! -----------------------------------------------------gadegete 1 ini ------------------------------------------------------------->
+<!----------------------post 1------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>José Yunes: “Ele pediu essa gentileza para mim”
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2xutiAm"><img src="https://abrilveja.files.wordpress.com/2017/02/jose-yunes-2519.jpg?quality=70&strip=info&w=1000&h=666&crop=1"border="0" width="97%" height="150" onmouseout="this.src='https://abrilveja.files.wordpress.com/2017/02/jose-yunes-2519.jpg?quality=70&strip=info&w=1000&h=666&crop=1'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-Pc4lZ2v1f8s/Vtr9tHzuAqI/AAAAAAAANzs/1fYeY-fjQLASx0Q4rPhOD4WnoHwJr8fUQCPcB/s1600/veja%2Bbranco.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O advogado José Yunes deixou a assessoria do governo do presidente Michel Temer após reconhecer que recebeu um pacote de 1 milhão de reais. VEJA teve acesso ao vídeo com o depoimento espontâneo que o advogado amigo do presidente prestou à Procuradoria-Geral da República, em Brasília. Yunes confirma que recebeu o pacote em seu escritório em São Paulo das mãos do doleiro Lúcio Funaro, mas não sabia que era dinheiro. Estaria apenas fazendo um favor ao ministro Eliseu Padilha...
+ <br/>
+<a href="http://bit.ly/2xutiAm"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 2------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 2------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>EMPRESA PORTUÁRIA DA NOVA INVESTIGAÇÃO CONTRA TEMER ATUA SEM CONTRATO
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2xraPVD"><img src="https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000548232.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000548232.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Protagonista da mais recente investigação aberta contra Michel Temer, o grupo Rodrimar ocupa uma área no porto de Santos "sem respaldo" de contrato com o poder público, segundo o governo federal, e tem autorização apenas de liminares para atuar em outros dois terminais; o grupo teve sua concessão prorrogada por 35 anos, em maio, graças a uma canetada presidencial; o Ministério Público Federal suspeita que dois dirigentes da companhia tenham operado propina para Temer; o ex-assessor de Temer e ex-deputado Rodrigo Rocha Loures (PMDB-PR) foi gravado em interceptações telefônicas defendendo a ampliação de alcance do decreto presidencial que beneficiaria empresas portuárias com contratos antigos, firmados até o início dos anos 1990...
+ <br/>
+<a href="http://bit.ly/2xraPVD"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 3------------------------------->
+<div style="float:left; width:30%">
+<!----------------------post 3------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>JOSIAS DIZ QUE DORIA É O PIOR TIPO DE POLÍTICO: O TRAIDOR
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2xrMzm9"><img src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564361.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564361.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+"Doria tomou tanto gosto pelo personagem que criou que está esquecendo que sua obrigação é ser o prefeito que prometeu. Revela-se um político do pior tipo: traidor. Mete-se em articulações com corruptos antipetistas. E percorre o país espalhando a insinuação de que está disposto a fazer o favor de presidir a República", diz o colunista Josias de Souza
+ <br/>
+<a href="http://bit.ly/2xrMzm9"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -----------------------------------------------------gadegete 1 fim ------------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;">
+<! -----------------------------------------------------gadegete 1 fim ------------------------------------------------------------->
+<br/></div>
+<! -----------------------------------------------------gadegete 2 ini ------------------------------------------------------------->
+<!----------------------post 1------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Fundo eleitoral provoca rombo de R$ 300 milhões no Orçamento de 2018
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2gm8n84"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_59c402c900be8.jpg?1507469815"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_59c402c900be8.jpg?1507469815'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O fundo eleitoral criado para bancar as campanhas provocará no Orçamento do ano que vem um "rombo" de ao menos R$ 300 milhões. Embora parlamentares usem o discurso de que o fundo não vai tirar recursos públicos de outras áreas, como saúde e educação, esse valor terá de ser coberto com verba do Tesouro já que os cálculos para chegar ao total de R$ 1,77 bilhão consideraram uma receita que não será obtida em 2018...
+ <br/>
+<a href="http://bit.ly/2gm8n84"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 2------------------------------->
+<div style="float:left; width:35%">
+<!----------------------post 2------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>ENQUANTO LULA ALUGA UM APÊ, TEMER COMPRA IMÓVEIS DE LUXO
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://soanatareportagensext2.blogspot.com.br/2017/10/enquanto-lula-aluga-um-ape-temer-compra.html#"><img src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564296.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000564296.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Enquanto a imprensa brasileira cuida de colaborar com a contrariedade histérica do MP com os recibos de aluguel do apartamento vizinho ao de Lula em São Bernardo do Campo, fica por conta do El País revelar que, "um dia após propina delatada por JBS, Temer comprou dois terrenos em área de luxo", compara o jornalista Fernando Brito, do Tijolaço, que observa que, "ao contrário dos pedalinhos dos netos de Marisa Letícia, [a denúncia] não está nas manchetes de nenhum dos sites dos jornalões"
+ <br/>
+<a href="http://soanatareportagensext2.blogspot.com.br/2017/10/enquanto-lula-aluga-um-ape-temer-compra.html#"> Continue lendo...→</a></span>
+</div>
+<!----------------------post 3------------------------------->
+<div style="float:left; width:30%">
+<!----------------------post 3------------------------------->
+ <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>55% não votariam em Doria para presidente
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2xr6rps"><img src="https://abrilveja.files.wordpress.com/2017/04/brasil-prefeito-joao-doria-20170405-001.jpeg?quality=70&strip=info&w=1000&h=666&crop=1"border="0" width="97%" height="150" onmouseout="this.src='https://abrilveja.files.wordpress.com/2017/04/brasil-prefeito-joao-doria-20170405-001.jpeg?quality=70&strip=info&w=1000&h=666&crop=1'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-Pc4lZ2v1f8s/Vtr9tHzuAqI/AAAAAAAANzs/1fYeY-fjQLASx0Q4rPhOD4WnoHwJr8fUQCPcB/s1600/veja%2Bbranco.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+A aprovação à administração do prefeito de São Paulo João Doria (PSDB) caiu quase dez pontos, segundo levantamento divulgado neste domingo pelo InstitutoDatafolha. O nome do empresário também foi rejeitado pela maioria dos entrevistados, todos paulistanos, em uma eventual corrida para 2018: 55% disseram que não votariam em Doria para presidente...
+ <br/>
+<a href="http://bit.ly/2xr6rps"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -----------------------------------------------------gadegete 2 fim ------------------------------------------------------------->
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;">
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! -----------------------------------------------------gadegete 2 fim ------------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<br/></div>
+<! -----------------------------------------------------gadegete 3 ini ----------------------------------------------------------->
+<!---------------------------post 1--------------------------------->
+<div style="float:left; width:35%">
+<!---------------------------post 1--------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Temer embolsou US$ 11 milhões pessoalmente!
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/temer-embolsou-us-11-milhoes.html#"><img src="https://www.conversaafiada.com.br/capa/@@collective.nitf/b10ac393-9c6e-41dd-9a5e-788a7b0261c8/@@images/051249cf-f274-4ccf-a15d-44839d8872d7.jpeg"border="0" width="97%" height="150" onmouseout="this.src='https://www.conversaafiada.com.br/capa/@@collective.nitf/b10ac393-9c6e-41dd-9a5e-788a7b0261c8/@@images/051249cf-f274-4ccf-a15d-44839d8872d7.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black; font-size: 13px;">
+Perícia da Polícia Federal confirma: o Quadrilhão é guloso!
+O PiG impresso - moribundo - não assistiu ao jornal nacional de ontem, 19/set.
+Nem leu a reportagem de André Barrocal, na Carta Capital, reproduzida em parte no Conversa Afiada, em 22 de abril.
+O presidente ladrão tomou grana pessoalmente.
+Com as mãos dele! 
+<br/>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/temer-embolsou-us-11-milhoes.html#
+"rel="nofollow"> assista Agora...→</a></span>
+</div>
+<!---------------------------post 2--------------------------------->
+<div style="float:left; width:35%">
+<!---------------------------post 2--------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>MAIORIA DO STF VOTA PELO ENVIO DE DENÚNCIA CONTRA TEMER À CÂMARA
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/maioria-do-stf-vota-pelo-envio-de.html"><img src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000562045.jpg"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000562045.jpg'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+Michel Temer sofreu mais uma derrota nesta quarta-feira, 20; seis ministros do Supremo Tribunal Federal votaram pelo envio da segunda denúncia contra Temer à Câmara Federal; negaram o pedido de suspensão do pedido da defesa de Temer o relator Edson Fachin, e os ministros Alexandre de Moraes, Luis Roberto Barroso, Rosa Weber, Luiz Fux e Ricardo Lewandowski; o ministro Dias Toffoli divergiu do relator; no momento vota o ministro Gilmar Mendes; defesa de Temer solicitou ao STF que devolvesse a denúncia à PGR, após a suspensão dos benefícios concedidos aos delatores da JBS; ministros defenderam que a rescisão não poderá anular automaticamente as citações e provas...
+  <br/>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/maioria-do-stf-vota-pelo-envio-de.html
+"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<!--------------------------post 3---------------------------------->
+<div style="float:left; width:30%"> 
+<!--------------------------post 3---------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Feijóo: presidente golpista não pode criticar a Venezuela.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/feijoo-presidente-golpista-nao-pode.html"><img src="http://www.redebrasilatual.com.br/politica/2017/09/feijoo-presidente-golpista-nao-pode-criticar-a-venezuela/temer-e-trump/image_preview"border="0" width="97%" height="150" onmouseout="this.src='http://www.redebrasilatual.com.br/politica/2017/09/feijoo-presidente-golpista-nao-pode-criticar-a-venezuela/temer-e-trump/image_preview'"onmouseover="this.src=&#39;https://1.bp.blogspot.com/-xmNstXvTjAI/UnWpdnz5bOI/AAAAAAAAG7I/ZWfMPBYDKgcbPzMCE_uY8e0N_5trWBWeQCPcB/s200/RBA.png&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black; font-size: 13px;">
+Comentarista do Seu Jornal diz ser no mínimo "curioso" que Temer, no poder por conta de um "golpe jurídico-midiático-parlamentar-empresarial", critique Maduro, eleito pelo voto popular...Assista
+
+<br/>
+<a href="http://soanatareportagens.blogspot.jp/2017/09/feijoo-presidente-golpista-nao-pode.html
+"rel="nofollow"> Continue lendo...→</a></span>
+</div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p /> 
+<! -------------------------------------------------------gadegete 3 fim ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;">
+<! -------------------------------------------------------gadegete 3 fim ----------------------------------------------------------->
+	       <br/></div>
+<!----------------------------fim post----------------------->
+<!-------------------------ini Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;">Topo da pagina</a></div>
+<!-------------------------fim Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<br/><br/><br/><br/><br/><p /> <p />
+<!------------ Histats.com  START  (aync)------------>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3895721,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3895721&101" alt="" border="0"></a></noscript>
+<!---------------- Histats.com  END ---------------->
+<!---------------------------------------------------------rodape-------------------------------------------------------------------->
+<!---------------------------------------------------------rodape-------------------------------------------------------------------->
+<!---------------------------------------------------------rodape-------------------------------------------------------------------->
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<div style="text-align: center;">
+<span style="color: #0000; font-size: 15px;"><b>
+Comunique canais fora do ar através do telegram (55) 84 98780-4100<br/>
+Contato telegram (55) 84 98780-4100<br/>
+Canal telegram @soanatareportagens
+ </b></b></span></div>
+<br/> <br/><br/> 
+<div style="text-align: center;">
+<!--************CODE revolvermaps.com mapa fixo************-->
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5prom7tstvw&amp;m=0&amp;h=150&amp;c=ff0000&amp;r=0" async="async"></script>
+<!--************CODE revolvermaps.com mapa fixo************-->
+<!------------ cod publicidade -------------->
+<div style="float: left; width:40%"> 
+<!------------ cod publicidade -------------->
+<div style="text-align: center;">
+<div align=center><a href='https://contador.s12.com.br'><img src='https://contador.s12.com.br/img-cz49446c9BA0ZZa3-26.gif' border='0' alt='contador free'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=cz49446c9BA0ZZa3'></script></div>
+<!---------- cod noticias ini --------->
+<div style="float: right; width:0%"><br/>
+<!---------- cod noticias ini --------->
+<!--************CODE GEOCOUNTER************-->
+<script type="text/javascript" src="https://geoloc4.geostats.ovh/private/geocounter.js?compte=7q7z11bz4y8z"></script>
+<noscript>
+<a href="http://www.geovisites.com/pt/directory/actualidades_jornalismo.php?compte=7q7z11bz4y8z"  target="_blank"><img src="https://geoloc4.geostats.ovh/private/geocounter.php?compte=7q7z11bz4y8z" border="0" alt="jornalismo" /></a>
+
+<br />Please do not change this code for a perfect fonctionality of your counter
+<a href="http://www.geovisites.com/pt/directory/actualidades_jornalismo.php">jornalismo</a>
+</noscript><!--************END CODE GEOCOUNTER************--></div>
+
+<p/><p/>
+<!---------------------------------------------------controle de visitas 2----------------------------------------------------------->
+<!---------------------------------------------------controle de visitas 2----------------------------------------------------------->
+
