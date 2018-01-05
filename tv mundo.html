@@ -934,6 +934,105 @@ O Globo” e pelo ex-presidente FHC, que ficaram especialmente impressionados co
 -
 -
 --->
+<style>
+body, 
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+* img{
+	max-width:100% !important;
+	height:auto !important;
+}
+.site-cols-wrapper{
+	max-width:1200px;
+	margin:0 auto;
+
+	font-family: sans-serif;
+	font-size:20px;
+	color:#555;
+}
+.site-left-col{
+	width:100%;
+	margin-right:-360px;
+	float:left;
+}
+.site-left-col-resized{
+	width:100%;
+	margin-right:0;
+	float:none;
+}
+.site-left-col-inner{
+	padding:20px;
+	margin-right:360px;
+}
+.site-left-col-inner-resized{
+	padding:20px;
+	margin-right:0;
+}
+/* Coluna da direita */
+.site-right-col{
+	width:360px;
+	float:right;
+}
+.site-right-col-resized{
+	width:100%;
+	float:none;
+}
+.site-right-col-inner{
+	padding:20px;
+}
+/* "Menu" */
+.menu{
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+	displau:block;
+	clear:both;
+	font-size:20px;
+	color:#fff;
+	background:#2f4456;
+}
+.menu a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+}
+</style>
+<script src="js"></script>
+<script>
+function resizeSidebar() {
+	var window_width = $(window).width();
+	
+	if ( window_width < 800 ) {
+		$('.site-right-col').addClass('site-right-col-resized');
+		$('.site-left-col').addClass('site-left-col-resized');
+		$('.site-left-col-inner').addClass('site-left-col-inner-resized');
+	} else {
+		$('.site-right-col').removeClass('site-right-col-resized');
+		$('.site-left-col').removeClass('site-left-col-resized');
+		$('.site-left-col-inner').removeClass('site-left-col-inner-resized');
+	}
+}
+
+jQuery(function(){
+	resizeSidebar();
+	
+	$(window).resize(function(){
+		resizeSidebar();
+	});
+});
+</script>
+</head>
+<body>
+<div class="menu">
+<a href="http://www.tutsup.com/?p=129"> Noticias </a>
+</div>
+                       <!---------------------------------------cabecalho noticias fim--------------------------------------------->
+<div class="site-cols-wrapper">
+<div class="site-left-col">
+<div class="site-left-col-inner">
 <!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
 <! ------------------------------------------------------gadegete 1 ini ----------------------------------------------------------->
 <!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
