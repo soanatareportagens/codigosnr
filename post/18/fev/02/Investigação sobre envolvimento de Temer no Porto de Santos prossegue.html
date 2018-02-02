@@ -95,9 +95,106 @@ jQuery(function(){
 </head>
 <body>
 <div class="menu">
-<a href="http://www.tutsup.com/?p=129"> TV Mundo </a>
+<a href="#"> TV Mundo </a>
 </div>
                        <!---------------------------------------cabecalho fim--------------------------------------------->
+<!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudott').hide("slow"); 
+
+$('#exibirtt').click(function(){ 
+
+$('#conteudott').show('3000'); 
+
+}); 
+
+$('#ocultartt').click(function(){ 
+
+$('#conteudott').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudott { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibirtt" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Tweets</b></span></a> |||| <a href="#" id="ocultartt"><span style="color: #000; font-size: 17px;"><b>Fechar Tweets</b></span></a>
+<div id="conteudott"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 70%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<a class="twitter-timeline" data-lang="pt" data-width="600" data-height="800" href="https://twitter.com/soanatareportag">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 30%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+
+
+	
+<!-----------fim div abre temp------------>
+<!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
+
 <div class="site-cols-wrapper">
 <div class="site-left-col">
 <div class="site-left-col-inner">
@@ -197,7 +294,6 @@ setembro 14, 2012</div>
 Em "Brasil"</div>
 </div>
 </div>
-
 <!---------------------------------------post fim--------------------------------------------->
                                        </div></div>
 <!---------------------------------------post fim---------------------------------------------> 
