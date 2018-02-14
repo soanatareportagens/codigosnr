@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TV Mundo</title>
+<style>
+body, 
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+* img{
+	max-width:100% !important;
+	height:auto !important;
+}
+.site-cols-wrapper{
+	max-width:1200px;
+	margin:0 auto;
+
+	font-family: sans-serif;
+	font-size:20px;
+	color:#555;
+}
+.site-left-col{
+	width:100%;
+	margin-right:-360px;
+	float:left;
+}
+.site-left-col-resized{
+	width:100%;
+	margin-right:0;
+	float:none;
+}
+.site-left-col-inner{
+	padding:20px;
+	margin-right:360px;
+}
+.site-left-col-inner-resized{
+	padding:20px;
+	margin-right:0;
+}
+/* Coluna da direita */
+.site-right-col{
+	width:360px;
+	float:right;
+}
+.site-right-col-resized{
+	width:100%;
+	float:none;
+}
+.site-right-col-inner{
+	padding:20px;
+}
+/* "Menu" */
+.menu{
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+	displau:block;
+	clear:both;
+	font-size:20px;
+	color:#fff;
+	background:#2f4456;
+}
+.menu a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+}
+</style>
+<script src="js"></script>
+<script>
+function resizeSidebar() {
+	var window_width = $(window).width();
+	
+	if ( window_width < 800 ) {
+		$('.site-right-col').addClass('site-right-col-resized');
+		$('.site-left-col').addClass('site-left-col-resized');
+		$('.site-left-col-inner').addClass('site-left-col-inner-resized');
+	} else {
+		$('.site-right-col').removeClass('site-right-col-resized');
+		$('.site-left-col').removeClass('site-left-col-resized');
+		$('.site-left-col-inner').removeClass('site-left-col-inner-resized');
+	}
+}
+
+jQuery(function(){
+	resizeSidebar();
+	
+	$(window).resize(function(){
+		resizeSidebar();
+	});
+});
+</script>
+</head>
+<body>
+<div class="menu">
+<a href="#"> TV Mundo </a>
+</div>
+                       <!---------------------------------------cabecalho fim--------------------------------------------->
+<!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudott').hide("slow"); 
+
+$('#exibirtt').click(function(){ 
+
+$('#conteudott').show('3000'); 
+
+}); 
+
+$('#ocultartt').click(function(){ 
+
+$('#conteudott').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudott { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibirtt" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Tweets</b></span></a> |||| <a href="#" id="ocultartt"><span style="color: #000; font-size: 17px;"><b>Fechar Tweets</b></span></a>
+<div id="conteudott"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 70%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<a class="twitter-timeline" data-lang="pt" data-width="600" data-height="800" href="https://twitter.com/soanatareportag">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 30%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+
+
+	
+<!-----------fim div abre temp------------>
+<!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
+
+<div class="site-cols-wrapper">
+<div class="site-left-col">
+<div class="site-left-col-inner">
+                       <!---------------------------------------post ini--------------------------------------------->
+Data 14.02.2018
+
+
+<div style="text-align: center;">
+Fonte:</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://www.hispantv.com/noticias/opinion/368553/venezuela-golpe-estado-oposicion-derecha-disturbios-eeuu" rel="nofollow" target="_blank"><img border="0" data-original-height="74" data-original-width="182" src="https://3.bp.blogspot.com/-MTjSNBf3xx8/WY7ym2t0ECI/AAAAAAAA4_M/5DCdNBsNtC0d4sQLDmc5Zz4rC9VCulw4gCLcBGAs/s1600/hispantv.jpg" /></a></div>
+<br/>   <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: 9.0pt; text-align: center;">
+<b><span style="font-family: Verdana, sans-serif; font-size: 26pt; text-transform: uppercase;">Os Estados Unidos promovem um golpe contra a Venezuela</span></b><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;"><o:p></o:p></span></div>
+<br/>   
+<div class="item-author" style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">Por&nbsp;&nbsp;</span><a href="https://www.hispantv.com/contribuyente/pablo-jofre-leal/5" rel="nofollow" style="background: transparent; box-sizing: border-box; color: #a61b21; font-weight: bold; outline-offset: -2px; outline: -webkit-focus-ring-color auto 5px;" target="_blank"><span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Pablo Jofré Leal</span></span></a></div>
+<div class="item-date" style="background-color: white; box-sizing: border-box; color: #777777; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; margin-bottom: 6.66667px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 279.984px;" title="2357">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Postado:&nbsp;</span><span style="box-sizing: border-box; font-weight: normal;"><span style="box-sizing: border-box; vertical-align: inherit;">quarta</span></span><span style="box-sizing: border-box; vertical-align: inherit;">&nbsp;-&nbsp;</span></span><span style="box-sizing: border-box; font-weight: normal;">feira, 14 de fevereiro de 2018</span></div>
+<br/>   
+<img alt="Os Estados Unidos promovem um golpe contra a Venezuela" src="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20180214/10423826_xl.jpg" />
+<br/>   &nbsp; Os Estados Unidos promovem um golpe contra a Venezuela
+<br/>   <br/>   
+<div class="introtext" style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">A Venezuela sofre uma guerra implacável dos EUA, o direito venezuelano e seus aliados na América Latina e na Europa.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Uma guerra brutal, que está sendo realizada através de bandas terroristas que aguardam o chamado de Washington para dar um golpe contra Caracas.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Não havia visto uma tal campanha de desestabilização, desde os momentos mais difíceis do confronto entre a Cuba de Fidel contra as administrações dos EUA.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Uma campanha que significou mesmo o chamado abertamente sedicioso do senador anti-Castro de origem cubana, Marco Rubio, que, como imigrante de direita clássico, geralmente encoraja intervenções na América Latina de maneira mais criminosa do que o Protestante Anglo-Saxão Branco - WASP - Falcão Republicano .&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Rubio disse que&nbsp;</span></span><em style="box-sizing: border-box;">"o mundo apoiaria as Forças Armadas venezuelanas se decidissem proteger as pessoas e restaurar a democracia tirando um ditador".</em></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">palavras sediciosas Rubio ocorrer dentro de dias das declarações do secretário de Estado americano Rex Tillerson, que visita feita ao México observou que gostaria de receber uma intervenção militar do Exército venezuelano para finalizar uma "transição pacífica" no país Sul-americano&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Não admira que estes subversivo chamado tanto Rubio como Tillerson seguir o mesmo caminho que o ocupante da Casa Branca, que tem mantido permanentemente, o que não descarta uma opção militar para trazer Maduro de poder.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<strong style="box-sizing: border-box;">A Moral Dupla como arma política</strong></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Essas declarações deixam de surpreender aqueles que analisam a política externa dos EUA.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Eles são parte de seu DNA golpista, exemplificado nos golpes militares que foram favorecidos em grande parte da América Latina no século XX: Chile, Brasil, Argentina, Uruguai, Grenada, Panamá, Guatemala.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Seu apoio às ditaduras militares e sua oposição aos movimentos de libertação na Nicarágua, El Salvador, República Dominicana.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Ou a mutilação mostrada quando se trata de não condenar a fraude eleitoral em Honduras, onde o candidato pró-americano Juan Orlando Hernández permanece no poder apesar da fraude cometida.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">É a hipocrisia e a moralidade dupla exibida por Washington de forma permanente, que é disseminada como máxima e auto fé de grandes corporações de mídia internacional.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Este comportamento desestabilizador teve a reação digna da chancelaria venezuelana, mas ganhou críticas e críticas a todos os governos que muitas vezes enchem a boca do conceito de democracia e exigência de certificados de bom comportamento e que permanecem silencio covarde quando Washington Ele ordena que o secundem em seus objetivos subversivos.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Não lemos nenhuma declaração dos ministros dos Negócios Estrangeiros e dos governos agrupados na Organização dos Estados Americanos - OEA - condenando o chamado à sedição, com exceções honrosas como a Bolívia, Cuba.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Uma OEA, cujo Secretário Geral liderado pelo uruguaio Luis Almagro mostrou sinais de um comportamento genuflexivo, vergonhoso como não aconteceu há anos.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">No caso chileno, a conduta seguida pelo ministro dos Negócios Estrangeiros chileno, Heraldo Muñoz, foi o exemplo mais claro e vergonhoso do funcionário que seguiu os ditames de Washington em termos de como se comportar, o que dizer e como agir em seu trabalho como garante nas conversações entre o governo venezuelano e a oposição desse país.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Este funcionário do governo extrovertido de Michelle Bachelet emitiu declarações claramente intervencionistas, deploráveis ​​e, acima de tudo, falsas no que foi discutido na República Dominicana.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Muñoz, em movimento movido entre a oposição venezuelana, o governo dos EUA e o chamado Grupo de Lima, decidiu suspender sua participação como acompanhante do diálogo entre a oposição eo executivo venezuelano.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">De acordo com a chancelaria chilena, isso é feito&nbsp;</span><em style="box-sizing: border-box;"><span style="box-sizing: border-box; vertical-align: inherit;">"</span></em><span style="box-sizing: border-box; vertical-align: inherit;">&nbsp;desde&nbsp;</span></span><em style="box-sizing: border-box;"><span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">que as condições entre as partes para a realização de eleições presidenciais democráticas e transparentes e de acordo com as normas internacionais não sejam cumpridas o mais rápido possível.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Chile suspende indefinidamente sua participação nas negociações realizadas em Santo Domingo por causa da incerteza do processo entre o governo e a oposição venezuelana ... "</span></span></em></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">As falsas declarações, falsas, direcionadas para desacreditar o governo venezuelano e um processo de diálogo realizado de forma séria e honesta.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Muñoz foi a ponta de lança, uma marioneta manipulada por tópicos, neste ponto muito visível, o que deve envergonhar um governo que dê suas últimas agasões abaladas, não só por essas manobras no plano da política externa, mas pela próprios erros no nível interno como foi o caso da chamada Operação Furacão, que acabou sendo uma policial policial contra o movimento mapuque.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">No jargão do Baseball, quando algo dá errado, muitas vezes é dito "não ande com uma bola" e, nesse plano, a chancelaria chilena não tem a dignidade necessária que deve ter nas relações internacionais.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">O diálogo acima mencionado refere-se às conversas realizadas na República Dominicana em que o governo venezuelano e a oposição chegaram com seis dos sete pontos previamente acordados como elementos básicos do diálogo.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Esses pontos foram refletidos em um documento de pré-acordo assinado pelas partes e entregue ao presidente da República Dominicana, Danilo Medina, deixando apenas especificar a data da eleição presidencial.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Os pontos acordados foram:</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">1.- Defesa da soberania da Venezuela e rejeição de interferências estrangeiras</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">2.- Expandir as garantias eleitorais</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">3.- Coexistência pacífica e reconhecimento entre as partes</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">4.- Cessação da guerra econômica e defesa comum contra as sanções dos EUA.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">e a União Européia</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">5.- Concordo com os canais de ajuda humanitária</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">6.- Liberação de pessoas encarceradas acusadas de promover violência política</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">Tanto o presidente Dominicano como garante espanhol, ex-presidente espanhol José Luis Rodriguez Zapatero pediu duas delegações concluir as negociações para a data da eleição na cidade de Caracas, para que no dia 6 de fevereiro deste ano poderia, em um único ato, assinar o acordo de Santo Domingo.</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<strong style="box-sizing: border-box;">Crônica de um canalha</strong></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">O que aconteceu, mais tarde, é a "crónica de um rogue", conforme definido por um alto funcionário do governo venezuelano em Caracas, que falou com este cronista.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Na verdade, esta infâmia e indignidade significava que em 5 de Fevereiro até tarde da noite, na presença do ex-primeiro-ministro espanhol Rodriguez Zapatero, governo e oposição venezuelana fechou negociações aceitar a data de 22 de Abril para a eleição presidencial, data proposta pela oposição e aceitou sem uma contra-proposta do Governo.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">José Luís Rodríguez Zapatero dirigiu seus passos para o Palácio Miraflores em Caracas para informar com entusiasmo o presidente Nicolás Maduro do acordo alcançado, informando ao presidente da República Dominicana, Danilo Medina.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">O presidente Medina instrui o ministro das Relações Exteriores de seu país, Miguel Vargas, para habilitar um ato formal, assinar o documento em 6 de fevereiro e é efetivamente convocado para assinatura, não para outro assunto, já que o direito venezuelano tinha Dado o culminar do processo, propondo e aceitando a data de 22 de abril.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">No dia 6 de fevereiro, as delegações estão presentes, inesperadamente, como Rodríguez Zapatero afirma firmemente em sua declaração, Julio Borges exige abrir novos tópicos.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Havia reivindicações do presidente Medina a este respeito.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">As horas passaram sob a recusa de Borges de assinar se novas condições foram atendidas.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">É claro que o desconcerto, o desapontamento, e mesmo a raiva de Rodríguez Zapatero, do presidente Medina e do ministro das Relações Exteriores Vargas foi evidente.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Não é assim para a delegação do governo venezuelano dada a história de descortesia, arrogância, falta de ética e seriedade pelo direito em outras tentativas de acordos desde 2002 após o golpe de Estado.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Lembre-se que, em 6 de fevereiro, o secretário de Estado e o magnata do petróleo, Rex Tillerson, estavam visitando a Colômbia, ditando diretrizes para o governo de Nova Granada.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Borges recebe um telefonema de Bogotá, o serviço e retirou-se para o hotel por volta de 16h30, em seguida, retorna para a reunião local em cerca de 19.00 horas e, obviamente, baixa e deplorável estado de embriaguez - de acordo com testemunhas presentes no momento do incidente embaraçoso - anuncia que o direito não assinará o acordo porque "não é digno do povo venezuelano".&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Demandando de passagem que as eleições foram monitoradas pelo Grupo Lima, transformou-se em um grupo de países fiéis servos dos desejos de Washington.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">É necessário ter em mente que houve acordo assinado e assinado por ambas as partes no acta que está na posse do Presidente Medina e para o qual os governos latino-americanos e a imprensa internacional podem consultar.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">O que não havia foi o protocolo de assinatura do acordo devido à irresponsabilidade de Julio Borges e seus companheiros.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Neste cenário e em uma operação planejada antecipadamente, os ministros dos estrangeiros do Chile e do México desistiram de continuar a participar como companheiros de pressão e demandas do governo dos EUA e porque já conheciam a decisão de Washington de impedir o direito de assinar o acordo final.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">Como disse claramente em fevereiro passado 11 em TV Jorge Rodriguez, primeiro porta-voz da delegação do governo viveu experiência reflete "... o ultrajante e indecente covarde e antiético o comportamento Julio Borges ..." Mesmo que tais divulgações são aplicáveis ​​também para o resto do delegação, que com seu silêncio aprova essa atroz incursão à verdade, à democracia e à direita dos venezuelanos para dar seu próprio curso fora dos ditames das potências estrangeiras.</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Para Rodriguez Zapatero, o que aconteceu não foi apenas uma surpresa, mas em círculos do governo venezuelano e os representantes da oposição deram conta de sua indignação com a atitude de Borges e sua família, que jogou ao mar dois anos de trabalho.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">O ex presidente espanhol testemunha os esforços do governo venezuelano para alcançar a paz social e avançar no diálogo com oposição violenta e falta de dignidade nacional.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Rodríguez Zapatero sustentou que, com o comportamento da oposição, um golpe foi derrubado&nbsp;&nbsp;</span></span><em style="box-sizing: border-box;">"um processo eleitoral com garantias e consenso sobre a data das eleições, a posição sobre as sanções contra a Venezuela, as condições da Comissão da Verdade, a cooperação em relação aos desafios sociais e econômicos, o compromisso com a normalização institucional e as garantias para o cumprimento do acordo e o compromisso de um funcionamento e desenvolvimento de políticas democráticas totalmente normalizadas ".</em></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">O presidente Nicolás Maduro afirmou que o governo tomará os acordos alcançados como um compromisso ético com as pessoas e que serão totalmente implementados.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Na verdade, ele já apresentou sua candidatura para o processo eleitoral em 22 de abril, de acordo com a data proposta pelo direito.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Até hoje, esse direito não enfrentou o país e provavelmente não o dará na forma como os eventos ocorreram e, para isso, eles usarão o mecanismo de mídia dos Estados Unidos e seus aliados para distorcer o acordo, mentir, subverter e tentar impedir que a Venezuela avance com conceitos-chave como a soberania e a dignidade.</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">O direito venezuelano assume novamente o seu verdadeiro caminho político.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Onde as camadas de entendimento entre os líderes de direita Henrique Capriles e o prisioneiro Leopoldo López são visualizadas, para bloquear a passagem para um Henry Ramos Allup disposto a competir nas eleições presidenciais, tendo como base os quatro governos obtidos nas eleições de 15 de outubro ano 2017. O direito duro, recalcitrante, o instrumento de Washington no país sul-americano apenas pretende desestabilizar, sabotar qualquer tentativa de paz com uma fórmula de ataque contra o povo venezuelano, que só beneficia os grandes poderes dos Estados Unidos em que nosso confidente chama "o miserável propósito de criar condições para uma intervenção militar anunciada pelos falcões de Washington".</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+<span style="box-sizing: border-box; vertical-align: inherit;">Mas, nessas tentativas de propiciar um golpe de Estado onde conspiradores da administração do governo americano, senadores de origem latina e na soma e subtração dos políticos venezuelanos - com um pé mais no norte do que em seu país - não se encontram eles consideraram um elemento central: o povo venezuelano e suas Forças Armadas, chamados a defender sua soberania, prontos para defender essa sociedade sujeita a tantas tribulações, mas isso não cessa na adoção de todo tipo de medidas para enfrentar ameaças internas e externas .</span></div>
+<br/>   
+<a href="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20150316/06321424_l.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img alt="Pablo Jofré Leal" border="0" height="112" src="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20150316/06321424_l.jpg" width="200" /></a><strong style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: italic;"><a href="https://www.hispantv.com/contribuyente/pablo-jofre-leal/5" rel="nofollow" style="background: transparent; box-sizing: border-box; color: #428bca; outline: none 0px; text-decoration-line: none;" target="_blank"><span style="box-sizing: border-box; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">Pablo Jofré Leal</span></span></a></strong><span style="background-color: white; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: italic;">&nbsp;</span><span style="background-color: white; box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: italic; vertical-align: inherit;"><span style="box-sizing: border-box; vertical-align: inherit;">jornalista e escritor chileno.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Analista Internacional, Mestrado em Relações Internacionais na Universidade Complutense de Madri.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Especialista em temas principalmente na América Latina, Oriente Médio e Magreb.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Ele é colaborador de várias redes internacionais de notícias.&nbsp;</span><span style="box-sizing: border-box; vertical-align: inherit;">Criador do site de análise internacional GLOCAL ANALYSIS www.analisisglocal.cl</span></span>
+
+
+<br/>   <br/>   <br/>   <br/>   <br/>   <br/>  <br/>    
+<div class="panel-title" style="background: rgb(255, 255, 255); box-sizing: border-box; color: #a61b21; font-family: Hispan, Arial; font-size: 16px; font-weight: bold; margin-bottom: 12px; margin-top: 0px; position: relative;">
+<span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; box-sizing: border-box; display: inline-block; font-size: 20px; line-height: 20px; margin-left: 15px; padding: 0px 7px; position: relative; text-transform: uppercase; z-index: 12;"><span style="box-sizing: border-box; vertical-align: inherit;">RELACIONADO em&nbsp;HISPANTV&nbsp;</span></span></div>
+<div class="panel-body" style="box-sizing: border-box; color: #333333; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 0px;">
+<div class="row" style="box-sizing: border-box; margin-left: -10px; margin-right: -10px;">
+<ul class="list-unstyled" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;">
+<li class="col-xs-12 col-sm-6" style="box-sizing: border-box; float: left; margin-bottom: 14px; min-height: 50px; padding-left: 10px; padding-right: 10px; position: relative; width: 450px;"><div class="inner" style="box-sizing: border-box;">
+<a href="https://www.hispantv.com/noticias/venezuela/283562/almagro-revocatorio-maduro-liberacion-lopez-dialogo" rel="nofollow" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; box-sizing: border-box; color: #333333; display: block; font-family: Hispan, Arial; font-weight: bold; outline: none 0px; position: relative; text-decoration-line: none;" target="_blank"><span class="img" style="box-sizing: border-box; display: block; float: left; max-height: 56px; min-height: 0px; width: 80px;"><img alt="Almagro: Recall e lançamento de López não são negociáveis " src="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20160801/07450849_m.jpg" style="border: 0px none; box-sizing: border-box; display: block; height: auto; vertical-align: middle; width: 80px;" /></span><span class="title" style="box-sizing: border-box; display: block; line-height: 1.2em; margin-left: 88px;"><span style="box-sizing: border-box; vertical-align: inherit;">Almagro: Recall e lançamento de López não são negociáveis</span></span></a></div>
+</li>
+<li class="col-xs-12 col-sm-6" style="box-sizing: border-box; float: left; margin-bottom: 14px; min-height: 50px; padding-left: 10px; padding-right: 10px; position: relative; width: 450px;"><div class="inner" style="box-sizing: border-box;">
+<a href="https://www.hispantv.com/noticias/venezuela/283269/venezuela-injerencias-eeuu-rodriguez-kirby" rel="nofollow" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; box-sizing: border-box; color: #a61b21; display: block; font-family: Hispan, Arial; font-weight: bold; outline: 0px; position: relative; text-decoration-line: none;" target="_blank"><span class="img" style="box-sizing: border-box; display: block; float: left; max-height: 56px; min-height: 0px; width: 80px;"><img alt="Venezuela condena a posição dos EUA no referendo contra Maduro" src="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20160729/06175681_m.jpg" style="border: 0px none; box-sizing: border-box; display: block; height: auto; vertical-align: middle; width: 80px;" /></span><span class="title" style="box-sizing: border-box; display: block; line-height: 1.2em; margin-left: 88px;"><span style="box-sizing: border-box; vertical-align: inherit;">Venezuela condena a posição dos EUA no referendo contra Maduro</span></span></a></div>
+</li>
+</ul>
+</div>
+</div>
+
+<!---------------------------------------post fim--------------------------------------------->
+                                       </div></div>
+<!---------------------------------------post fim---------------------------------------------> 
+                  <!---------------------------------------coluna direita ini--------------------------------------------->
+<div class="site-right-col">
+<div class="site-right-col-inner">
+                         <!---------------------------------------coluna direita ini--------------------------------------------->
+<!----------------------Gad 1 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Cármen Lúcia mantém Fachin na relatoria de inquérito contra Maia.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yEej6Y"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+O presidente da Câmara e o pai dele, César Maia (DEM-RJ), ex-prefeito do Rio e hoje vereador carioca, são apontados pela PGR como suspeitos de receber R$ 950 mil em propina da Odebrecht...
+ <br/>
+<a href="http://bit.ly/2yEej6Y"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 1 fim------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fim post<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<br/><br/><br/>
+<!----------------------Gad 2 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 2 fim banner------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 3 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Lula da Silva promete referendo ‘revocatorio’ contra Temer
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yCKTps"><img src="http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg"border="0" width="97%" height="150" onmouseout="this.src='http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-MTjSNBf3xx8/WY7ym2t0ECI/AAAAAAAA4_M/5DCdNBsNtC0d4sQLDmc5Zz4rC9VCulw4gCLcBGAs/s1600/hispantv.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+"O Brasil deve ser governado novamente com a maioria em mente, não poucos, então a primeira coisa que pretendo aumentar é um referendo de revogação sobre muitas das medidas aprovadas pelo presidente brasileiro Michel Temer", disse o ex-líder brasileiro ...
+ <br/>
+<a href="http://bit.ly/2yCKTps"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 3 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 4 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 4 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 5 ini------------------------------->
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Temer corta para preservar a Escravidão!.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2ypDOs3"><img src="https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg"border="0" width="97%" height="150" onmouseout="this.src='https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O número de trabalhadores em condições análogas à escravidão resgatados no Brasil este ano despencou. Mas não há motivos para comemorar. A queda não é consequência do abandono da prática centenária de exploração ilegal. Apenas não há dinheiro para fiscalizar, segundo funcionários e entidades que atuam na área. Em 2016 foram resgatadas 885 pessoas. Até setembro deste ano foram apenas 167 libertados. A informação foi repassada à reportagem por um funcionário de alto escalão do Ministério do Trabalho, e confirmado pelo Sindicato Nacional dos Auditores Fiscais do Trabalho...
+ <br/>
+<a href="http://bit.ly/2ypDOs3"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 5 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 6 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 6 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 7 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>PF ACHA CONTRATOS DE CÂMBIO MILIONÁRIOS COM CORONEL AMIGO DE TEMER..
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yN1Xcu"><img src="https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+Uma operação da Polícia Federal encontrou contratos de câmbio de US$ 1,2 milhão e ‎€ 1,4 milhão em endereço do coronel aposentado da PM João Baptista Lima Filho, amigo de Michel Temer (PMDB) há mais de 30 anos e apontado por delatores como operador do pemedebista; ele é acusado de receber R$ 1 milhão que teriam Temer como destinatário final...
+ <br/>
+<a href="http://bit.ly/2yN1Xcu"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 7 fim------------------------------->
+<br/><br/></div></div></div></div></div></div></div>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div> 
+<!---------------------------------------coluna direita fim--------------------------------------------->
+                                         </div></div></div>
+<!---------------------------------------coluna direita fim--------------------------------------------->
+<!-------------------------ini Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color:#2f4456; outline: 0px; padding: 5px; text-align: -webkit-auto; vertical-align: center;">
+<div style="text-align: center;"> <a href="https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo.html">
+<span style="color: #fff; font-size: 25px;"><b>Voltar para Pagina Inicial TV Mundo</div></div>
+<!-------------------------fim Voltar para Pagina Inicial TV Mundo-------------------------------------->
+	<br/><br/><br/><br/><br/><p /> <p />      
+                   <!---------------------------------------rodape--------------------------------------------->
+                                          <div class="menu">
+                   <!---------------------------------------rodape--------------------------------------------->
+<a href="#"> * voltar para o Topo *</a>
+<!---------------------------------------rodape--------------------------------------------->
+                       </div></body></html>
+<!---------------------------------------rodape--------------------------------------------->
+<!-------------------------------------------------popup em iframe ini ------------------------------------------>
+<style type="text/css">
+<!--
+#popjan {border: 6px solid #fff;
+background-color: #ffffff;
+width:110%px;
+top: 40px; left: 5px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
+</script>
+
+
+<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span></div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';"><img src="https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif" width="20" height="20&quot;" align="center" /><span style="color: red; font-size: 18px;"><b>&nbsp; &nbsp;FECHAR PUBLICIDADE – CLIQUE AQUI</b></span></a>
+
+<!---------cristo----------> 
+</div>
+<div style="clear: both;">
+</div>
+<div style="margin: auto; text-align: center; width: 100%;">
+</div>
+<div style="clear: both;">
+</div>
+<div style="text-align: left;">
+<!-------internas------->           
+<script language="JavaScript">       
+function TrocaBanner() {
+var x = 1;
+x = Math.floor(Math.random()*9);
+if(x == 1) 
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?42115609C53299852&ULP=[[http://www.casasbahia.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink]]" frameborder="0" allowfullscreen></iframe><!----casas bahia------> </a>');
+return(0);
+}
+else
+{
+if(x == 2)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 3)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 4)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 5)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 6)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----6 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 7)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----7 americanas------> </a>');
+return(0);
+}
+else
+{
+if(x == 8)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----8 americanas------> </a>');
+return(0);
+}
+else
+{
+document.write(' <iframe width="105%" height="600" src="https://soanatareportagens.000webhostapp.com/anun/zanox/avira/300%20x%20250%201.html" frameborder="0" allowfullscreen></iframe><!----1 avira------> </a>');
+return(0);
+
+}}}}}}}}}
+</script>
+<script>TrocaBanner()</script></div>
+<!----ultima imagem 105% por 2----->         
+<a href="http://www.extra.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink&zanpid=2284305379787994112" rel="nofollow" target="_blank"><img src="http://www.extra-imagens.com.br/Banner/banner-tv/home/2017-04-12_jwq/tv01.jpg"border="0" width="100%" height="2"/>
+<br/>
+</a></div><span style="color: #fff; font-size: 20px;">.
+.
+.
+.
+.
+.
+.</span>
+<!-------------------------------------------------popup em iframe fim ------------------------------------------>
+  
+<iniciotextoaovivo ......................................................="">
+<style type='text/css'> 
+#inftemp { 
+height: 37px; 
+position: fixed; 
+top: 0; 
+left:0; 
+z-index: 95469148; 
+background: #2f4456; 
+width: 100%; 
+border-width: 1px 0; 
+border-style: solid; 
+border-color: #EBEBEB; 
+border-bottom: 3px solid gainsboro; 
+-moz-box-shadow: 0px 6px 30px #c9c9c9; 
+-webkit-box-shadow: 0px 6px 30px #c9c9c9; 
+box-shadow: 0px 6px 30px #c9c9c9; 
+}
+
+#inftemp ul { 
+padding-top: 3px; 
+color: #555; 
+margin-top: 8px; 
+}
+
+.inftempativo a:link { 
+color: #c60; 
+}
+
+#inftemp li { 
+list-style-type: none; 
+display: inline; 
+color: #ffffff; 
+cursor: pointer; 
+line-height: 20px; 
+text-align: center; 
+font-size: 14px; 
+font-weight: bold; 
+}
+
+#inftemp li a { 
+color: #FFFFFF; 
+-webkit-transition: All 0.3s ease; 
+-moz-transition: All 0.3s ease; 
+-o-transition: All 0.3s ease; 
+text-decoration: none; 
+padding-left: 20px; 
+}
+
+#inftemp li a:hover { 
+color: #000000; 
+-webkit-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-moz-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-o-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+text-decoration: none; 
+} 
+</style> 
+</iniciotextoaovivo>
+<div id="inftemp">
+<!----------------------Marquee ini------------------------>
+<div style="text-align: center;">
+<script type="text/javascript">  
+// O Último Banners não deve utilizar virgula (,) no final da linha
+var imgs1 = new Array(
+<!-----------moveis projetado3-------------->
+"https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" <!-------------servicos de alvenaria2------------>
+);
+
+// Neste Array, você vai colocar as URLs, links de destinos dos sites quando clicarem em um
+// O Último Link do site não deve utilizar virgula (,) no final da linha
+var lnks1 = new Array(
+"http://vulcovulco.blogspot.com./#"<!-----------6vulcovulco-------------->
+);
+
+// Deve-se seguir o mesmo padrão das Array acima, a última linha correspondente ao último
+// banner, deve ser finalizada sem a virgula (,) no final da linha.
+var alt1 = new Array(
+"google+",
+"2twite
