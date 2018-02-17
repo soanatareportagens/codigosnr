@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TV Mundo</title>
+<style>
+body, 
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+* img{
+	max-width:100% !important;
+	height:auto !important;
+}
+.site-cols-wrapper{
+	max-width:1200px;
+	margin:0 auto;
+
+	font-family: sans-serif;
+	font-size:20px;
+	color:#555;
+}
+.site-left-col{
+	width:100%;
+	margin-right:-360px;
+	float:left;
+}
+.site-left-col-resized{
+	width:100%;
+	margin-right:0;
+	float:none;
+}
+.site-left-col-inner{
+	padding:20px;
+	margin-right:360px;
+}
+.site-left-col-inner-resized{
+	padding:20px;
+	margin-right:0;
+}
+/* Coluna da direita */
+.site-right-col{
+	width:360px;
+	float:right;
+}
+.site-right-col-resized{
+	width:100%;
+	float:none;
+}
+.site-right-col-inner{
+	padding:20px;
+}
+/* "Menu" */
+.menu{
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+	displau:block;
+	clear:both;
+	font-size:20px;
+	color:#fff;
+	background:#2f4456;
+}
+.menu a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+}
+</style>
+<script src="js"></script>
+<script>
+function resizeSidebar() {
+	var window_width = $(window).width();
+	
+	if ( window_width < 800 ) {
+		$('.site-right-col').addClass('site-right-col-resized');
+		$('.site-left-col').addClass('site-left-col-resized');
+		$('.site-left-col-inner').addClass('site-left-col-inner-resized');
+	} else {
+		$('.site-right-col').removeClass('site-right-col-resized');
+		$('.site-left-col').removeClass('site-left-col-resized');
+		$('.site-left-col-inner').removeClass('site-left-col-inner-resized');
+	}
+}
+
+jQuery(function(){
+	resizeSidebar();
+	
+	$(window).resize(function(){
+		resizeSidebar();
+	});
+});
+</script>
+</head>
+<body>
+<div class="menu">
+<a href="#"> TV Mundo </a>
+</div>
+                       <!---------------------------------------cabecalho fim--------------------------------------------->
+<!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudott').hide("slow"); 
+
+$('#exibirtt').click(function(){ 
+
+$('#conteudott').show('3000'); 
+
+}); 
+
+$('#ocultartt').click(function(){ 
+
+$('#conteudott').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudott { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibirtt" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Tweets</b></span></a> |||| <a href="#" id="ocultartt"><span style="color: #000; font-size: 17px;"><b>Fechar Tweets</b></span></a>
+<div id="conteudott"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 70%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<a class="twitter-timeline" data-lang="pt" data-width="600" data-height="800" href="https://twitter.com/soanatareportag">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 30%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+
+
+	
+<!-----------fim div abre temp------------>
+<!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
+
+<div class="site-cols-wrapper">
+<div class="site-left-col">
+<div class="site-left-col-inner">
+                       <!---------------------------------------post ini--------------------------------------------->
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 9.0pt;">
+<span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; mso-fareast-language: PT-BR; mso-no-proof: yes;">Data 17.02.2018<o:p></o:p></span></div>
+
+
+<div style="text-align: center;">
+Fonte:</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://www.brasil247.com/pt/247/cultura/342700/Duvivier-interven%C3%A7%C3%A3o-militar-no-Rio-%C3%A9-comandada-por-um-chefe-de-quadrilha.htm" rel="nofollow" target="_blank"><img border="0" height="118" src="https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg" width="320" /></a></div>
+<br/>   
+<div align="center" class="MsoNormal" style="background: white; line-height: normal; margin-bottom: 3.75pt; mso-outline-level: 2; text-align: center; vertical-align: baseline;">
+<b><span style="color: #0066b0; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; font-size: 26.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: PT-BR; text-transform: uppercase;">DUVIVIER: INTERVENÇÃO MILITAR NO RIO É COMANDADA POR UM CHEFE DE QUADRILHA<o:p></o:p></span></b></div>
+<br/>   
+<img alt="Dir.: Marcelo Camargo-ABR" data-src-a="/images/cache/480x240/crop/images%7Ccms-image-000580222.jpg" data-src-b="/images/cache/490x280/crop/images%7Ccms-image-000580222.jpg" height="357" src="https://www.brasil247.com/images/cache/1000x357/crop/images%7Ccms-image-000580221.jpg" style="background: rgb(255, 255, 255); border: 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 0px; vertical-align: baseline;" title="Dir.: Marcelo Camargo-ABR" width="1000" /><span style="background-color: white; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px;"></span>
+<div style="background: rgb(255, 255, 255); border: 0px; color: #2f2f2f; font-family: Verdana, Geneva, sans-serif; font-size: 21px; line-height: normal; margin-bottom: 10px; outline: 0px; padding: 0px; vertical-align: baseline;">
+</div>
+<div style="background: rgb(255, 255, 255); border: 0px; color: #2f2f2f; font-family: Verdana, Geneva, sans-serif; font-size: 21px; line-height: normal; margin-bottom: 10px; outline: 0px; padding: 0px; vertical-align: baseline;">
+O ator Gregório Duviver foi direto ao ponto ao comentar a "guerra ao crime organizado" anunciada por Michel Temer, denunciado por corrupção e comando de organização criminosa, além de investigado por propinas nos portos; "O presidente que usa as Forças Armadas para ofuscar a derrota da Reforma da Previdência é o mesmo que cortou os investimentos em segurança pública em 10,3%. O chefe de quadrilha agora comandará uma intervenção militar", diz ele</div>
+<div style="background: rgb(255, 255, 255); border: 0px; color: #2f2f2f; font-family: Verdana, Geneva, sans-serif; font-size: 21px; line-height: normal; margin-bottom: 10px; outline: 0px; padding: 0px; vertical-align: baseline;">
+</div>
+<div class="meta" style="background: rgb(255, 255, 255); border: 0px; color: #666666; font-family: Verdana, Geneva, sans-serif; font-size: 14px; line-height: normal; margin-bottom: 10px; outline: 0px; padding: 20px 0px 0px; text-transform: uppercase; vertical-align: baseline;">
+17 DE FEVEREIRO DE 2018 ÀS 18:19 //&nbsp;<a class="youtube-receba" href="https://goo.gl/sCEDzb" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: #e41005; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">INSCREVA-SE NA TV 247&nbsp;<img alt="Youtube" src="https://www.brasil247.com/themes/publication_1/theme_4/assets/img/youtube.png" style="background: transparent; border: 0px; margin: 0px 0px -2px; outline: 0px; padding: 0px; vertical-align: baseline;" /></a></div>
+<br/>   
+<div style="background: rgb(255, 255, 255); border: 0px; color: #2f2f2f; font-family: Verdana, Geneva, sans-serif; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">247 –&nbsp;</strong>O ator Gregório Duviver foi direto ao ponto ao comentar a "guerra ao crime organizado" anunciada por Michel Temer, denunciado por corrupção e comando de organização criminosa, além de investigado por propinas nos portos; "O presidente que usa as Forças Armadas para ofuscar a derrota da Reforma da Previdência é o mesmo que cortou os investimentos em segurança pública em 10,3%. O chefe de quadrilha agora comandará uma intervenção militar", diz ele</div>
+<div style="background: rgb(255, 255, 255); border: 0px; color: #2f2f2f; font-family: Verdana, Geneva, sans-serif; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Confira, ainda, o tweet de Duviver:</strong></div>
+<blockquote class="twitter-tweet twitter-tweet-error" data-lang="pt" data-twitter-extracted-i1518905279036548727="true" style="background: rgb(255, 255, 255); border: 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px; outline: 0px; padding: 0px; quotes: none; vertical-align: baseline;">
+<div dir="ltr" lang="pt" style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+O presidente que usa as Forças Armadas para ofuscar a derrota da Reforma da Previdência é o mesmo que cortou os investimentos em segurança pública em 10,3%. O chefe de quadrilha agora comandará uma intervenção militar.</div>
+</blockquote>
+<br/>   
+<blockquote class="twitter-tweet" data-lang="pt">
+<div dir="ltr" lang="pt">
+O presidente que usa as Forças Armadas para ofuscar a derrota da Reforma da Previdência é o mesmo que cortou os investimentos em segurança pública em 10,3%. O chefe de quadrilha agora comandará uma intervenção militar.</div>
+— Gregorio Duvivier (@gduvivier) <a href="https://twitter.com/gduvivier/status/964921189473898496?ref_src=twsrc%5Etfw">17 de fevereiro de 2018</a></blockquote>
+
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<div>
+
+</div>
+<br/>   
+<blockquote class="twitter-tweet twitter-tweet-error" data-lang="pt" data-twitter-extracted-i1518905279036548727="true" style="background: rgb(255, 255, 255); border: 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px; outline: 0px; padding: 0px; quotes: none; vertical-align: baseline;">
+<strong style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Leia, abaixo, o artigo de Glauber Braga:</strong></blockquote>
+<blockquote class="twitter-tweet twitter-tweet-error" data-lang="pt" data-twitter-extracted-i1518905279036548727="true" style="background: rgb(255, 255, 255); border: 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px; outline: 0px; padding: 0px; quotes: none; vertical-align: baseline;">
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Por Glauber Braga (Psol-RJ) –</strong>&nbsp;É duro ouvir Temer falar em contenção ao crime organizado, sabendo se tratar de um bandidão que organiza o saque do estado brasileiro através da política de desmonte. Logo ele que, ao se referir ao aliado da mala de dinheiro, disse: "é um bom rapaz".</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+É a doutrina do choque em ação. Essa turma quer sair das cordas. Com um programa altamente impopular de retirada de direitos e rodadas de privatizações eles precisavam de algo que tivesse apelo no imaginário popular. Acusarão aqueles que não aderirem a essa esparrela de não serem "cidadãos de bem". Olha o que ele disse no pronunciamento à nação: "contamos com todos os homens e mulheres de bem ao nosso lado, apoiando, sendo vigilantes e parceiros nessa luta."</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+Quem é o Sr Temer para estabelecer parâmetros de honradez para as pessoas?</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+O Rio tem forte mobilização de trabalhadores contra a entrega da Eletrobrás. Eles não querem esse movimento organizado em ação.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+A resistência dos trabalhadores da CEDAE contra a privatização segue forte. Eles precisam diminuir essa contenção.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+Boa parte dos interesses estatais sujeitos à privatização tem forte presença no Rio. Só pra citar mais alguns exemplos: Petrobras, BNDES, bancos públicos como a Caixa.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+Na ausência de votos para aprovar a "reforma" da previdência está evidente que o governo e aqueles agentes que lhe dão sustentação repetirão a estratégia eficaz de 2017. Não conseguindo apoio para maioria qualificada tocarão outras matérias altamente cobiçadas pelo mercado: PRIVATIZAÇÕES. Fizeram isso no ano passado com a "reforma" trabalhista, terceirização total e irrestrita, isenção trilionária para as petroleiras...</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+Tocam essa agenda infra-constitucional e aquecem o debate público com a ampliação do estado punitivo que tem ainda forte apelo na sociedade. E o Rio segue ainda melhor sequestrado e controlado para o que realmente conta pra eles. O programa econômico.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+A retirada de direitos sociais sempre veio acompanhada de ampliação do estado punitivo. A ampliação do braço punitivo sempre reforçou o desrespeito a direitos e garantias fundamentais.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+E fingem se preocupar com a sua segurança. Pezão não tem condições de governar o Rio desde muito. Mas não será descartado por enquanto por eles. É um aliado obediente da agenda.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+Não puderam lançar spray de pimenta e gás lacrimogêneo na Tuiuti. Mas estão encontrando uma forma de ampliar o seu controle a partir do medo que amplificam nas pessoas.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+O problema do Rio é gravíssimo: na segurança, na saúde, na educação.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+A solução estrutural não está nos mecanismos ardilosos propostos por Temer, Pezão e aqueles que sustentam esse programa.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+A solução está em uma construção coletiva, à la Tuiuti, que não concilie com esses caras.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+A única alternativa duradoura vem através da articulação e mobilização popular. É disso que eles têm medo! É disso que o Rio precisa ainda mais nesse momento.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+À tentativa de amplificar o medo, que possamos responder com a ocupação organizada e contundente dos espaços públicos.</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+O primeiro semestre de 2018 ainda será de muita resistência!</div>
+<div style="background: transparent; border: 0px; color: #2f2f2f; font-size: 16px; line-height: 18px; margin-bottom: 18px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><a class="campsite_external_link" href="https://www.youtube.com/brasil247" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; margin: 0px; padding: 0px; vertical-align: baseline;" target="_blank">Inscreva-se na TV 247</a>&nbsp;e acompanhe a análise de Glauber Braga sobre a intervenção no Rio:</strong></div>
+</blockquote>
+
+<br/>   <br/>   
+
+<h4 style="background: rgb(255, 255, 255); border: 0px; color: #000b6b; font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: normal; margin: 0px; outline: 0px; padding: 2px 0px 3px; text-transform: uppercase; vertical-align: baseline;">
+MATÉRIAS RELACIONADAS em brasil247</h4>
+<article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342704/Geuvar-vampir%C3%A3o-manda-o-Ex%C3%A9rcito-n%C3%A3o-deixar-o-morro-descer.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Geuvar: vampirão manda o Exército não deixar o morro descer</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342704/Geuvar-vampir%C3%A3o-manda-o-Ex%C3%A9rcito-n%C3%A3o-deixar-o-morro-descer.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342704" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">2</span></a></h3>
+</hgroup></article><article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342701/Brasileira-vence-pr%C3%AAmio-liter%C3%A1rio-internacional-agradece-a-Lula-e-denuncia-golpe-no-Brasil.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Brasileira vence prêmio literário internacional, agradece a Lula e denuncia golpe no Brasil</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342701/Brasileira-vence-pr%C3%AAmio-liter%C3%A1rio-internacional-agradece-a-Lula-e-denuncia-golpe-no-Brasil.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342701" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">2</span></a></h3>
+</hgroup></article><article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342699/Governo-quer-que-voc%C3%AA-morra-sem-se-aposentar-diz-o-ator-Herson-Capri.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Governo quer que você morra sem se aposentar, diz o ator Herson Capri</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342699/Governo-quer-que-voc%C3%AA-morra-sem-se-aposentar-diz-o-ator-Herson-Capri.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342699" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">...</span></a></h3>
+</hgroup></article><article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342392/Carnaval-da-Tuiuti-bomba-nas-redes-e-lidera-buscas-entre-escolas-de-samba.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Carnaval da Tuiuti bomba nas redes e lidera buscas entre escolas de samba</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342392/Carnaval-da-Tuiuti-bomba-nas-redes-e-lidera-buscas-entre-escolas-de-samba.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342392" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">1</span></a></h3>
+</hgroup></article><article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342202/Marcelo-Serrado-%E2%80%9CEu-n%C3%A3o-votaria-em-Luciano-Huck-Tem-pessoas-mais-preparadas%E2%80%9D.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Marcelo Serrado: “Eu não votaria em Luciano Huck. Tem pessoas mais preparadas”</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342202/Marcelo-Serrado-%E2%80%9CEu-n%C3%A3o-votaria-em-Luciano-Huck-Tem-pessoas-mais-preparadas%E2%80%9D.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342202" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">8</span></a></h3>
+</hgroup></article><article style="background: rgb(255, 255, 255); border-bottom-color: initial; border-bottom-style: initial; border-image: initial; border-left-color: initial; border-left-style: initial; border-right-color: initial; border-right-style: initial; border-top-color: rgb(226, 226, 226); border-top-style: solid; border-width: 1px 0px 0px; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 13px; margin: 0px 0px 10px; outline: 0px; padding: 5px 0px; position: relative; vertical-align: baseline;"><hgroup style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><h3 style="background: transparent; border: 0px; color: black; font-size: 14px; margin: 0px; outline: 0px; padding: 5px 0px 0px; vertical-align: baseline;">
+<a href="https://www.brasil247.com/pt/247/cultura/342186/Filho-de-bicheiro-da-Beija-Flor-teve-ideia-de-enredo-sobre-corrup%C3%A7%C3%A3o.htm" rel="nofollow" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: transparent; color: black; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Filho de bicheiro da Beija-Flor teve ideia de enredo sobre corrupção</a><a class="comm" href="http://www.brasil247.com/pt/247/cultura/342186/Filho-de-bicheiro-da-Beija-Flor-teve-ideia-de-enredo-sobre-corrup%C3%A7%C3%A3o.htm#comments" style="-webkit-tap-highlight-color: rgb(255, 94, 153); background: rgb(255, 51, 51); border-radius: 2px; color: white; display: inline-block; font-size: 11px; font-weight: normal; height: 15px; line-height: 15px; margin: 0px; padding: 0px 5px; position: relative; text-decoration-line: none; vertical-align: baseline; zoom: 1;"><span class="disqus-comment-count" data-disqus-identifier="342186" style="background: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">4</span></a></h3>
+</hgroup></article>
+<!---------------------------------------post fim--------------------------------------------->
+                                       </div></div>
+<!---------------------------------------post fim---------------------------------------------> 
+                  <!---------------------------------------coluna direita ini--------------------------------------------->
+<div class="site-right-col">
+<div class="site-right-col-inner">
+                         <!---------------------------------------coluna direita ini--------------------------------------------->
+<!----------------------Gad 1 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Cármen Lúcia mantém Fachin na relatoria de inquérito contra Maia.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yEej6Y"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+O presidente da Câmara e o pai dele, César Maia (DEM-RJ), ex-prefeito do Rio e hoje vereador carioca, são apontados pela PGR como suspeitos de receber R$ 950 mil em propina da Odebrecht...
+ <br/>
+<a href="http://bit.ly/2yEej6Y"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 1 fim------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fim post<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<br/><br/><br/>
+<!----------------------Gad 2 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 2 fim banner------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 3 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Lula da Silva promete referendo ‘revocatorio’ contra Temer
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yCKTps"><img src="http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg"border="0" width="97%" height="150" onmouseout="this.src='http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-MTjSNBf3xx8/WY7ym2t0ECI/AAAAAAAA4_M/5DCdNBsNtC0d4sQLDmc5Zz4rC9VCulw4gCLcBGAs/s1600/hispantv.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+"O Brasil deve ser governado novamente com a maioria em mente, não poucos, então a primeira coisa que pretendo aumentar é um referendo de revogação sobre muitas das medidas aprovadas pelo presidente brasileiro Michel Temer", disse o ex-líder brasileiro ...
+ <br/>
+<a href="http://bit.ly/2yCKTps"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 3 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 4 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 4 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 5 ini------------------------------->
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Temer corta para preservar a Escravidão!.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2ypDOs3"><img src="https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg"border="0" width="97%" height="150" onmouseout="this.src='https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O número de trabalhadores em condições análogas à escravidão resgatados no Brasil este ano despencou. Mas não há motivos para comemorar. A queda não é consequência do abandono da prática centenária de exploração ilegal. Apenas não há dinheiro para fiscalizar, segundo funcionários e entidades que atuam na área. Em 2016 foram resgatadas 885 pessoas. Até setembro deste ano foram apenas 167 libertados. A informação foi repassada à reportagem por um funcionário de alto escalão do Ministério do Trabalho, e confirmado pelo Sindicato Nacional dos Auditores Fiscais do Trabalho...
+ <br/>
+<a href="http://bit.ly/2ypDOs3"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 5 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 6 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 6 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 7 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>PF ACHA CONTRATOS DE CÂMBIO MILIONÁRIOS COM CORONEL AMIGO DE TEMER..
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yN1Xcu"><img src="https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+Uma operação da Polícia Federal encontrou contratos de câmbio de US$ 1,2 milhão e ‎€ 1,4 milhão em endereço do coronel aposentado da PM João Baptista Lima Filho, amigo de Michel Temer (PMDB) há mais de 30 anos e apontado por delatores como operador do pemedebista; ele é acusado de receber R$ 1 milhão que teriam Temer como destinatário final...
+ <br/>
+<a href="http://bit.ly/2yN1Xcu"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 7 fim------------------------------->
+<br/><br/></div></div></div></div></div></div></div>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div> 
+<!---------------------------------------coluna direita fim--------------------------------------------->
+                                         </div></div></div>
+<!---------------------------------------coluna direita fim--------------------------------------------->
+<!-------------------------ini Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color:#2f4456; outline: 0px; padding: 5px; text-align: -webkit-auto; vertical-align: center;">
+<div style="text-align: center;"> <a href="https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo.html">
+<span style="color: #fff; font-size: 25px;"><b>Voltar para Pagina Inicial TV Mundo</div></div>
+<!-------------------------fim Voltar para Pagina Inicial TV Mundo-------------------------------------->
+	<br/><br/><br/><br/><br/><p /> <p />      
+                   <!---------------------------------------rodape--------------------------------------------->
+                                          <div class="menu">
+                   <!---------------------------------------rodape--------------------------------------------->
+<a href="#"> * voltar para o Topo *</a>
+<!---------------------------------------rodape--------------------------------------------->
+                       </div></body></html>
+<!---------------------------------------rodape--------------------------------------------->
+<!-------------------------------------------------popup em iframe ini ------------------------------------------>
+<style type="text/css">
+<!--
+#popjan {border: 6px solid #fff;
+background-color: #ffffff;
+width:110%px;
+top: 40px; left: 5px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
+</script>
+
+
+<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span></div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';"><img src="https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif" width="20" height="20&quot;" align="center" /><span style="color: red; font-size: 18px;"><b>&nbsp; &nbsp;FECHAR PUBLICIDADE – CLIQUE AQUI</b></span></a>
+
+<!---------cristo----------> 
+</div>
+<div style="clear: both;">
+</div>
+<div style="margin: auto; text-align: center; width: 100%;">
+</div>
+<div style="clear: both;">
+</div>
+<div style="text-align: left;">
+<!-------internas------->           
+<script language="JavaScript">       
+function TrocaBanner() {
+var x = 1;
+x = Math.floor(Math.random()*9);
+if(x == 1) 
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?42115609C53299852&ULP=[[http://www.casasbahia.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink]]" frameborder="0" allowfullscreen></iframe><!----casas bahia------> </a>');
+return(0);
+}
+else
+{
+if(x == 2)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 3)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 4)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 5)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 6)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----6 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 7)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----7 americanas------> </a>');
+return(0);
+}
+else
+{
+if(x == 8)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----8 americanas------> </a>');
+return(0);
+}
+else
+{
+document.write(' <iframe width="105%" height="600" src="https://soanatareportagens.000webhostapp.com/anun/zanox/avira/300%20x%20250%201.html" frameborder="0" allowfullscreen></iframe><!----1 avira------> </a>');
+return(0);
+
+}}}}}}}}}
+</script>
+<script>TrocaBanner()</script></div>
+<!----ultima imagem 105% por 2----->         
+<a href="http://www.extra.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink&zanpid=2284305379787994112" rel="nofollow" target="_blank"><img src="http://www.extra-imagens.com.br/Banner/banner-tv/home/2017-04-12_jwq/tv01.jpg"border="0" width="100%" height="2"/>
+<br/>
+</a></div><span style="color: #fff; font-size: 20px;">.
+.
+.
+.
+.
+.
+.</span>
+<!-------------------------------------------------popup em iframe fim ------------------------------------------>
+  
+<iniciotextoaovivo ......................................................="">
+<style type='text/css'> 
+#inftemp { 
+height: 37px; 
+position: fixed; 
+top: 0; 
+left:0; 
+z-index: 95469148; 
+background: #2f4456; 
+width: 100%; 
+border-width: 1px 0; 
+border-style: solid; 
+border-color: #EBEBEB; 
+border-bottom: 3px solid gainsboro; 
+-moz-box-shadow: 0px 6px 30px #c9c9c9; 
+-webkit-box-shadow: 0px 6px 30px #c9c9c9; 
+box-shadow: 0px 6px 30px #c9c9c9; 
+}
+
+#inftemp ul { 
+padding-top: 3px; 
+color: #555; 
+margin-top: 8px; 
+}
+
+.inftempativo a:link { 
+color: #c60; 
+}
+
+#inftemp li { 
+list-style-type: none; 
+display: inline; 
+color: #ffffff; 
+cursor: pointer; 
+line-height: 20px; 
+text-align: center; 
+font-size: 14px; 
+font-weight: bold; 
+}
+
+#inftemp li a { 
+color: #FFFFFF; 
+-webkit-transition: All 0.3s ease; 
+-moz-transition: All 0.3s ease; 
+-o-transition: All 0.3s ease; 
+text-decoration: none; 
+padding-left: 20px; 
+}
+
+#inftemp li a:hover { 
+color: #000000; 
+-webkit-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-moz-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-o-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+text-decoration: none; 
+} 
+</style> 
+</iniciotextoaovivo>
+<div id="inftemp">
+<!----------------------Marquee ini------------------------>
+<div style="text-align: center;">
+<script type="text/javascript">  
+// O Último Banners não deve utilizar virgula (,) no final da linha
+var imgs1 = new Array(
+<!-----------moveis projetado3-------------->
+"https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" <!-------------servicos de alvenaria2------------>
+);
+
+// Neste Array, você vai colocar as URLs, links de destinos dos sites quando clicarem em um
+// O Último Link do site não deve utilizar virgula (,) no final da linha
+var lnks1 = new Array(
+"http://vulcovulco.blogspot.com./#"<!-----------6vulcovulco-------------->
+);
+
+// Deve-se seguir o mesmo padrão das Array acima, a última linha correspondente ao último
+// banner, deve ser finalizada sem a virgula (,) no final da linha.
+var alt1 = new Array(
+"google+",
+"2twite
