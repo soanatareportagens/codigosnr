@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TV Mundo</title>
+<style>
+body, 
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+* img{
+	max-width:100% !important;
+	height:auto !important;
+}
+.site-cols-wrapper{
+	max-width:1200px;
+	margin:0 auto;
+
+	font-family: sans-serif;
+	font-size:20px;
+	color:#555;
+}
+.site-left-col{
+	width:100%;
+	margin-right:-360px;
+	float:left;
+}
+.site-left-col-resized{
+	width:100%;
+	margin-right:0;
+	float:none;
+}
+.site-left-col-inner{
+	padding:20px;
+	margin-right:360px;
+}
+.site-left-col-inner-resized{
+	padding:20px;
+	margin-right:0;
+}
+/* Coluna da direita */
+.site-right-col{
+	width:360px;
+	float:right;
+}
+.site-right-col-resized{
+	width:100%;
+	float:none;
+}
+.site-right-col-inner{
+	padding:20px;
+}
+/* "Menu" */
+.menu{
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+	displau:block;
+	clear:both;
+	font-size:20px;
+	color:#fff;
+	background:#2f4456;
+}
+.menu a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+}
+</style>
+<script src="js"></script>
+<script>
+function resizeSidebar() {
+	var window_width = $(window).width();
+	
+	if ( window_width < 800 ) {
+		$('.site-right-col').addClass('site-right-col-resized');
+		$('.site-left-col').addClass('site-left-col-resized');
+		$('.site-left-col-inner').addClass('site-left-col-inner-resized');
+	} else {
+		$('.site-right-col').removeClass('site-right-col-resized');
+		$('.site-left-col').removeClass('site-left-col-resized');
+		$('.site-left-col-inner').removeClass('site-left-col-inner-resized');
+	}
+}
+
+jQuery(function(){
+	resizeSidebar();
+	
+	$(window).resize(function(){
+		resizeSidebar();
+	});
+});
+</script>
+</head>
+<body>
+<div class="menu">
+<a href="#"> TV Mundo </a>
+</div>
+                       <!---------------------------------------cabecalho fim--------------------------------------------->
+<!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudott').hide("slow"); 
+
+$('#exibirtt').click(function(){ 
+
+$('#conteudott').show('3000'); 
+
+}); 
+
+$('#ocultartt').click(function(){ 
+
+$('#conteudott').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+ 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudott { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibirtt" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Tweets</b></span></a> |||| <a href="#" id="ocultartt"><span style="color: #000; font-size: 17px;"><b>Fechar Tweets</b></span></a>
+<div id="conteudott"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 70%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<a class="twitter-timeline" data-lang="pt" data-width="600" data-height="800" href="https://twitter.com/soanatareportag">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 30%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="310" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+
+
+	
+<!-----------fim div abre temp------------>
+<!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
+
+<div class="site-cols-wrapper">
+<div class="site-left-col">
+<div class="site-left-col-inner">
+                       <!---------------------------------------post ini--------------------------------------------->
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 9.0pt;">
+<span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; mso-fareast-language: PT-BR; mso-no-proof: yes;">Data 12.03.2018<o:p></o:p></span></div>
+<div style="text-align: center;">
+Fonte:</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://www.diariodocentrodomundo.com.br/exclusivo-marcos-valerio-quebra-o-silencio-e-entrega-o-esquema-de-corrupcao-do-psdb-por-joaquim-de-carvalho/" rel="nofollow" target="_blank"><img border="0" src="https://2.bp.blogspot.com/-AQSIUgGs_No/UnWLo9Yz5bI/AAAAAAAAG64/6xoR3r9q84sSC2zfVTpGpCcOHtWDUR5vACPcB/s1600/DCM.png" /></a></div>
+<br/>   
+<div align="center" class="MsoNormal" style="background: white; line-height: 30.0pt; margin-bottom: 5.25pt; margin-left: 0cm; margin-right: 0cm; margin-top: 4.5pt; mso-outline-level: 1; text-align: center;">
+<b><span style="color: #222222; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 26.0pt; letter-spacing: -.25pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: PT-BR; mso-font-kerning: 18.0pt;">Exclusivo: Marcos Valério quebra o silêncio e entrega o esquema de corrupção do PSDB. Por Joaquim de Carvalho<o:p></o:p></span></b></div>
+<br/>   
+<div class="td-author-by" style="background-color: white; box-sizing: border-box; color: #444444; display: inline; font-family: &quot;Open Sans&quot;, arial, sans-serif; font-size: 11px;">
+Por</div>
+<span style="background-color: white; color: #444444; font-family: &quot;Open Sans&quot;, arial, sans-serif; font-size: 11px;">&nbsp;</span><a href="https://www.diariodocentrodomundo.com.br/author/joaquim-de-carvalho/" style="background: rgb(255, 255, 255); box-sizing: border-box; color: #222222; font-family: &quot;Open Sans&quot;, arial, sans-serif; font-size: 11px; font-weight: 700; outline: none; text-decoration-line: none !important;">Joaquim de Carvalho</a>
+<br/>   
+<figure class="wp-caption aligncenter" id="attachment_11377" style="background-color: white; box-sizing: border-box; clear: both; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 14px; margin: 6px auto 0px; max-width: 600px; text-align: center;"><img alt="" class="size-large wp-image-11377" data-attachment-id="11377" data-comments-opened="1" data-image-description="" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="aa222" data-large-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222-600x337.jpg" data-medium-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222-300x168.jpg" data-orig-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222.jpg" data-orig-size="800,450" data-permalink="https://www.diariodocentrodomundo.com.br/o-que-o-caso-marcos-valerio-conta-sobre-a-midia-brasileira/aa222/" height="337" sizes="(max-width: 600px) 100vw, 600px" src="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222-600x337.jpg" srcset="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222-600x337.jpg 600w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222-300x168.jpg 300w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2012/09/aa222.jpg 800w" style="border: 0px; box-sizing: border-box; display: block; height: auto; margin-bottom: 0px; max-width: 100%; width: 640px;" width="600" /><figcaption class="wp-caption-text" style="box-sizing: border-box; font-size: 11px; font-style: italic; line-height: 17px; margin: 4px 0px 17px; text-align: right; z-index: 1;">Marcos Valério</figcaption></figure><div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Na sexta-feira da semana passada, o publicitário Marcos Valério ficou sete horas no Departamento Estadual de Investigações sobre Fraudes em Belo Horizonte, no primeiro depoimento que prestou depois que fez um acordo de delação premiada com a Polícia Civil de Minas Gerais.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">“O Valério implodiu o PSDB”, disse uma pessoa que acompanhou o depoimento. Conversei com outras pessoas que estiveram presentes no depoimento. Os relatos são impactantes. Rodrigo Pinho de Bossi, chefe do Departamento, não deu entrevista, mas anunciou que deve falar sobre o caso em coletiva.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Ele, entretanto, não liberará o depoimento até que o acordo de delação premiada seja homologado pela Justiça.</span></div>
+<br/>   
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Marcos Valério cumpre pena de 37 anos e cinco meses de prisão por participação no caso conhecido como Mensalão de Brasília ou Mensalão do PT.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Ele tinha uma agência de publicidade usada para repassar recursos a políticos de todos os partidos, durante os primeiros anos do primeiro mandato do governo Lula.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Era um operador. O dinheiro de caixa 2 passava por ele.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O que a velha imprensa quase não diz<span class="Apple-converted-space" style="box-sizing: border-box;">&nbsp;&nbsp;</span>— e quando diz não destaca — é que Marcos Valério começou a operar no submundo da política muito antes do PT chegar ao governo.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">“Foi no governo de Eduardo Azeredo, do PSDB, que ele criou os mecanismos para ser o maior trem pagador da política brasileira”, disse uma pessoa que acompanhou o depoimento.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Marcos Valério tentou fazer delação premiada em outros momentos, mas o Ministério Público Federal rejeitou seu depoimento.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">“Agora nós sabemos por que. É porque ele arrebenta o PSDB e seus apoiadores. É muita sujeira, e o Ministério Público não quis ouvir”, afirmou a fonte.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Valério confirmou a autenticidade de documentos apreendidos pela Polícia Civil em casas de pessoas que estavam sendo investigadas por envolvimento em esquemas de corrupção, como Denise Landim e o advogado Joaquim Engler.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Um dos documentos apreendidos é a cópia da chamada Lista do Valério, um documento que foi considerado apócrifo. Nesta lista, a exemplo de outra lista famosa, a de Furnas, aparecem os nomes de pessoas que receberam recursos operados por Valério.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">São pessoas que ocupavam postos de destaque no governo de Fernando Henrique Cardoso. O que Valério contou à Polícia Civil é a origem desses recursos.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">“A origem está na negociação na venda da CEMIG”, contou ele, em referência à estatal de energia controlada pelo governo de Minas Gerais.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Em 1997, o governo de Minas Gerais, por decisão de Eduardo Azeredo, vendeu 32,7% das ações da CEMIG para o que se chamou à época “parceiros estratégicos”, que formaram o consórcio Southern Electric Brasil Participações Ltda.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O consócio foi costurado pelo Banco Opprtunity, de Daniel Dantas, com duas empresas de eletricidade dos Estados Unidos, a Southern Electric e a AES.</span></div>
+<div class="p3" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Pelo lado do governo, quem conduziu a venda foi o vice-governador Walfrido dos Mares Guia. O consórcio arrematou quase 33% das ações ordinárias da Cemig por R$ 1,13 bilhão.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O dinheiro que financiou a compra saiu dos cofres do BNDES, na época presidido por Luiz Carlos Mendonça de Barros.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Metade do dinheiro seria paga em 12 meses sem juros e, a outra metade, em 10 anos, com financiamento do BNDES, que cobrava do consórcio juros de 3,5% ao ano.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O governador Azeredo não se reelegeu. Em seu lugar, assumiu Itamar Franco, que em 1999 entrou com ação para desfazer o acordo de acionistas e retomar para o Estado o controle da CEMIG.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O Tribunal concedeu liminar favorável a Itamar, que demitiu os três diretores que representavam o consórcio.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Mas as ações continuaram nas mãos do consórcio, que até hoje recebem altos dividendos, o que demonstra que as empresas capitaneadas por Daniel Dantas fizeram um excelente negócio.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Se foi bom para os investidores, foi péssimo para a estatal, e um negócio desse tipo não se concretizaria sem o pagamento de propina, muita propina.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">É aí que entra Marcos Valério.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Ele já tinha negócios com Daniel Dantas, através das contas de empresas de telefonia controladas pelo Banco Opportunity.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Para Valério, publicidade sempre foi um meio de fazer caixa 2, e era essa a natureza dos negócios com Dantas.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">“Ele pagou todo mundo, a maior parte gente graúda do PSDB, graúda não, muito graúda, do governo de Minas Gerais e do governo federal”, contou a fonte.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Quando estourou o escândalo do Mensalão, começou a circular a lista com o nome das pessoas que receberam recursos de Valério. Não fazia referência explícita à CEMIG, mas os nomes que apareciam lá eram de pessoas envolvidas, de uma forma ou de outra, com a venda das ações.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">A lista tem a assinatura de Valério e documentos desse tipo, como o de Furnas, servem para intimidar recebedores de recursos ilegais.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Na época, a velha imprensa noticiou que Valério havia negado a autenticidade da lista, mas nunca se fez perícia para verificar se a assinatura era dele.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">A lista original foi entregue pelo advogado Dino Miraglia, na época advogado do lobista Nílton Monteiro, delator de Furnas e do Mensalão de Minas, ao então presidente do Supremo Tribunal Federal, Joaquim Barbosa, que foi o relator do Mensalão de Brasília.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O documento nunca foi investigado e se encontra nos arquivos do Supremo Tribunal Federal. Mas a lista teve repercussão. Negativa para quem a denunciou.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O ministro Gilmar Mendes, que fazia parte do governo Fernando Henrique Cardoso, aparece na lista como recebedor de propina. O caso foi noticiado pela revista Carta Capital.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Gilmar processou a publicação, o jornalista autor da reportagem e o advogado. Todos foram condenados.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Com o depoimento de Marcos Valério, abre-se nova oportunidade para um mergulho no submundo que une política, Ministério Público, Judiciário e grandes empresas.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Sempre se soube que a corrupção não nasceu com o governo do PT, mas uma blindagem institucional nunca permitiu que as investigações avançassem sobre o PSDB.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">O delegado Rodrigo Bossi de Pinho, da Polícia Civil de Minas, abriu uma brecha, deu voz a um grande operador do submundo do dinheiro, um profissional do crime de colarinho branco que prestou serviços a A, B, C e até Z.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">Vai começar uma operação abafa.</span></div>
+<div class="p2" style="background-color: white; box-sizing: border-box; font-family: Verdana, Geneva, sans-serif; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<span class="s1" style="box-sizing: border-box;">A parte do Brasil que já foi civilizada não pode permitir que isso aconteça.</span></div>
+<br/>   
+<figure class="wp-caption aligncenter" id="attachment_207142" style="background-color: white; box-sizing: border-box; clear: both; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 14px; margin: 6px auto 0px; max-width: 600px; text-align: center;"><img alt="" class="size-large wp-image-207142" data-attachment-id="207142" data-comments-opened="1" data-image-description="" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Captura de Tela 2018-03-12 às 10.16.00" data-large-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-600x398.png" data-medium-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-300x199.png" data-orig-file="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00.png" data-orig-size="950,630" data-permalink="https://www.diariodocentrodomundo.com.br/exclusivo-marcos-valerio-quebra-o-silencio-e-entrega-o-esquema-de-corrupcao-do-psdb-por-joaquim-de-carvalho/captura-de-tela-2018-03-12-as-10-16-00/" height="398" sizes="(max-width: 600px) 100vw, 600px" src="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-600x398.png" srcset="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-600x398.png 600w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-300x199.png 300w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-768x509.png 768w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-633x420.png 633w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-640x424.png 640w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00-681x452.png 681w, https://www.diariodocentrodomundo.com.br/wp-content/uploads/2018/03/captura-de-tela-2018-03-12-as-10-16-00.png 950w" style="border: 0px; box-sizing: border-box; display: block; height: auto; margin-bottom: 0px; max-width: 100%; width: 640px;" width="600" /><figcaption class="wp-caption-text" style="box-sizing: border-box; font-size: 11px; font-style: italic; line-height: 17px; margin: 4px 0px 17px; text-align: right; z-index: 1;">A lucrativa CEMIG foi o bem que, segundo Valério, os corruptos do PSDB venderam</figcaption></figure><div class="td_block_template_1 widget widget_execphp" id="execphp-67" style="background-color: white; box-sizing: border-box; color: #444444; font-family: Verdana, Geneva, sans-serif; font-size: 14px; margin-bottom: 0px; padding: 0px 19px 0px 20px;">
+<div class="execphpwidget" style="box-sizing: border-box;">
+<div class="crowdfunding-rodape" style="background: gainsboro !important; box-sizing: border-box; font-family: oswald !important; font-size: 1em !important; padding: 30px !important; text-align: center !important;">
+<a href="https://crowdfunding.dcm.com.br/projetos/crowdfunding-o-dcm-vai-cobrir-a-caravana-de-lula-no-rs,-a-1a-apos-a-condenacao-no-trf-4,-e-conta-com-voce" style="background: transparent; box-sizing: border-box; color: #222222; text-decoration-line: none !important;" target="_blank">Crowdfunding: o DCM vai cobrir a caravana de Lula no RS, a 1ª após a condenação no TRF 4, e conta com você&nbsp;<br style="box-sizing: border-box;" />Saiba mais</a></div>
+<div class="acompanhe-face" style="box-sizing: border-box;">
+<strong style="box-sizing: border-box;"><em style="box-sizing: border-box;">Acompanhe as publicações do DCM no Facebook. Curta&nbsp;<a href="https://www.facebook.com/diariodcm" style="background: transparent; box-sizing: border-box; color: #222222; text-decoration-line: none !important;">aqui</a>.</em></strong><div style="box-sizing: border-box; color: black; font-size: 18px; letter-spacing: -0.003em; line-height: 29.5px; margin-bottom: 24px;">
+<strong style="box-sizing: border-box;"><em style="box-sizing: border-box;"><a href="http://www.youtube.com/diariodcm" style="background: transparent; box-sizing: border-box; color: #222222; text-decoration-line: none !important;">Clique aqui e assine nosso canal no youtube</a></em></strong></div>
+</div>
+</div>
+</div>
+
+<!---------------------------------------post fim--------------------------------------------->
+                                       </div></div>
+<!---------------------------------------post fim---------------------------------------------> 
+                  <!---------------------------------------coluna direita ini--------------------------------------------->
+<div class="site-right-col">
+<div class="site-right-col-inner">
+                         <!---------------------------------------coluna direita ini--------------------------------------------->
+<!----------------------Gad 1 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Cármen Lúcia mantém Fachin na relatoria de inquérito contra Maia.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yEej6Y"><img src="https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817"border="0" width="97%" height="150" onmouseout="this.src='https://static.noticiasaominuto.com.br/stockimages/1920/naom_589336729d6a0.jpg?1508777817'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-9Yw_fTfTLNg/Vuk_-WlcByI/AAAAAAAAOiU/jNl8tlVZd4QcMRZaS5dafwnoCmGRK7blgCPcB/s320/Nova%2BImagem%2B%25284%2529.bmp&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+O presidente da Câmara e o pai dele, César Maia (DEM-RJ), ex-prefeito do Rio e hoje vereador carioca, são apontados pela PGR como suspeitos de receber R$ 950 mil em propina da Odebrecht...
+ <br/>
+<a href="http://bit.ly/2yEej6Y"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 1 fim------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fim post<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<br/><br/><br/>
+<!----------------------Gad 2 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 2 fim banner------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 3 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>Lula da Silva promete referendo ‘revocatorio’ contra Temer
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yCKTps"><img src="http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg"border="0" width="97%" height="150" onmouseout="this.src='http://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20171022/1327148_xl.jpg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-MTjSNBf3xx8/WY7ym2t0ECI/AAAAAAAA4_M/5DCdNBsNtC0d4sQLDmc5Zz4rC9VCulw4gCLcBGAs/s1600/hispantv.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+"O Brasil deve ser governado novamente com a maioria em mente, não poucos, então a primeira coisa que pretendo aumentar é um referendo de revogação sobre muitas das medidas aprovadas pelo presidente brasileiro Michel Temer", disse o ex-líder brasileiro ...
+ <br/>
+<a href="http://bit.ly/2yCKTps"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 3 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 4 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 4 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 5 ini------------------------------->
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 14px;"><b>Temer corta para preservar a Escravidão!.
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2ypDOs3"><img src="https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg"border="0" width="97%" height="150" onmouseout="this.src='https://www.conversaafiada.com.br/brasil/temer-corta-para-preservar-a-escravidao/Sem%20Titulo-3.jpg/@@images/06299053-8f49-4320-a018-09acb5fdfb77.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 13px; outline:">
+O número de trabalhadores em condições análogas à escravidão resgatados no Brasil este ano despencou. Mas não há motivos para comemorar. A queda não é consequência do abandono da prática centenária de exploração ilegal. Apenas não há dinheiro para fiscalizar, segundo funcionários e entidades que atuam na área. Em 2016 foram resgatadas 885 pessoas. Até setembro deste ano foram apenas 167 libertados. A informação foi repassada à reportagem por um funcionário de alto escalão do Ministério do Trabalho, e confirmado pelo Sindicato Nacional dos Auditores Fiscais do Trabalho...
+ <br/>
+<a href="http://bit.ly/2ypDOs3"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 5 fim------------------------------->
+<br/><br/><br/>
+<!----------------------Gad 6 ini banner------------------------>
+<div style="text-align: center;">
+<iframe width="350" height="260" src="https://soanatareportagens.000webhostapp.com/posts/banners/banner%20reflessprog350x250.html" frameborder="0" allowfullscreen></iframe>
+<!----------------------Gad 6 fim banner------------------------>
+<br/><br/><br/>
+<!----------------------Gad 7 ini------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><div style="text-align: center;"><b>PF ACHA CONTRATOS DE CÂMBIO MILIONÁRIOS COM CORONEL AMIGO DE TEMER..
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="http://bit.ly/2yN1Xcu"><img src="https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png"border="0" width="97%" height="150" onmouseout="this.src='https://www.brasil247.com/images/cache/1000x357/crop_0_0_1000_357/images%7Ccms-image-000555840.png'"onmouseover="this.src=&#39;https://4.bp.blogspot.com/-ZE0xU7FdxZg/VF-cMKyRTNI/AAAAAAAAJF4/6vUemu3xND0akbrhjBssNf-jBkyUyPtZACPcB/s320/brasil247%2Bgrande%2Bcompleto.jpg&#39;" />
+</a></!.......cor></div></div></b></span></div><span style="color: black;  font-size: 14px; outline:">
+Uma operação da Polícia Federal encontrou contratos de câmbio de US$ 1,2 milhão e ‎€ 1,4 milhão em endereço do coronel aposentado da PM João Baptista Lima Filho, amigo de Michel Temer (PMDB) há mais de 30 anos e apontado por delatores como operador do pemedebista; ele é acusado de receber R$ 1 milhão que teriam Temer como destinatário final...
+ <br/>
+<a href="http://bit.ly/2yN1Xcu"> Continue lendo...→</a></span>
+</div>
+<!----------------------Gad 7 fim------------------------------->
+<br/><br/></div></div></div></div></div></div></div>
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div> 
+<!---------------------------------------coluna direita fim--------------------------------------------->
+                                         </div></div></div>
+<!---------------------------------------coluna direita fim--------------------------------------------->
+<!-------------------------ini Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color:#2f4456; outline: 0px; padding: 5px; text-align: -webkit-auto; vertical-align: center;">
+<div style="text-align: center;"> <a href="https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo.html">
+<span style="color: #fff; font-size: 25px;"><b>Voltar para Pagina Inicial TV Mundo</div></div>
+<!-------------------------fim Voltar para Pagina Inicial TV Mundo-------------------------------------->
+	<br/><br/><br/><br/><br/><p /> <p />      
+                   <!---------------------------------------rodape--------------------------------------------->
+                                          <div class="menu">
+                   <!---------------------------------------rodape--------------------------------------------->
+<a href="#"> * voltar para o Topo *</a>
+<!---------------------------------------rodape--------------------------------------------->
+                       </div></body></html>
+<!---------------------------------------rodape--------------------------------------------->
+<!-------------------------------------------------popup em iframe ini ------------------------------------------>
+<style type="text/css">
+<!--
+#popjan {border: 6px solid #fff;
+background-color: #ffffff;
+width:110%px;
+top: 40px; left: 5px;
+text-align: center;
+z-index: 450;position:fixed;visibility: visible;}
+-->
+</style>
+<!--------------------nova div temp ini---------------------->
+    <div id="popjan">
+<!--------------------cronometro ini---------------------->
+<!---------------------fechar div ini----------------------->
+
+<script language="JavaScript">
+function fecha_banner()
+{
+ var banner_obj = document.getElementById('fechar div');
+ banner_obj.style.display = 'none';
+}
+setTimeout('fecha_banner()', 10000);
+</script>
+
+
+<div id="fechar div"> <span style="color: #2f4456;; font-size: 22px;"><b> Por favor, aguarde só alguns segundos...<br/><br/><img src="http://rawgit.com/soanatareportagens/codigosnr/master/pub/loading1.gif"border="0" width="30" height="30"/> </b></span></div>
+
+<!---------------------fechar div fim----------------------->
+<!--------------------cronometro fim---------------------->
+<div id="mime">
+<a color:="" href="#" onclick="document.getElementById('mime').style.display='none';" red;"="" style="float: right;"><span style="color: red;"><span style="font-weight:bold;">
+</span></span></a>
+<div style="margin: auto; text-align: center; width: 100%px; height:0 ">
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no inacio
+var div = document.getElementById('mime');
+div.style.display = 'none';
+// Mostra a div apos 1 minuto
+setTimeout(function() {
+    div.style.display = 'block';
+}, 13000);
+</script> 
+<!--------------------nova div temp fim---------------------->  
+</div>
+<!---------cristo---------->  
+	<script>
+		function exibe(){
+			document.getElementById('aaa').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 13000);
+		}
+	</script>
+
+	<a id="aaa" href="#" onclick="document.getElementById('popjan').style.display='none';"><img src="https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif" width="20" height="20&quot;" align="center" /><span style="color: red; font-size: 18px;"><b>&nbsp; &nbsp;FECHAR PUBLICIDADE – CLIQUE AQUI</b></span></a>
+
+<!---------cristo----------> 
+</div>
+<div style="clear: both;">
+</div>
+<div style="margin: auto; text-align: center; width: 100%;">
+</div>
+<div style="clear: both;">
+</div>
+<div style="text-align: left;">
+<!-------internas------->           
+<script language="JavaScript">       
+function TrocaBanner() {
+var x = 1;
+x = Math.floor(Math.random()*9);
+if(x == 1) 
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?42115609C53299852&ULP=[[http://www.casasbahia.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink]]" frameborder="0" allowfullscreen></iframe><!----casas bahia------> </a>');
+return(0);
+}
+else
+{
+if(x == 2)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 3)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----2 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 4)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 5)
+{
+document.write('<iframe width="105%" height="600" src="https://www.netfarma.com.br/?utm_source=zanox&utm_medium=cpa&utm_content=txtlink&utm_campaign=zanox&zanpid=2274987827907605504&AffID=2291660" frameborder="0" allowfullscreen></iframe><!----3 net farma------> </a>');
+return(0);
+}
+else
+{
+if(x == 6)
+{
+document.write('<iframe width="105%" height="600" src="http://rede.natura.net/?utm_source=zanox&utm_medium=display&utm_campaign=redenatura&utm_content=httpsoanatareportagensblogspotcombr&zanpid=2286628851763516416" frameborder="0" allowfullscreen></iframe><!----6 natura------> </a>');
+return(0);
+}
+else
+{
+if(x == 7)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----7 americanas------> </a>');
+return(0);
+}
+else
+{
+if(x == 8)
+{
+document.write('<iframe width="105%" height="600" src="https://ad.zanox.com/ppc/?43311882C1490895490&ULP=[[https://www.americanas.com.br/?opn=AFLACOM&epar=af_00_00_za_zanoxacom]]" frameborder="0" allowfullscreen></iframe><!----8 americanas------> </a>');
+return(0);
+}
+else
+{
+document.write(' <iframe width="105%" height="600" src="https://soanatareportagens.000webhostapp.com/anun/zanox/avira/300%20x%20250%201.html" frameborder="0" allowfullscreen></iframe><!----1 avira------> </a>');
+return(0);
+
+}}}}}}}}}
+</script>
+<script>TrocaBanner()</script></div>
+<!----ultima imagem 105% por 2----->         
+<a href="http://www.extra.com.br/?utm_source=zanox&utm_medium=deeplink&utm_campaign=deeplink&zanpid=2284305379787994112" rel="nofollow" target="_blank"><img src="http://www.extra-imagens.com.br/Banner/banner-tv/home/2017-04-12_jwq/tv01.jpg"border="0" width="100%" height="2"/>
+<br/>
+</a></div><span style="color: #fff; font-size: 20px;">.
+.
+.
+.
+.
+.
+.</span>
+<!-------------------------------------------------popup em iframe fim ------------------------------------------>
+  
+<iniciotextoaovivo ......................................................="">
+<style type='text/css'> 
+#inftemp { 
+height: 37px; 
+position: fixed; 
+top: 0; 
+left:0; 
+z-index: 95469148; 
+background: #2f4456; 
+width: 100%; 
+border-width: 1px 0; 
+border-style: solid; 
+border-color: #EBEBEB; 
+border-bottom: 3px solid gainsboro; 
+-moz-box-shadow: 0px 6px 30px #c9c9c9; 
+-webkit-box-shadow: 0px 6px 30px #c9c9c9; 
+box-shadow: 0px 6px 30px #c9c9c9; 
+}
+
+#inftemp ul { 
+padding-top: 3px; 
+color: #555; 
+margin-top: 8px; 
+}
+
+.inftempativo a:link { 
+color: #c60; 
+}
+
+#inftemp li { 
+list-style-type: none; 
+display: inline; 
+color: #ffffff; 
+cursor: pointer; 
+line-height: 20px; 
+text-align: center; 
+font-size: 14px; 
+font-weight: bold; 
+}
+
+#inftemp li a { 
+color: #FFFFFF; 
+-webkit-transition: All 0.3s ease; 
+-moz-transition: All 0.3s ease; 
+-o-transition: All 0.3s ease; 
+text-decoration: none; 
+padding-left: 20px; 
+}
+
+#inftemp li a:hover { 
+color: #000000; 
+-webkit-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-moz-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+-o-transform: rotate(0deg) scale(1.2) skew(1deg) translate(0px); 
+text-decoration: none; 
+} 
+</style> 
+</iniciotextoaovivo>
+<div id="inftemp">
+<!----------------------Marquee ini------------------------>
+<div style="text-align: center;">
+<script type="text/javascript">  
+// O Último Banners não deve utilizar virgula (,) no final da linha
+var imgs1 = new Array(
+<!-----------moveis projetado3-------------->
+"https://rawgit.com/soanatareportagens/codigosnr/master/digite%20textovivo.html" <!-------------servicos de alvenaria2------------>
+);
+
+// Neste Array, você vai colocar as URLs, links de destinos dos sites quando clicarem em um
+// O Último Link do site não deve utilizar virgula (,) no final da linha
+var lnks1 = new Array(
+"http://vulcovulco.blogspot.com./#"<!-----------6vulcovulco-------------->
+);
+
+// Deve-se seguir o mesmo padrão das Array acima, a última linha correspondente ao último
+// banner, deve ser finalizada sem a virgula (,) no final da linha.
+var alt1 = new Array(
+"google+",
+"2twite
