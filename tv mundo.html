@@ -145,10 +145,16 @@ $('a#ocultar').click(function(){
 $('#conteudo').hide('slow'); 
 }) 
 return false; 
+
 }); 
 </script> 
+
+ 
+ 
 <?php 
+
 include ("conn_db.php"); 
+
 $query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
 $linha = mysql_num_rows($query); 
 if ($linha==0){ 
@@ -174,7 +180,9 @@ width:100%;
 <a id="exibir" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Menu</b></span></a> |||| <a href="#" id="ocultar"><span style="color: #000; font-size: 17px;"><b>Fechar Menu</b></span></a>
 <div id="conteudo"> 
 <!------------------seu conteudo ini---------------------->
+
 <!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
 <span style="color: red; font-size: 17px;"><b>
 <!-------------------TV------------->
  </b></span></div><div style="float: left; width: 60%">
@@ -231,12 +239,11 @@ Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
 
 	<a id="download" style="display: none;"> 
 <div id="floatLayer" style="position:absolute; height:250px; left:400px; top:234px; width:300px">
-<!---ini---troca banner no player 300x250 menu tv mundo--->
-<iframe width="370" height="270" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
-<!---Fim---troca banner no player 350x250 menu tv mundo--->
+ <!---ini---troca banner reflashprog300x250 no player--->
+<iframe width="120%" height="110%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250 no player--->
 <div style="position:relative; height:9px; left:298px; top:-270px; width:9px"><span onmouseup="document.getElementById('floatLayer').style.display='none'"><img alt="FECHAR" border="0" height="15" src="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fechar%201.jpg" width="15" /></span></div></div> 
 <!-----------fim div abre temp------------>
-		</div>
 <!-------------------------------------------------fim menu tv mundo--------------------------------------------------------->
 <a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
 <!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
