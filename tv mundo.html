@@ -1,9 +1,23 @@
 <!------------------------mensagem live ini----------------------->
-<!------------obs a altura ao editar pois pode ficar escondido------------>
-<div id="responsecontainer" style="position:relative;height:0px; width:100%px;top:200px;left:0px"><iframe width="800" height="250" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div> 
-</div>
-   <!--------- background:#FF0000; vermelho f00 vermelho-----apague texto--------------->
+<! ----------obs a altura ao editar pois pode ficar escondido------------>
+ <style type="text/css">
+#msglive{
+  position:fixed;
+  z-index:999; 
+  left:350px; 
+  top:50px;
+  overflow:hidden;
+  border:0px dashed #CCC;
+  padding:0px;
+margin:0 auto;
+  width:800px;
+  height:150px
+}
+</style>
+<div id="msglive">
+   <iframe width="800" height="150" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" ></iframe>
+</div> 
+      <!--------- background:#FF0000; vermelho f00 vermelho-----apague texto--------------->
 	<!------------------------mensagem live fim----------------------->
 <div style="float: left; width: 100%">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
