@@ -12,24 +12,7 @@ margin:0 auto;
     }
 </style>
 <div id="msglive">
-   <script language="JavaScript"> 
-var ultimo=-1, msglvivo;
-function carrega(x) {msglvivo=x;Banners()}
-function Banners()
-{ 
-var MNews = new Array();  
-MNews[0]= '<A HREF="#" target="_blank"><iframe width="360" height="260" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" allowfullscreen></iframe>'; 
-
-MNews[1]= '<A HREF="http://www.tenisbaratos.com.br/" target="_blank"><iframe width="360" height="260" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" allowfullscreen></iframe>'
-
-while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
-msglvivo.innerHTML=MNews[Numero];
-
-setTimeout("Banners()",500000);
-} 
-</script></head> 
-<body bgcolor="#FFFFFF" topmargin=0 leftmargin=0 text="#000000" onLoad=carrega(this.divBanner)> 
-<div align="center" id=divBanner></div> 
+   <iframe width="380" height="270" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" ></iframe>
 </div> 
       	<!------------------------mensagem live fim----------------------->
 <div style="float: left; width: 100%">
