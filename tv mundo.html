@@ -12,7 +12,24 @@ margin:0 auto;
     }
 </style>
 <div id="msglive">
-   <iframe width="380" height="260" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" ></iframe>
+   <script language="JavaScript"> 
+var ultimo=-1, dBanner;
+function carrega(x) {dBanner=x;Banners()}
+function Banners()
+{ 
+var MNews = new Array();  
+MNews[0]= '<A HREF="#" target="_blank"><iframe width="370" height="4000" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" allowfullscreen></iframe>'; 
+
+MNews[1]= '<A HREF="http://www.tenisbaratos.com.br/" target="_blank"><iframe width="370" height="4000" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/msgsvivo/msg%20live.html" frameborder="0" allowfullscreen></iframe>'
+
+while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
+dBanner.innerHTML=MNews[Numero];
+
+setTimeout("Banners()",20000);
+} 
+</script></head> 
+<body bgcolor="#FFFFFF" topmargin=0 leftmargin=0 text="#000000" onLoad=carrega(this.divBanner)> 
+<div align="center" id=divBanner></div> 
 </div> 
       	<!------------------------mensagem live fim----------------------->
 <div style="float: left; width: 100%">
