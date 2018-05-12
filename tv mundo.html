@@ -71,28 +71,18 @@ margin:0 auto;
 <script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
 <script type="text/javascript"> 
 $(document).ready(function(){ 
-
 $('#conteudo').hide("slow"); 
-
 $('a#exibir').click(function(){ 
-
 $('#conteudo').show('3000'); 
-
 }); 
-
 $('a#ocultar').click(function(){ 
-
 $('#conteudo').hide('slow'); 
 }) 
 return false; 
-
 }); 
 </script> 
- 
-<?php 
-
+ <?php 
 include ("conn_db.php"); 
-
 $query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
 $linha = mysql_num_rows($query); 
 if ($linha==0){ 
@@ -101,11 +91,9 @@ echo "Não foi retornado nenhum registro";
 else{ 
 while ($dados = mysql_fetch_array($query)){ 
 ?> 
-
 <style> 
 body { 
 font: 12px Verdana, Geneva, sans-serif; 
-
 } 
 #conteudo { 
 border:0px solid #CCCC33; 
@@ -118,7 +106,6 @@ width:100%;
 <a id="exibir" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Menu</b></span></a> |||| <a href="#" id="ocultar"><span style="color: #000; font-size: 17px;"><b>Fechar Menu</b></span></a>
 <div id="conteudo"> 
 <!------------------seu conteudo ini---------------------->
-
 <!...so pagina inicial topo ...> 
 <div style="text-align: center;"> 
 <span style="color: red; font-size: 17px;"><b>
@@ -176,7 +163,7 @@ Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
 	<a id="download" style="display: none;"> 
 <div id="floatLayer" style="position:absolute; height:250px; left:250px; top:234px; width:300px">
  <!---ini---troca banner reflashprog300x250 no player--->
-<iframe width="120%" height="110%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="85%" scrolling="no"  src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
 <!---Fim---troca banner reflashprog350x250 no player--->
 <div style="position:relative; height:9px; left:0px; top:-287px; width:9px"><span onmouseup="document.getElementById('floatLayer').style.display='none'"><img alt="FECHAR" border="0" height="15" src="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fechar%201.jpg" width="15" /></span></div></div> 
 <!-----------fim div abre temp------------></div>       
@@ -186,21 +173,14 @@ Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
 <script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
 <script type="text/javascript"> 
 $(document).ready(function(){ 
-
 $('#conteudott').hide("slow"); 
-
 $('#exibirtt').click(function(){ 
-
 $('#conteudott').show('3000'); 
-
 }); 
-
 $('#ocultartt').click(function(){ 
-
 $('#conteudott').hide('slow'); 
 }) 
 return false; 
-
 }); 
 </script> 
 <?php 
@@ -242,7 +222,7 @@ width:100%;
 <div style="text-align: center;">  <br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <!---ini---troca banner reflashprog300x250 twitter--->
-<iframe width="100%" height="100%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="85%" scrolling="no"  src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
 <!---Fim---troca banner reflashprog350x250 twitter--->
 
 </div>
@@ -431,7 +411,6 @@ background: url(https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/s
 	<option value="plano56" />Canal 56 Rádio TV AO VIVO Estereosom FM	         
         <option value="plano57" />Canal 57 Rádio TV najuá 92.5
         <option value="plano58" />Canal 58 Rádio TV Nova FM 104
-
  </select>
 </div>      
 <div style="float: center; width: 100%">
@@ -724,7 +703,7 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
 <br />
 <br />
 <!---ini---troca banner reflashprog300x250 direita do player--->
-<iframe width="100%" height="85%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="85%" scrolling="no" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
 <!---Fim---troca banner reflashprog350x250 direita do player--->
 </div>
 	<!------------------------tradutor ini-------------------->
@@ -892,7 +871,7 @@ $(document).ready(function(){
 <!------------ cod publicidade -------------->
 <br/>
 <!---ini---troca banner reflashprog300x250--->
-<iframe width="360" height="270" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe><!---Fim---troca banner reflashprog300x250--->
+<iframe width="100%" height="85%" scrolling="no" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe><!---Fim---troca banner reflashprog300x250--->
 </div>
 <!// end anuncios--> <br/>
 </!></b></span></div>
