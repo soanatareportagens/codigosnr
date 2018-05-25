@@ -943,11 +943,22 @@ $(document).ready(function(){
 											</header>
 					<div class="row no-collapse-1">
 						<section class="4u">
-<!--------------------------coluna esquerda ini-------------------------------->
-		<!-----cod atualiza coll esquerda abaixo----->
-	<!-- For ease i'm just using a JQuery version hosted by JQuery- you can download any version and link to it locally -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<!--------------------------coluna esquerda ini-------------------------------->
+ <!-----cod atualiza coll esquerda abaixo----->
+ <!-- For ease i'm just using a JQuery version hosted by JQuery- you can download any version and link to it locally -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
- 
+ <script>
+var refreshId = setInterval(function()
+{
+     $('#collesquerda').fadeOut("slow").load('response.php').fadeIn("slow");
+}, 100000);
+</script>
+</head>
+<body>
+   <!-----cod atualiza coll centro acima----->
+<div id="collesquerda">
+   <!-----cod atualiza coll centro acima----->
 <script>
 var refreshId = setInterval(function()
 {
