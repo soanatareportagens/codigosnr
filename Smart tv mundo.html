@@ -571,59 +571,43 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
 <!---Fim---troca banner reflashprog350x250--->
 </div>
 <!// end anuncios--> 
-</!></div>
-<!--------------------coltvmundojan ini------------------------>
- <!-----cod atualiza coll direita abaixo----->
-<!-- For ease i'm just using a JQuery version hosted by JQuery- you can download any version and link to it locally -->
-<script src=""></script>
- 
-<script>
-var refreshId = setInterval(function()
+</!></div><br/>
+	<!--------------------coltvmundojan ini------------------------>
+<br/>
+<script language="JavaScript">
+var ultimo=-1, dBanner;
+function carrega(x) {dBanner=x;Banners()}
+function Banners()
 {
-     $('#colldireita').fadeOut("slow").load('response.php').fadeIn("slow");
-}, 100000);
-</script>
-</head>
-<body>
- <!-----cod atualiza coll direita acima----->
-<div id="colldireita">
- <!-----cod atualiza coll direita acima----->
-<!--------------------coltvmundojan ini------------------------>
-<script language="JavaScript">     
-function TrocaBanner() {
-var x = 1;
-x = Math.floor(Math.random()*4);
-if(x == 1)
-{
-document.write('<iframe width="100%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20esquerda.html" frameborder="0" allowfullscreen></iframe><!----ratinho Entrevista com Gilberto Chierice------></a>');
-return(0);
+<!---1---------coll esquerda--------------------->
+var MNews = new Array();
+MNews[0]= '<A HREF="http://www.extra.com.br/?utm_source=zanox&utm_medium=afiliados&utm_campaign=banner_inst&zanpid=2262923584353940480" target="_blank"> <iframe width="50%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20esquerda.html" frameborder="0" allowfullscreen></iframe> </a>';
+<!---0---------coll esquerda--------------------->
+<!---1-----coll centro------------------------->
+MNews[1]= '<A HREF="http://www.casasbahia.com.br/?utm_source=zanox&utm_medium=afiliados&utm_campaign=banner_inst&zanpid=2275033400056673280" target="_blank"><iframe width="50%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20centro.html" frameborder="0" allowfullscreen></iframe></a>'
+<!---1-----coll centro------------------------->
+<!---2-------coll jan----------------->
+MNews[2]= '<A HREF="#" target="_blank"><iframe width="50%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/2018/jan.html" frameborder="0" allowfullscreen></iframe></a>'
+<!---2-------coll jan----------------->
+
+<!---3-------------coll redes----------------->
+MNews[3]= '<A HREF="http://ad.zanox.com/ppc/?42433392C481038869T" target="_blank"><iframe width="50%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20redes.html" frameborder="0" allowfullscreen></iframe></a>'
+<!---3----------coll redes-------------------->
+while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
+dBanner.innerHTML=MNews[Numero];
+setTimeout("Banners()",50000);
 }
-else
-{
-if(x == 2)
-{
-document.write('<iframe width="100%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20centro.html" frameborder="0" allowfullscreen></iframe> <!----ratinho bolsonaro------> </a>');
-return(0);
-}
-else
-{
-if(x == 3)
-{
-document.write('<iframe width="100%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/2018/jan.html" frameborder="0" allowfullscreen></iframe> <!----Brasília Lado B------> </a>');
-return(0);
-}
-else
-{
-document.write('<iframe width="100%" height="5400" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/coltvmundo/col%20redes.html" frameborder="0" allowfullscreen></iframe> <!----Requião abre debate------> </a>');
-return(0);
-}}}}
-</script>
-<script>TrocaBanner()</script>      
-</div>  
+</script></head>
+<body topmargin=0 leftmargin=0 text="#000000" onLoad=carrega(this.trocacoll)>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="250" bordercolor="#000000">
+<tr>
+<td>
+<div align="center" id=trocacoll></div>
+<br/>
 <!-------------------TV menu------------->
  <div style="text-align: center;">
 <span style="color: black; font-size: 26px;"><b>
-Menu TV Mundo</b></span></div>
+Menu TV Mundo</b></span></div><br/><br/>
 <a href="#" onclick="window.open('https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
 <div style="text-align: center;">
 <span style="color: black; font-size: 26px;"><b>
@@ -665,12 +649,9 @@ Contato whatsapp / telegram (55) 84 98780-4100<br/>
 Canal telegram @soanatareportagens
  </b></b></span></div></div></div>
 <br/> <br/><br/> 
-
-
-<br/> <br/><br/> <p/>
-<!----------------------------------------------controle de visitas 2------------------------------------------------------>
+<!----------------------------------------controle de visitas 2----------------------------------------------->
                   	                                             
-<!----------------------------------------------controle de visitas 2------------------------------------------------------>
+<!----------------------------------------controle de visitas 2----------------------------------------------->
 <p/>
 <br/> <br/><br/>
 
