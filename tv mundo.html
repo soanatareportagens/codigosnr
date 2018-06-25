@@ -338,8 +338,10 @@ TV MUNDO<br/>
 background: url(https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/seta%20D%20color.GIF) no-repeat left #2f4456; border: px solid #2f4456; font-size: 18px; color: #fff;   "><b> Fechar TV Mundo</b></span> } 
        </style>
 </style>
- <select id="combobox" name="combobox" onchange="showDiv(this.value);">
+ <select id="combobox" name="combobox" onchange="showDiv2(this.value);showDiv(this.value);">
         <option value="plano1" />&nbsp; &nbsp;&nbsp;&nbsp;...→&nbsp; Selecione Um canal aqui
+	<OPTION value="magazinevoce" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Loja autorizada Magazine Luiza
+        <OPTION value="doação" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fazer uma doação para este site
 	<option value="plano1" />Canal 1 Reservado
 	<option value="plano2" />Canal 2 TV Justiça – Brasil
 	<option value="plano3" />Canal 3 Jornal da Band – Brasil
@@ -666,6 +668,36 @@ autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" framebord
 <div id="plano58" class="invisivel">
 <iframe frameborder="0" width="100%" height="500" src="//www.dailymotion.com/embed/video/x58ob7u" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x58ob7u" target="_blank">R&aacute;dio Nova FM 104,9 - AO VIVO</a> <i>por <a href="http://www.dailymotion.com/novafm104" target="_blank">novafm104</a></i>
 </div><!--Canal 58 Rádio TV Nova FM 104---------------------->
+	 <!--------------------select pop up inicio--------------->
+<SCRIPT language=Javascript>
+function showDiv2(pasta) {
+  if (pasta == 'abr') {
+    var url = "https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/abr/160418.html";
+    window.open("https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/abr/160418.html", target="_parent");<!----abre na mesma janela----->
+  }
+// copie abaixo para adicionar mais uma janela smartfone //
+  if (pasta == 'mai') {
+    var url = "https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/mai.html";
+    window.open("https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/mai.html", target="_parent");
+  }
+// copie abaixo para adicionar mais uma janela smartfone //
+  if (pasta == 'jun') {
+    var url = "https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/jun.html";
+    window.open("https://rawgit.com/soanatareportagens/tv/master/seujornaltvt/18/jun.html", target="_parent");
+  }
+  if (pasta == 'magazinevoce') {
+    var url = "https://www.magazinevoce.com.br/magazineelianefx";
+    window.open(url,'nova_pasta',"width=1200,height=700,left=" + (screen.width - 1200) / 2 + ",top=" + (screen.height - 700) / 2); 
+  } 
+// copie abaixo para adicionar mais uma janela Tecnologia//
+  if (pasta == 'doação') {
+    var url = "http://soanatareportagensanu.blogspot.com.br/2016/05/contribua-com-este-blog.html";
+    window.open(url,'nova_pasta',"width=1200,height=700,left=" + (screen.width - 1200) / 2 + ",top=" + (screen.height - 700) / 2);
+  }
+// copie acima para adicionar mais uma janela //
+}
+ </SCRIPT>
+               <!--------------------select pop up fim--------------->
                                                                                                                
 <br/><br/><!---------------------------------------------<p /> 
 <?php 
