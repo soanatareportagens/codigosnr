@@ -3,6 +3,7 @@
 <!----------   https://rawgit.com/soanatareportagens/codigosnr/master/teste.html   --------------------------------->
 <!----------------------------------link visitante da pagina nao apague esse link----------------------------------->
   <!-------------------------------------------------texto vivo fixo topo ini--------------------------------------------------------->
+<!-------------------------------------------------texto vivo fixo topo ini--------------------------------------------------------->
 <style type="text/css">
 #divpagini{
   position:fixed;
@@ -262,9 +263,6 @@ $(document).ready(function(){
 <!-------------------TV------------->
 <div style="text-align: center;">
 <div style="float: left; width: 65%;">
-<!---------------------select canais ini---------------------->
-<iframe width="100%" height="40"  scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/selectcn.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         <!---------------------select canais fim---------------------->
 	<script language="Javascript">
 function showDiv(div)
 {
@@ -345,14 +343,332 @@ TV MUNDO<br/>
 background: url(https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/seta%20D%20color.GIF) no-repeat left #2f4456; border: px solid #2f4456; font-size: 18px; color: #fff;   "><b> Fechar TV Mundo</b></span> } 
        </style>
 </style>
- </div>      
+ <select id="combobox" name="combobox" onchange="showDiv2(this.value);showDiv(this.value);">
+        <option value="plano1" />&nbsp; &nbsp;&nbsp;&nbsp;...→&nbsp; Selecione Um canal aqui
+	<OPTION value="magazinevoce" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Loja autorizada Magazine Luiza
+        <OPTION value="doação" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fazer uma doação para este site
+	<option value="plano1" />Canal 1 Filmes e Documentários
+	<option value="plano2" />Canal 2 TV Justiça – Brasil
+	<option value="plano3" />Canal 3 Jornal da Band – Brasil
+        <option value="plano4" />Canal 4 TV Humor português Brasil | 2 Canais ao vivo
+        <option value="plano5" />Canal 5 TV cristã Brasileira | 6 canais de tv ao vivo
+        <option value="plano6" />Canal 6 Chef TV O Canal da Gastronomia - Brasil
+        <option value="plano7" />Canal 7 | Rádios ao vivo - Brasil
+        <option value="plano8" />Canal 8 | Canais Euronews
+        <option value="plano9" />Canal 9 Patrulha da Cidade - TV Ponta Negra - Brasil
+        <option value="plano10" />Canal 10 HispanTV en vivo - FULL HD
+        <option value="plano11" />Canal 11 Uso futuro
+        <option value="plano12" />Canal 12 DESENHOS ao vivo
+        <option value="plano13" />Canal 13 - Argentina | 5 Canais ao vivo
+        <option value="plano14" />Canal 14 - EUA | 5 Canais ao vivo
+        <option value="plano15" />Canal 15 | Lives de jogos
+        <option value="plano16" />Canal 16 FOX News Live
+        <option value="plano17" />Canal 17 AMAZON SAT - Brasil
+        <option value="plano18" />Canal 18 Cidade Alerta- TV Record Brasil
+        <option value="plano19" />Canal 19 BAND NEWS AO VIVO - BRASIL
+        <option value="plano20" />Canal 20 RT en espanha HD
+        <option value="plano21" />Canal 21 RT на русском em Russo
+	<option value="plano22" />Canal 22 Al Jazeera English - Live
+        <option value="plano23" />Canal 23 Sky News Live
+        <option value="plano24" />Canal 24 FRANCE 24 Live
+        <option value="plano25" />Canal 25 Jornal da Cultura
+        <option value="plano26" />Canal 26 Fox Sports
+        <option value="plano27" />Canal 27 Jogo Aberto
+        <option value="plano28" />Canal 28 C5N en VIVO
+        <option value="plano29" />Canal 29 KBS World 24 Korea
+        <option value="plano30" />Canal 30 TV ABC News (Australia)
+        <option value="plano31" />Canal 31 Boston News
+        <option value="plano32" />Canal 32 - India TV | 5 canais ao vivo
+        <option value="plano33" />Canal 33 Seu Jornal Rede TVT - BRasil 
+        <option value="plano34" />Canal 34 Canais Globo Brasil
+        <option value="plano35" />Canal 35 Jornal hoje
+        <option value="plano36" />Canal 36 Jornal Nacional
+        <option value="plano37" />Canal 37 Fantástico
+        <option value="plano38" />Canal 38 Web TV Brasileira
+        <option value="plano39" />Canal 39 TRT WORLD - İstanbul TURKEY - INGLÊS
+        <option value="plano40" />Canal 40 - Africa | 5 Canais ao vivo
+        <option value="plano41" />Canal 41 Transmissão ao vivo do Canal Rit TV                                 
+        <option value="plano42" />Canal 42 Fox 35 orlando.com 
+        <option value="plano43" />Canal 43 bn Play | Boas Novas - Brasil 
+        <option value="plano44" />Canal 44 Talentos e JR News - Brasil
+        <option value="plano45" />Canal 45 Polimer News - India 
+        <option value="plano46" />Canal 46 Globo News - Brasil
+        <option value="plano47" />Canal 47 TV Globo Brasil
+        <option value="plano48" />Canal 48 Aaj News Live - Pakistan
+        <option value="plano49" />Canal 49 CGTN Live CGTN is China's
+        <option value="plano50" />Canal 50 CGTN en Español
+        <option value="plano51" />Canal 51 Rádio TV - Pânico - Jovem Pan
+        <option value="plano52" />Canal 52 Rádio TV Mix limeira
+        <option value="plano53" />Canal 53 Rádio TV Sociedade da Bahia  
+        <option value="plano54" />Canal 54 Rádio TV Educadora AM
+        <option value="plano55" />Canal 55 Rádio TV Gospel
+	<option value="plano56" />Canal 56 Ao vivo | Rede Brasil TV - evangélico	         
+        <option value="plano57" />Canal 57 Rádio TV najuá 92.5
+        <option value="plano58" />Canal 58 Rádio TV Nova FM 104
+ </select>
+</div>      
 <div style="float: center; width: 100%">
 <div style="background-color: #000; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%; height: 530;">
-<div id="plano1" class="visivel"> 
+<div id="plano1" class="invisivel"> 
 <div style="text-align: center;">
 <iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn1.html" frameborder="0" allowfullscreen></iframe>
 	</div></div><!------------canal 1 acima------------------->
+	
+<div id="plano2" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn2.html" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 2 TV Justiça – Brasil acima--------->
 
+<div id="plano3" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://www.youtube.com/embed/8DDTrUO5pxA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 3 jornal da band – brasil acima----------->
+
+<div id="plano4" class="invisivel">
+<iframe width="100%" height="500"  scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn4.html" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!--Canal 4 TODO MUNDO ODEIA O CHRIS – Brasil acima--------------->
+
+<div id="plano5" class="invisivel">
+<iframe width="98%" height="490" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn5.html" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!-canal 5 - tv cristã - brasil acima----------->
+
+<div id="plano6" class="invisivel">
+<iframe width="100%" height="500"  scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn6.html" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!-canal 6 - chef tv o canal da gastronomia -brasil acima------------------------------------->
+
+<div id="plano7" class="invisivel">
+<iframe width="100%" height="500"  scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn7.html" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+</div><!---------------------canal 7 canais euronews acima---------------->
+
+<div id="plano8" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn8.html" frameborder="0" allowfullscreen></iframe>
+</div><!------------------canal 8 euronews (en español) (em português) acima------------->
+
+<div id="plano9" class="invisivel"> 
+<div style="text-align: center;">
+<span style="color: #fff; font-size: 20px;"><b>Patrulha da Cidade - TV Ponta Negra Natal RN - Brasil</a>
+<br/>
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn9.html" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+</div></div><!------------Canal 9 Patrulha da Cidade - TV Ponta Negra - Brasil acima-------------------> 
+
+<div id="plano10" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn10.html" frameborder="0" 
+allowfullscreen></iframe>
+</div><!-canal 10 hispantv en vivo - full hd-------------->
+
+<div id="plano11" class="invisivel">
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/cQF5Bq619Ks?rel=0&amp;showinfo=0" frameborder="0" 
+allowfullscreen></iframe>
+</div><!-canal 11 desenhos 24 horas----------------------->
+
+<div id="plano12" class="invisivel">
+<iframe width="100%" height="515" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn12.html" frameborder="0" allowfullscreen></iframe>
+</div><!----------canal 12 DESENHOS 24 HORAS 2------------>
+
+<div id="plano13" class="invisivel">
+<iframe width="100%" height="515" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn13.html" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 13 - Argentina canais----------------->
+
+<div id="plano14" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn14.html" frameborder="0" allowfullscreen></iframe>
+</div><!------canal 14 CNN LIVE acima--------------->
+
+<div id="plano15" class="invisivel">
+<iframe width="98%" height="515" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn15.html" frameborder="0" allowfullscreen></iframe>
+</div><!---canal 15 LIVE jogos acima-------------->
+
+<div id="plano16" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://www.youtube.com/embed/55mxe6ToFC5g?rel=0&amp;showinfo=0" frameborder="0" 2
+allowfullscreen></iframe>
+</div><!----canal 16 FOX News Live acima---------------->
+
+<div id="plano17" class="invisivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn17.html" frameborder="0" 
+allowfullscreen></iframe>
+</div><!--canal 17 AMAZON SAT - Brasil acima----------->
+
+<div id="plano18" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/gPh32O_7kTE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 18 cidade alerta- TV Record Brasil acima--->
+
+<div id="plano19" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/A_DXOr2qhbE?rel=0&amp;showinfo=0" frameborder="0" 
+allowfullscreen></iframe>
+</div><!--canal 19 EBC TV Brasil----------------------->
+
+<div id="plano20" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/mV8jp1N2fSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 20 RT en espanha HD-------------------->
+
+<div id="plano21" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/QrsTxn7W9m0?rel=0&amp;showinfo=0" frameborder="0" 
+	    allowfullscreen></iframe>
+</div><!--canal 21 RT на русском em Russo ascima---------------->
+		
+	<div id="plano22" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/XbZjFCGZ1Mc?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 22 Al Jazeera English - Live acima------>
+
+<div id="plano23" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/XOacA3RYrXk?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 23 Sky News - Live acima---------------->
+
+<div id="plano24" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/J78SdCzzumA?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 24 FRANCE 24 Live acima------------------>
+
+<div id="plano25" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/_UZ9HttUjDQ?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 25 Jornal da Cultura acima---------------->
+
+<div id="plano26" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/ZjkS1yxRSWQ?
+	autoplay=0&rel=0&ena3blejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 26 Fox Sports acima---------------------->
+
+<div id="plano27" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/y6Dh1j9OfoQ?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 27 jogo aberto acima----------------------->
+
+<div id="plano28" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/zPY-i-I9ud8?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 28 c5n en vivo acima----------------------->
+
+<div id="plano29" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/IXQjWE0Ajyw?
+	autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 29 kbs world 24 korea acima---------------->
+
+<div id="plano30" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/sSTH5sBWcVQ?autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 30 tv abc news (australia) acima----------->
+
+<div id="plano31" class="invisivel"> 
+<iframe scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen 
+src="https://www.ffox25boston.com/popup-livestream"  width ="80%" height="500"></iframe>
+</div><!-canal 31 fox25 boston news acima---------------->
+
+<div id="plano32" class="invisivel">
+<iframe width="98%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn32.html" frameborder="0" allowfullscreen></iframe>
+</div><!--canal 32 India Today Live TV acima-------------->
+
+<div id="plano33" class="invisivel">
+<iframe width="100%" height="500"  scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn33.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!--canal 33 Rede TVT - BRasil Seu Jornal acima---->
+  
+  <div id="plano34" class="visivel">
+<iframe width="100%" height="500" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn34.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!-canal 34 bom dia brasil acima------------------>
+                                           
+<div id="plano35" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/ARQfnKintag?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 35 jornal hoje acima------------------>
+	
+<div id="plano36" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/-qmR4jXJG8o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 36 Jornal Nacional acima----------------->  
+	
+	<div id="plano37" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/n8uMNct6zoI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 37 fantástico acima--------------------->
+                                                                                        
+<div id="plano38" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/jQiu1-Ionao?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 38 web tv brasileira acima---------------->
+                                                                                                               
+<div id="plano39" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/J3jvzQtRGdc?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 39 trt world - istanbul turkey - inglês acima---------------------->
+                   
+<div id="plano40" class="invisivel">
+<iframe width="98%" height="490" scrolling="no" src="https://rawgit.com/soanatareportagens/tv/master/canais/cn40.html" frameborder="0" allowfullscreen></iframe>
+</div><!---Canal 40 - Africa | 5 Canais ao vivo acima---->
+                                                                                                               
+<div id="plano41" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/iijm4IpKW3EE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 41 transmissão ao vivo do canal rit tv acima---------------------->
+
+<div id="plano42" class="invisivel">
+<iframe id="ls_embed_1505181558" src="https://livestream.com/accounts/66140902/events/2549335/player?width=640&height=360&enableInfoAndActivity=truee&autoPlay=ttrue&mute=false" width="98%" height="530" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+</div><!-canal 42 fox 35 Worlando fox news- acima-------------------------->
+  
+<div id="plano43" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/nnQ4mcZk-R3Y?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!---Canal 43 bn Play | Boas Novas - Brasil ascima------>
+
+<div id="plano44" class="invisivel">
+<iframe width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://player.r7.com/video/i/554ae76aa2bc243235c0079d3?layout=wide540p&full=true" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
+</div><!--Canal 44 Talentos e JR News acima-------------->
+  
+  <div id="plano45" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/88knR3DG6LOI?
+      autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+      </div><!--------------------------canal 45 Polimer News - India  acima-------------------------->
+
+<div id="plano46" class="invisivel">
+<iframe width="100%" height="520" src="https://www.youtube.com/embed/cFx8IvDlO-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 46 Globo News ao vivo acima-------------->
+  
+<div id="plano47" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/1xqSFkttBvk?
+rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div><!-------Canal 47 tv Globo ao vivo acima------->
+                                                                                               
+<div id="plano48" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/0raY3aYVQSo?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!-canal 48 aaj news live - pakistan acima----------->
+  
+<div id="plano49" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/OVQBQUHNU6o?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 49 CGTN Live CGTN is China acima---------->
+  
+<div id="plano50" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/9Rd14miCPFU?
+autoplay=0&rel=0&enablejsapi=1&playerapiid=ytplayer&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 50 CGTN en Español acima----------------->
+
+<div id="plano51" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/1Uol5Ww22AI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 51 Pânico Jovem Pan na Rádio de terça a sexta das 12h às 14h-------------------------->
+
+<div id="plano52" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/seQXF_kITiA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 52 Rádio TV Mix limeira------------------>
+
+<div id="plano53" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/W0Z4bfqs12o?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 53 Rádio TV Sociedade da Bahia----------->
+
+<div id="plano54" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/Ogsw7xIwKSA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 54 educadora – Brasil----------->
+
+<div id="plano55" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/_rsjUGJBzl0?rel=0" frameborder="0" allowfullscreen></iframe>
+</div><!--Canal 55 Rádio TV Gospel---------------------->
+												      
+<div id="plano56" class="invisivel">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/ceoO41nbOwA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><!--Canal 56 Ao vivo | Rede Brasil TV - evangélico---------------------->
+
+<div id="plano57" class="invisivel">
+<iframe frameborder="0" width="100%" height="500" src="//www.dailymotion.com/embed/video/x5asxow" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x5asxow" target="_blank">Ao Vivo 92.5</a> <i>por <a href="http://www.dailymotion.com/najua92-5" target="_blank">najua92-5</a></i>
+</div><!--Canal 57 Rádio TV najua92.5---------------------->
+
+<div id="plano58" class="invisivel">
+<iframe frameborder="0" width="100%" height="500" src="//www.dailymotion.com/embed/video/x58ob7u" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x58ob7u" target="_blank">R&aacute;dio Nova FM 104,9 - AO VIVO</a> <i>por <a href="http://www.dailymotion.com/novafm104" target="_blank">novafm104</a></i>
+</div><!--Canal 58 Rádio TV Nova FM 104---------------------->
 	 <!--------------------select pop up inicio--------------->
 <SCRIPT language=Javascript>
 function showDiv2(pasta) {
@@ -388,7 +704,7 @@ function showDiv2(pasta) {
 <?php 
 }} 
 ?> 
-</?php></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></div></div></div></a> 
+</?php></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></div></div></div></a> 
 <!------------ cod publicidade --------------> 
    </div></div></div>
 <div style="float: Right; width: 30%;">
