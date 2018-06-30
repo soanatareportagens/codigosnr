@@ -3,6 +3,7 @@ seta vermelhaD 3 >> https://rawgit.com/soanatareportagens/codigosnr/master/tv%20
 seta vermelhaD 3 50px >> https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/setad%20verm3.50px.gif
 seta vermelhaD color >> https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/seta%20D%20color.GIF
 fundo branco >> https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fbranco.jpg
+fundo preto cguvisco jpg >>> https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fpretochuvisco.jpg
 
 foto contato snr telegram width="310" height="153"
 https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/contato%20tv%20mundo%20telegram.jpg
