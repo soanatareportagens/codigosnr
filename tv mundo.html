@@ -1,10 +1,3 @@
-<!---
--
-- >>>  https://github.com/soanatareportagens/codigosnr/blob/master/Smart%20tv%20mundo.html
-- visitante >>>   https://rawgit.com/soanatareportagens/codigosnr/master/Smart%20tv%20mundo.html
--
--->
-
 <!-------------------------------------------------texto vivo fixo topo ini--------------------------------------------------------->
 <style type="text/css">
 #divpagini{
@@ -55,41 +48,238 @@
 </div>
 <!------------------------------------Div troca txt iframe acima--------------------------------------------------------->
 	</div></div></div></div></div>
-<!----------------------Marquee fim------------------------>
-<!-------------------------------------------------texto vivo fixo topo fim--------------------------------------------------------->
-<!------linha de spaço----->
-<div style=" padding: 45px; text-align: center;"></div>
-<!------linha de spaço----->
+<br/><br/><br/><br/><br/>
 <!-------------------------------------------------ini menu tv mundo--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudo').hide("slow"); 
+
+$('a#exibir').click(function(){ 
+
+$('#conteudo').show('3000'); 
+
+}); 
+
+$('a#ocultar').click(function(){ 
+
+$('#conteudo').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+ 
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudo { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibir" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Menu</b></span></a> |||| <a href="#" id="ocultar"><span style="color: #000; font-size: 17px;"><b>Fechar Menu</b></span></a>
+<div id="conteudo"> 
+<!------------------seu conteudo ini---------------------->
+
+<!...so pagina inicial topo ...> 
+<div style="text-align: center;"> 
+<span style="color: red; font-size: 17px;"><b>
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 60%">
+<!--------------------------------------------------->	
+<div style="text-align: center;"><br/>
+<span style="color: black; font-size: 26px;"><b>
+Menu TV Mundo</b></span></div><br/><br/><br/>
+<a href="#" onclick="window.open('http://rawgit.com/soanatareportagens/codigosnr/master/facevivo.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+TV Mundo em Tela cheia</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/filme.html#', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Filmes</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('https://soanatareportagens.000webhostapp.com/codigos/animais%20selvagens.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Documentários</b></span></div></a><br/><br/><br/>
+
+<a href="#" onclick="window.open('http://linkspub.blogspot.jp/2017/04/radio-am-fm.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=1500, HEIGHT=900');">
+<div style="text-align: center;">
+<span style="color: black; font-size: 26px;"><b>
+Radios Am/Fm e Musicas </b></span></div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 40%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="360" height="270" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe><!---Fim---troca banner reflashprog300x250--->
+<!---Fim---troca banner reflashprog350x250--->
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
 <!-------------------------espaço do seu codigo ini-------------------------->
 </div></div></?php>
 
-<!-------------------------------------------------ini div abre temp---------------------------------------------------->
+<!-----------ini div abre temp------------>
 	<script>
 		function exibe(){
 			document.getElementById('download').style.display="";
 		}
 		
 		window.onload = function(){
-			setTimeout("exibe()", 80000);
+			setTimeout("exibe()", 60000);
 		}
 	</script>
 	<a id="download" style="display: none;"> 
-<div id="floatLayer" style="position:absolute; height:351px; left:250px; top:280px; width:360px">
- <!---ini---troca banner reflashprog300x250 no player----------------no player----------------------->               
-<iframe width="350" height="100%" scrolling="no"  src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
-<!---Fim---troca banner reflashprog350x250 no player-----------------no player------------------------>
-<div style="position:relative; height:9px; left:0px; top:-360px; width:9px"><span onmouseup="document.getElementById('floatLayer').style.display='none'"><img alt="FECHAR" border="0" height="15" src="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fechar%201.jpg" width="15" /></span></div></div> 
-<!-----------fim div abre temp------------></div>      
+<div id="floatLayer" style="position:absolute; height:250px; left:400px; top:234px; width:300px">
+ <!---ini---troca banner reflashprog300x250 no player--->
+<iframe width="120%" height="110%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250 no player--->
+<div style="position:relative; height:9px; left:298px; top:-270px; width:9px"><span onmouseup="document.getElementById('floatLayer').style.display='none'"><img alt="FECHAR" border="0" height="15" src="https://raw.githubusercontent.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/fechar%201.jpg" width="15" /></span></div></div> 
+<!-----------fim div abre temp------------></div>
 <!-------------------------------------------------fim menu tv mundo--------------------------------------------------------->
 <a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
 <!-------------------------------------------------ini menu Tweets--------------------------------------------------------->
- <!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
+<script type="text/javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+
+$('#conteudott').hide("slow"); 
+
+$('#exibirtt').click(function(){ 
+
+$('#conteudott').show('3000'); 
+
+}); 
+
+$('#ocultartt').click(function(){ 
+
+$('#conteudott').hide('slow'); 
+}) 
+return false; 
+
+}); 
+</script> 
+
+<?php 
+
+include ("conn_db.php"); 
+
+$query = mysql_query("select * from tb_crianca") or die("Erro na query".mysql_error()); 
+$linha = mysql_num_rows($query); 
+if ($linha==0){ 
+echo "Não foi retornado nenhum registro"; 
+} 
+else{ 
+while ($dados = mysql_fetch_array($query)){ 
+?> 
+
+<style> 
+body { 
+font: 12px Verdana, Geneva, sans-serif; 
+
+} 
+#conteudott { 
+border:0px solid #CCCC33; 
+padding:10px; 
+margin-top:10px; 
+width:100%; 
+} 
+</style> 
+<div style="text-align: center;">
+<a id="exibirtt" href="#"><span style="color: #000; font-size: 17px;"><b>Abrir Tweets</b></span></a> |||| <a href="#" id="ocultartt"><span style="color: #000; font-size: 17px;"><b>Fechar Tweets</b></span></a>
+<div id="conteudott"> 
+<!------------------seu conteudo ini---------------------->
+<div style="text-align: center;"> 
+<!-------------------TV------------->
+ </b></span></div><div style="float: left; width: 60%">
+<!--------------------------------------------------->	
+<div style="text-align: center;">
+<a class="twitter-timeline" data-lang="pt" data-width="750" data-height="600" href="https://twitter.com/soanatareportag">soanatareportagens</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div></a><br/><br/><br/>
+
+</div>
+<!------------ cod publicidade --------------> 
+    <div style="float: Right; width: 40%">
+<!-------------------------------- cod publicidade ---------------------------------->
+<div style="text-align: center;">  <br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---ini---troca banner reflashprog300x250 twitter--->
+<iframe width="100%" height="100%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250 twitter--->
+
+</div>
+<!// end anuncios--> 
+</!></div></!...so>
+<!-------------------------espaço do seu codigo ini-------------------------->
+</div></div></?php>
+
+<!-----------ini div abre temp------------>
+	<script>
+		function exibe(){
+			document.getElementById('download').style.display="";
+		}
+		
+		window.onload = function(){
+			setTimeout("exibe()", 60000);
+		}
+	</script>
+	
+<!-----------fim div abre temp------------>
+</div></div></div>
+<!-------------------------------------------------fim menu Tweets--------------------------------------------------------->
 <a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
-   
+    <!-----------------ini ocultar tv mundo-------------->
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8aed83718f/js/af%20menu1cod1.js"></script>
+<script>
+$(document).ready(function(){
+	$("#ocultartvmundo").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectostvmundo").hide("slow");
+	});
+
+	$("#mostrartvmundo").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectostvmundo").show(3000);
+	});
+});
+</script>
+<script src=""></script>
+<div style="text-align: center;">
+<a href="#" id="mostrartvmundo"><span style="color: #000; font-size: 18px;"><b>Abrir TV Mundo</b></span></a>   |||| 
+<a href="#" id="ocultartvmundo"><span style="color: #000; font-size: 18px;"><b> Fechar TV Mundo</b></span></a> 
+<div id="capaefectostvmundo" style="background-color: #fff; color:fff; padding:0px;">
+                       <br/>
+  <!-----------espaço do seu codigo ini------------------->
 <!-------------------TV------------->
 <div style="text-align: center;">
-<div style="float: left; width: 100%;">
+<div style="float: left; width: 65%;">
 	<script language="Javascript">
 function showDiv(div)
 {
@@ -108,51 +298,7 @@ function showDiv(div)
       document.getElementById("plano13").className = "invisivel";
       document.getElementById("plano14").className = "invisivel";
       document.getElementById("plano15").className = "invisivel";
-      document.getElementById("plano16").className = "invisivel";
-      document.getElementById("plano17").className = "invisivel";
-      document.getElementById("plano18").className = "invisivel";
-      document.getElementById("plano19").className = "invisivel";
-      document.getElementById("plano20").className = "invisivel";
-      document.getElementById("plano21").className = "invisivel";
-      document.getElementById("plano22").className = "invisivel";
-      document.getElementById("plano23").className = "invisivel";
-      document.getElementById("plano24").className = "invisivel";
-      document.getElementById("plano25").className = "invisivel";
-      document.getElementById("plano26").className = "invisivel";
-      document.getElementById("plano27").className = "invisivel";
-      document.getElementById("plano28").className = "invisivel";
-      document.getElementById("plano29").className = "invisivel";
-      document.getElementById("plano30").className = "invisivel";
-      document.getElementById("plano31").className = "invisivel";
-      document.getElementById("plano32").className = "invisivel";
-      document.getElementById("plano33").className = "invisivel";
-      document.getElementById("plano34").className = "invisivel";
-      document.getElementById("plano35").className = "invisivel";
-      document.getElementById("plano36").className = "invisivel";
-      document.getElementById("plano37").className = "invisivel";
-      document.getElementById("plano38").className = "invisivel";
-      document.getElementById("plano39").className = "invisivel";
-      document.getElementById("plano40").className = "invisivel";
-      document.getElementById("plano41").className = "invisivel";
-      document.getElementById("plano42").className = "invisivel";
-      document.getElementById("plano43").className = "invisivel";
-      document.getElementById("plano44").className = "invisivel";
-      document.getElementById("plano45").className = "invisivel";
-      document.getElementById("plano46").className = "invisivel";
-      document.getElementById("plano47").className = "invisivel";
-      document.getElementById("plano48").className = "invisivel";
-      document.getElementById("plano49").className = "invisivel";
-      document.getElementById("plano50").className = "invisivel";
-      document.getElementById("plano51").className = "invisivel";
-      document.getElementById("plano52").className = "invisivel";
-      document.getElementById("plano53").className = "invisivel";
-      document.getElementById("plano54").className = "invisivel";
-      document.getElementById("plano55").className = "invisivel";
-      document.getElementById("plano56").className = "invisivel";
-      document.getElementById("plano57").className = "invisivel";
-      document.getElementById("plano58").className = "invisivel";
-
-document.getElementById(div).className = "visivel";
+  document.getElementById(div).className = "visivel";
 }
 </script>
 <style>
@@ -166,40 +312,799 @@ document.getElementById(div).className = "visivel";
 TV MUNDO<br/>
 </b></span></div>
 <div style="float: left; width: 35%">
-<style type="text/css"> /* Para todos os options */ select, option{ width:370pt; height:25pt; padding:1pt 14pt;   
-background: url(https://rawgit.com/soanatareportagens/codigosnr/master/tv%20mundo%20imgs/seta%20D%20color.GIF) no-repeat left #2f4456; border: px solid #2f4456; font-size: 18px; color: #fff;   "><b> Fechar TV Mundo</b></span> } 
+<style type="text/css"> /* Para todos os options */ select, option{ width:370pt; padding:1pt 14pt;  
+background: url(https://soanatareportagens.000webhostapp.com/ao%20vivo%20face1/seta%20pisc%20dir%20min.gif) no-repeat left #2f4456; border: px solid #2f4456; font-size: 18px; color: #fff;   "><b> Fechar TV Mundo</b></span> } 
        </style>
 </style>
- 
 </div>      
 <div style="float: center; width: 100%">
-<div style="background-color: #000; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%; height: 560;">
-<div id="plano1" class="visivel"> 
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a>
+<div id="mat_olho" itemprop="description" style="background-color:#000; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: center;">
+
+<div id="plano1" class="invisivel"> 
 <div style="text-align: center;">
-                  <!------------canal 1 abaixo quando usar só um video nao esquecer do select------------------->
+ <!------------canal 1 abaixo quando usar só um video nao esquecer do select------------------->
 		
 <iframe width="100%" height="560" scrolling="no" 
 src="https://rawgit.com/soanatareportagens/tv/master/canais/apresenta%C3%A7ao.html" 
 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	         
 	</div></div>                      <!------------canal 1 acima------------------->	
 <br/> <br/><br/> 
+                                                                                                             
+<br/><br/><!---------------------------------------------<p /> 
+<?php 
+}} 
+?> 
+</?php></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></!-canal></div></div></div></a> 
+<!------------ cod publicidade --------------> 
+   </div></div></div>
+<div style="float: Right; width: 30%;">
+<!------------ cod publicidade -------------->
+<!---ini---troca banner reflashprog300x250 direita do player--->
+<!------------------------tradutor ini-------------------->
+<br/>
+language,語,Sprache,язык,स्टॉक
+<br/>
+<div id="google_translate_element">
+</div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'pt'
+  }, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!------------------------tradutor fim-------------------->
+<br />
+<br />
+<br />
+<br />
+<br />
+<!---ini---troca banner reflashprog300x250 direita do player--->
+<iframe width="100%" height="85%" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe>
+<!---Fim---troca banner reflashprog350x250 direita do player--->
+</div>
 
+<div style="text-align: center;"> 
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/master/js/exibocultdiv1.js"></script>  
+<script>
+$(document).ready(function(){ 
 
+$('#canal1').hide(); 
 
+$('#ocultarcanal1').click(function(){ 
+
+$('#canal1').hide('slow'); 
+
+}); 
+
+$('#mostrarcanal1').click(function(){ 
+
+$("#canal1").show(3000); 
+}) 
+return false; 
+
+}); 
+</script> 
+<script src=""></script>
+<div id="canal1" style="background-color: #fff; color:fff; padding:1px;">
+<!-------------------------espaço do seu codigo ini-------------------------->
+  
+<!-----------inicio baner temporizado cana1--------------->
+   <a href="#" id="adLink" target="_blank">
+JQuery - Banner Flutuante com Contagem de Tempo
+<script src="https://rawgit.com/soanatareportagens/codigosnr/master/js/baner8seg.js"></script>
+<script type="text/javascript">
+$(function(){
+  var $conteudocanal1    = $('#conteudocanal1').width(); // largura total	
+  var $bannercanal1	   = $('#bannercanal1'); // objeto banner
+  var $tempocanal1   = 15; // milisegundos
+  var $intervalo;
+ 
+  // evento click
+  $(".fechar").click(function(event){
+    event.preventDefault();
+    fechar(); // chamada a função
+  });
+ 
+  // funcao que fechará o banner
+  function fechar(){
+    $("#bannercanal1").hide();
+  }
+ 
+  // funcao para contagem
+  function contadorcanal1(){
+     $intervalo = window.setInterval(function() {
+	var tempoContagem 	= $("#contadorcanal1").html();
+	var atualizaContagem 	= eval(tempoContagem) - eval(1);
+	$("#contadorcanal1").html(atualizaContagem);
+ 
+	// chegando em zero o contador é parado
+	if(atualizaContagem == 0){
+	  pararContagem();
+	}
+     }, 2000);
+  }
+ 
+  // funcao para limpar o contador
+  function pararContagem(){
+     window.clearInterval($intervalo);
+  }
+ 
+  // deslocamento do banner
+  $bannercanal1.animate({ center: ($conteudocanal1 /10)}, 900).show();
+  // chamada da funcao que fará a contagem
+  contadorcanal1();	
+  // setando o tempo de execução do banner
+  setTimeout(fechar, $tempocanal1*2000);
+});
+</script>
+<style type="text/css">
+body{ font-family:Arial, Helvetica, sans-serif }
+#conteudocanal1{ 
+ margin:0 auto;
+ width:100%px; 
+ height:800px;
+ background-color:#fff;	
+}
+#bannercanal1{
+ position:absolute;  
+ top:200px;    
+ left:50;
+ float:left;
+ width:312px; /* largura */
+ height:370px; /* altura */
+ background-color:#fff; /* cor de fundo */
+ -webkit-border-radius: 8px; /* canto arredondado */
+ -moz-border-radius: 8px; /* canto arredondado */
+ border-radius: 8px; /* canto arredondado */
+ z-index:999999; /* posicionando sobre os demais */
+ display:none;
+ color:black;
+}
+#bannercanal1 a{ color:#fff;text-decoration:none } 
+#bannercanal1 p { padding: 5px 10px 0; }
+p.link{ text-align:center;clear:both }
+#fechar{ 
+ position:relative;
+ float:right; 
+ width:20px;
+ height:20px;
+ background-color:#fff;  
+ color:black;
+ text-align:center; 
+}
+</style>
+</a>
+
+<div id="conteudocanal1">
+
+      <!------------------------Canal 1 reservado--------------------------->
+  
+</div></div>
+<!// end anuncios--> 
+</!></div>
+<!-------------------------espaço do seu codigo fim--------------------------> 
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----tapia fim ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </div>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 40px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a>
+<!--------------------------------------------------------ini vem &V tv---------------------------------------------------------------->
+<br/><br/><br/><br/>
+<script language="javascript" src="https://rawgit.com/soanatareportagens/codigosnr/919d077b23ee3ad51974705867a4dd8aed83718f/js/af%20menu1cod1.js"></script>
+<script>
+$(document).ready(function(){
+	$("#ocultar2").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectos2").hide("slow");
+	});
+
+	$("#mostrar2").click(function(event){
+	  event.preventDefault();
+	  $("#capaefectos2").show(3000);
+	});
+});
+</script>
+<script src=""></script>
+<p>
+<a href="#" id="mostrar2"><span style="color: #000; font-size: 17px;"><b>Abrir Vem & Vê TV</b></span></a>   |||| 
+<a href="#" id="ocultar2"><span style="color: #000; font-size: 17px;"><b> Fechar Vem & Vê TV</b></span></a> 
+
+</p>
+
+<div id="capaefectos2" style="background-color: #fff; color:fff; padding:1px;">
+
+<!-------------------------espaço do seu codigo ini-------------------------->
+
+<!...so pagina inicial topo ...>
+<div id="mat_olho" itemprop="description" style="background-color:#0B3861; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: center;">
+<div style="text-align: center;"> 
+<span style="color: #fff; font-size: 25px;"><b>Vem & Vê TV
+<!------------ cod publicidade -------------->
+<div style="float: left; width:39%"> 
+<!------------ cod publicidade -------------->
+<br/>
+<!---ini---troca banner reflashprog300x250--->
+<iframe width="360" height="270" src="https://rawgit.com/soanatareportagens/codigosnr/master/banners/codbanner300x250.html" frameborder="0" allowfullscreen></iframe><!---Fim---troca banner reflashprog300x250--->
+</div>
+<!// end anuncios--> <br/>
+</!></b></span></div>
+
+<!-------------------TV------------->
+<div style="float: Right; width: 60%"> 
+<!-------------------TV------------->
+
+ <embed src="http://www.vemevetv.com.br/flash/mediaplayer.swf" allowscriptaccess="always" allowfullscreen="true" flashvars="height=455&amp;width=565&amp;file=rtmp://srv-vvtv.sisdera.com/live&amp;id=vvtv2&amp;logo=images/logo_flash.png&amp;bufferlength=8&amp;start=true&amp;backcolor=0x000000&amp;frontcolor=0xFFFFFF&amp;lightcolor=0xFFFFFF&amp;screencolor=0x000000" width="100%" height="450"></embed>
+<!-------------------TV------------->
+<br/><br/><br/> 
+<!------ cod redes socias ini ------>
+<br/><br/><br/>
+<a href="#"><img width="80" height="50"src="https://lh4.googleusercontent.com/-0TXzbLdRkIs/TeoZRoWHHzI/AAAAAAAAAC4/3crx1hANPAs/h120/snR.jpg" /></a>
+<span style="color: #05394; font-size: 15px;"><b>SIGA-NOS →
+</b></span>
+<a href="https://telegram.me/soanatareportagens" title=telegram rel="nofollow" target="_blank"><img alt=" telegram" border="0" src="https://1.bp.blogspot.com/-VXdPRPxXXeQ/V27aNkDlmCI/AAAAAAAAWvE/48q4hTCQTRgzhIujzX6dhMbzOxwpMq-fACLcB/s1600/telegram.png" /></a><a href="https://plus.google.com/u/0/s/Robson%20snr" title=google+ rel="nofollow" target="_blank"><img alt=" Google+" border="0" src="https://1.bp.blogspot.com/-6l1pULyf9ec/V26n2mJ5GRI/AAAAAAAAWu4/5tpjpUjMvH8d2NWgAaNpNuyT44ngjqlmgCKgB/s1600/G%252B.gif" /></a><a href="https://twitter.com/soanatareportag" title=twitter ="nofollow" target="_blank"><img alt=" twitter" border="0" src="https://1.bp.blogspot.com/-qWBfx_0Uvt0/V26n9l8TAJI/AAAAAAAAWu4/xKUjAp0b7CIiWQIygis6K4eKGonSsaUZACKgB/s1600/tw.gif" /></a><a href="https://www.facebook.com/sga.agora/" title=facebook rel="nofollow" target="_blank"><img alt="facebook" border="0" src="https://2.bp.blogspot.com/-uBPKAPl1730/V26n5_lTdoI/AAAAAAAAWu4/EMRccjCXTuIK7RKjvWqDdb1O63siH-_sgCKgB/s1600/facebook.gif" /></a><a href="https://www.linkedin.com/in/soanatareportagens-snr-365373118?trk=nav_responsive_tab_profile" title=linkedin rel="nofollow" target="_blank"><img alt="https://www.linkedin.com/in/soanatareportagens-snr-365373118?trk=nav_responsive_tab_profile" border="0" src="https://1.bp.blogspot.com/-VgpNEHpbhnU/V26oDInHLiI/AAAAAAAAWu8/vaE3lvmwzrkltkTjXcBd2bMIEnb0mYu5QCKgB/s1600/in.gif" /><a href="https://www.instagram.com/soanatareportagens/" title=instagram rel="nofollow" target="_blank"><img alt=" instagram" border="0" src="https://2.bp.blogspot.com/-GiVOx5WD08I/V26oGUZS19I/AAAAAAAAWu8/AaUj54D0F9wl5vOqF1sSAPlGlHJ5jyhSwCKgB/s1600/instrag.gif" /></a><a href="http://www.tsu.co/soanatareportagens" title=tsu rel="nofollow" target="_blank"><img alt=" tsu" border="0" src="https://3.bp.blogspot.com/-vac5cgu-anY/V28VxLEczLI/AAAAAAAAWws/29gLLUOmFZ8QR1ps-tPsvAdkNIxM0wCwQCLcB/s1600/tsu.gif" /></a><a href="https://www.youtube.com/user/soanatareportagens" title=youtube rel="nofollow" target="_blank"><img alt="" border="0" src="https://3.bp.blogspot.com/--YmNsIG3_BI/V28abN_4ZmI/AAAAAAAAWw4/ny6CG1jO1m8SqSRRYqhX5WwUqA7UmuzugCKgB/s1600/youtube.gif" /></a></a>
+</div>
+
+<!---------- cod noticias ini --------->
+<div style="float: right; width:39%"><br/>
+<!---------- cod noticias ini --------->
+
+<span style="color: black; font-size: 14px;"><b>FHC se irrita com cartilha da CUT.
+Quem se aposenta antes dos 70 é vagabundo?
+<div style="text-align: center;"> 
+<!.......cor fim........>
+<a href="http://soanatareportagens.blogspot.com.br/2016/10/fhc-se-irrita-com-cartilha-da-cut.html#"><img src="http://www.conversaafiada.com.br/brasil/fhc-se-irrita-com-cartilha-da-cut/FHC%20e%20Temer.jpg/@@images/7091486d-fef0-478d-be51-db54bc9ba13b.jpeg"border="0" width="97%" height="150" onmouseout="this.src='http://www.conversaafiada.com.br/brasil/fhc-se-irrita-com-cartilha-da-cut/FHC%20e%20Temer.jpg/@@images/7091486d-fef0-478d-be51-db54bc9ba13b.jpeg'"onmouseover="this.src=&#39;https://3.bp.blogspot.com/-t90dDknNFWM/VE_yFvEwu-I/AAAAAAAAJAQ/LjCYp9NYDYk8MeUXwyiyjjD6uUMrhZQMgCPcB/s320/conversa%2Bafiada%2Bx%2Bpaulo%2Bhenrique%2Bamorim.JPG&#39;" />
+</a></!.......cor></div></b></span></div></div><span style="color: black;  font-size: 14px; outline:"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/><br/><br/>lida pelo jornal “
+O Globo” e pelo ex-presidente FHC, que ficaram especialmente impressionados com o trecho a seguir, contido na cartilha: “Michel Temer, que se aposentou aos 55 anos e recebe R$ 33 mil por mês, além do salário de presidente e outras mordomias, e FHC, que se aposentou aos 37 anos, depois de trabalhar só 12 anos como professor”....
+  <br/>
+<a href="http://soanatareportagens.blogspot.com.br/2016/10/fhc-se-irrita-com-cartilha-da-cut.html#
+"rel="nofollow"> Continue lendo...→</a></span>
+</!...so> <br/><br/>
+
+<!--------- cod noticias fim --------->
+<br/>
+<br/>
+<p /> 
+<?php 
+}} 
+?> 
+</?php></p></div></div></div>
+<!------------------fim vem &V t
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+--->
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div></div>
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<! ------------------------------------------------------gadegete 5 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 5 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2w3NtFc   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31743695_1818980438407227_1480228021498544128_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeFE3UVWVWYMKltk-zh37a7DSHDWXhCELHiVaJmjOcB45EGh-XDJ2e7SkWF7Rg3jKGN6rkgMNHt8sYOYSA10Iqi3m3SaNxbCyS66ZSHIlBHJ_A&oh=d433c1456a2f56ea08f82682cd74db63&oe=5B641762"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Seu Jornal - 3 de Maio de 2018</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+A redução de investimentos em educação, saúde e pesquisa, imposta pelo governo temer para os próximos vinte anos, foi o tema da conferência livre, realizada hoje em Porto Alegre.
+
+A Universidade de Brasília esta em greve desde esta quarta-feira, dia 2 de maio. A mobilização foi iniciada pelos estudantes que chegaram a ocupar a reitoria da instituição por mais de duas semanas.
+
+Para investigar suposta propina no departamento de iluminação pública de São Paulo, promotores de justiça apreenderam documentos e computadores na sede do ILUME e na casa da ex-diretora Denise Abreu.
+ <br/><a href="  https://bit.ly/2w3NtFc   "rel="nofollow"> Assista agora...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2KsEHnh
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31773066_1818864765085461_5631615316707508224_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeHCZVQqwaWrYUgMIJyMRf2cezRL1yAwKHb028_SGUJLHiB80mGWWYigBfZIo8YEMqTKCcfigBuIPoabxeymSFz_Q7Va95kqOtk2six4UbnI0g&oh=bfb526163e976163f62113717eadd855&oe=5B91B84B"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Patrulha da Cidade 3 de Maio 2018
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+TV Ponta Negra Natal RN - Brasil
+ <br/>
+<a href=" https://bit.ly/2KsEHnh "> Assista agora...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 5 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 5 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 6 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 6 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2vWbLAD   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31564224_2039343292972272_981044150440820736_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeHhKfVEQ7H66sjsxEFABCukhpvp8q-VoLFaVdV8YIC8Mw2MRxr5h6KWshz6bDdU1HyLUaVpP-wwEWX-7OGHPe9rkRORwJHDyGejd9Iro6paOw&oh=067bf4de17f5cd914a113c4cb963f67b&oe=5B609E03"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>LINDBERGH DORME NO ACAMPAMENTO UMA NOITE APÓS ATENTADO</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+"Decidi dormir aqui para mostrar que fascista algum vai nos intimidar", disse o senador Lindbergh Farias (PT-RJ), junto com a jornalista Laura Capriglione, do Jornalistas Livres, em resistência uma noite depois do atentado a tiros contra o acampamento, que deixou duas pessoas feridas; "Eles estão querendo nos intimidar, e a gente não pode aceitar esse tipo de intimidação", disse o senador; assista...
+
+ <br/><a href="  https://bit.ly/2vWbLAD  "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2jf6nPV
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31466835_1817787845193153_2690834445878951936_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGXs_48HeG-hssJlgilWxdUbQvdoccLqmvZQhu2yBOeVRm9VWuJ9l8ITvqaDCCPQ2j08P-9cLck4dmos_alIW0zp3teBa4RG4bke9dcAiRGMw&oh=6b2294b4270b245f2a1c373015c1280d&oe=5B55CD24"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Ataque a tiros a acampamento pró-Lula deixa dois feridos. </b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+O ataque teria acontecido na madrugada do sábado 28. Um integrante foi hospitalizado com um tiro no pescoço.
+Segundo informações de pessoas que estavam no acampamento havia movimentação de carros passando em frente ao local desde às duas da madrugada, gritando palavras de ordem a Jair Bolsonaro...
+ <br/>
+<a href=" https://bit.ly/2jf6nPV "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 6 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 6 fim ---------------------------------------------------------->
+
+<! ------------------------------------------------------gadegete 4 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 4 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2JvTz2G   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31363228_1817030355268902_2852080939943591936_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeFB-NeBiWBHNL_aROjBjPxqAaNbmck3CrEmED9yBaMjnxkr8sOo-2us2cvPV-5FMwt8fOUotv1d4fOmQ5hwe-vZJLmRyNO0s1BEbQgOoQF8iA&oh=12a3aadc6a5189dc701fc01dd316e052&oe=5B5E56CF"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>PESQUISA IPSOS: PRISÃO MELHOROU IMAGEM DE LULA E FEZ MORO SER MAIS REJEITADO DO QUE APROVADO.</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+A prisão do ex-presidente Luiz Inácio Lula da Silva fez bem à sua imagem e mal à de Sergio Moro, que o prendeu; é o que mostra a nova pesquisa Ipsos, que foi escondida pelo jornal Estado de S. Paulo; entre março e abril, a rejeição a Lula caiu de 57% a 54%, enquanto os brasileiros que desaprovam Moro passaram de 44% para 49%; o índice é maior do que a taxa de aprovação do juiz paranaense, que está em apenas 41%; segundo a mesma pesquisa, os políticos associados ao golpe de 2016 são os mais rejeitados do Brasil...
+
+ <br/><a href="  https://bit.ly/2JvTz2G  "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2FilCQZ
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31351547_1816902915281646_3765863046375800832_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeErQ5BvCCB2qnxUWC0Ij2IQvPKLjH0LBLBnPJKU4tE9os-FgKTEaIxK8Ve1EVIhnTrfVjFmpSTrJ_orkzZzdqE_0SwabkOtAfW4kX1HwmmpTA&oh=d9ab7bd2acd15c04af56dce428c9d8cf&oe=5B9D8994"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Kim atravessará fronteira a pé para encontro histórico. </b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Esta será a primeira vez desde o fim da Guerra da Coreia que um líder norte-coreano pisará em território do país vizinho. Kim e Moon participarão de cerimônias para marcar reaproximação entre as duas Coreias...
+ <br/>
+<a href=" https://bit.ly/2FilCQZ "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 4 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 4 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 3 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 3 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HXx1bM   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31326894_1815996822038922_5018708047455846400_n.png?_nc_cat=0&oh=726caf6fd7978d392be8d785a19985ab&oe=5B52BB59"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>SÍTIO DE ATIBAIA: LULA SERÁ CONDENADO NOVAMENTE PELA TEORIA DO DOMÍNIO DO FATO.</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Mesmo não sendo o dono do sítio Santa Bárbara, em Atibaia (SP), o ex-presidente Luis Inácio Lula da Silva será condenado pelo juiz federal Sérgio Moro, da Lava Jato, pelo simples fato do magistrado atribuir a ele [Lula] a propriedade, assim como fez com o triplex do Guarujá, como sendo uma forma de recebimento de propina das construtoras Odebrecht e OAS...
+
+ <br/><a href="  https://bit.ly/2HXx1bM  "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HkVKtz
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31183560_1815761112062493_6439620320033767424_n.jpg?_nc_cat=0&oh=9430dc67fa409ecc9c0e8f744d3ade38&oe=5B98C53C"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Pimenta: CNJ vai condenar o Judge Murrow? </b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Sérgio Moro é acusado pelos crimes de “interceptação telefônica da Presidente da República, de Ministros de Estado e de Senador da República, competência exclusiva do Supremo Tribunal Federal”; por “tornar público o conteúdo dessas gravações sem autorização judicial e com objetivos não autorizados em lei”, e por violar o sigilo profissional na comunicação profissional entre advogados e clientes, previstas pelos parágrafos 6º e 7º do art. 7º da Lei 8.906/94”...
+ <br/>
+<a href=" https://bit.ly/2HkVKtz "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 3 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 3 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 2 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 2 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2vj0Rol   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30716238_430361517405888_5230206843186295599_n.jpg?_nc_cat=0&oh=f0f66054c89467cb21950c3a3aaf606c&oe=5B60F2AE"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Seu Jornal - 23 Abril de 2018</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Veja os destaques de hoje dia 23:<br/>
+Mais de 2 mil índios, de todo o país, estão em Brasília para o "Acampamento Terra Livre". Até sexta-feira, os indígenas debatem a construção de uma carta de reivindicações para enviar aos três poderes.
+Esta semana começou com a expectativa de um encontro histórico. É que o líder da Coreia do Norte, Kim Jong-Un, e o presidente da coreia do sul, Moon Jae-In, devem se encontrar nesta sexta-feira, dia 27. A reunião será na chamada zona desmilitarizada, uma área que divide as duas coreias.
+
+ <br/><a href="  https://bit.ly/2vj0Rol   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2qQgCOO
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31206416_1815609992077605_4503766379475763200_n.jpg?_nc_cat=0&oh=04139cadbf44bb1e1de5bd6e53d72b04&oe=5B9CF1E1"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Temer toma emprestado US$ 250 milhões para beneficiar empresários e banqueiros.
+
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Governo toma recursos do Banco Mundial para repassar a fundações privadas e bancos, responsáveis pela "capacitação de gestores" que vão implementar "novo" Ensino Médio, baixado por medida provisória...
+ <br/>
+<a href=" https://bit.ly/2qQgCOO "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 2 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 2 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 1 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 1 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HgtZCs   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31068989_1814505368854734_1192399426652471296_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeEZZbu286QzeeR3Zxfm-B56uEtL_hOgpSfZRJDdhlkqqOnNBYGkqXkpCvt9OHaLHIDC8nbj-6Am1b5zyPE_IdiOhydwmMWk95qo12EenfBO0A&oh=112a7bc61c79109d8cb51ee399c19a73&oe=5B6B1ACE"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>LEI ROUANET LIBERA R$ 1,3 MI PARA FHC FAZER PROPAGANDA DO PLANO REAL.</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+No momento em que setores do Poder Judiciário tentam asfixiar financeiramente o Instituto Lula, o Ministério da Cultura do atual governo de Michel Temer, fruto de um golpe liderado pelo PSDB, autorizou o Instituto FHC a captar R$ 1,3 milhão para promover uma exposição que faz propaganda sobre o Plano Real, ocorrido há 24 anos...
+
+ <br/><a href="  https://bit.ly/2HgtZCs   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2JZ3xL4
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31048306_1814477482190856_4252219203035070464_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeF22z4wB3SwwhT_cuUx3ZCRuMNtUbjnSkk8HmBUEJ1zVdKamwRZjzR94D9zoaLrL2-3a6DN5nMUAqo2SL_h4sOCL7CrGA3Vg0rg_fFZapHShA&oh=0589923bd7f2e53012470dcb03b1a778&oe=5B53A886"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Bomba da 2ª Guerra paralisa centro de Berlim.
+
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Operação para desarmar artefato de 500 quilos gera transtornos sem precedentes nos arredores da estação central da capital alemã. Edifícios num raio de um quilômetro são evacuados, e 10 mil pessoas deixam suas casas...
+ <br/>
+<a href=" https://bit.ly/2JZ3xL4 "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 1 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 1 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 10 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 10 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2JZYKJi   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30740288_1814314035540534_2909355926563586048_n.jpg?_nc_cat=0&oh=da720b6bc011d07b29e24cb7266c912a&oe=5B6E81E6"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>WANDERLEY: QUER O MINISTRO BARROSO RASGAR A CONSTITUIÇÃO?</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+O gal Villas Bôas combate a corrupção diante de um presidente três vezes ladrão...
+
+ <br/><a href="  https://bit.ly/2JZYKJi   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HLZUaN
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/31061476_1814285082210096_4419846412183797760_n.jpg?_nc_cat=0&oh=a26e706b033df9160d1d46d34bff7d6d&oe=5B636770"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>RAÚL CASTRO CRITICA PRISÃO DE LULA: MOTIVAÇÃO POLÍTICA.
+
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Em seu discurso de despedida da presidência de Cuba, Raúl Castro criticou a prisão do ex-presidente seu amigo pessoal; "Hoje [Lula está] submetido à prisão política para impedir que ele participe das próximas eleições presidenciais, já que segundo diferentes pesquisas, se houvesse eleições hoje, ninguém poderia ganhar de Lula"...
+ <br/>
+<a href=" https://bit.ly/2HLZUaN "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 10 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 10 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 9 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 9 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2vj0Rol   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30716238_430361517405888_5230206843186295599_n.jpg?_nc_cat=0&oh=f0f66054c89467cb21950c3a3aaf606c&oe=5B60F2AE"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Seu Jornal - 19 Abril de 2018</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Veja os destaques de hoje dia 19:<br/>
+Durante a recém-encerrada janela partidária, que permitiu a troca de partidos sem perda de mandato, 93 dos 517 deputados federais mudaram de sigla. Diante desse quadro, acaba de ser lançada a campanha "um novo congresso", que pretende chamar atenção sobre a importância de escolher bem entre os candidatos ao legislativo.
+
+ <br/><a href="  https://bit.ly/2vj0Rol   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HcYrJy
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30762962_1814252858879985_2497178059879219200_n.jpg?_nc_cat=0&oh=2c07581b02b5f50c26958755d12b5f2c&oe=5B715CA0"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>UE barra importação de carne de 20 frigoríficos brasileiros.
+
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+A União Europeia (UE) proibiu nesta quinta-feira (19/04) 20 frigoríficos brasileiros de exportarem carne, principalmente frango, para o bloco. A medida foi tomada devido a deficiências no controle sanitário no Brasil...
+ <br/>
+<a href=" https://bit.ly/2HcYrJy "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 9 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 9 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 8 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 8 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2HKUxst   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30729725_1814108678894403_1956063922054234112_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeE0dWWUgv1GTHx8nBc5yWPGaiyyEtZyfOPq1TM9Dpxo7qLs06wrfCwFkUgNzperuFYCG7UVqMErS4kohebv7NG2hOtK8QJCqrIPUEOo6hgHXA&oh=b3e2cf7a3c3218a00cd076d4a0407cc7&oe=5B623EC6"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>LULA É MESMO UM FENÔMENO: AINDA QUE PRESO CONTINUA LÍDER NAS PESQUISAS.</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Quer queiram alguns, quer queiram outros não, Lula ganharia disparado as eleições de outubro não fosse a tentativa de alijá-lo da política. Fato! 
+Lula livre! 
+
+ <br/><a href="  https://bit.ly/2HKUxst   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2JYb7px
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30729032_1814048875567050_5225960465963679744_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeHxwMQUJ8XbQu7WZ4iyN_k1twWrL92lD5d4tng_NggToO3Blc_fcoAKpvnelun7ypFfWy7HQ2B1yKV6AZnyVy4gn3Ax6VgP-76ZOfjLySV9dw&oh=f78e15cd42e72ae373b4cab660219f9f&oe=5B55623F"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Um milhão de indígenas brasileiros buscam alternativas para sobreviver.
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Há, no Brasil, cerca de 1 milhão de indígenas de mais de 250 etnias distintas vivendo em 13,8% do território nacional. Em meio às ameaças de violência, riscos de perda de direitos em decorrência da pressão dos latifundiários, mineradoras e usinas, alguns povos indígenas lutam por mais autonomia, tentando conquistar, com a comercialização de seus produtos e com o turismo, alternativas para diminuir a dependência dos recursos cada vez mais escassos da Fundação Nacional do Índio (Funai)...
+ <br/>
+<a href=" https://bit.ly/2JYb7px "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 8 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 8 fim ---------------------------------------------------------->
+<! ------------------------------------------------------gadegete 7 ini ----------------------------------------------------------->
+<!<<<<<<<<<<<<!<<<<<<<<<<<<<<<<<&nbsp; &nbsp; &nbsp;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<!-------------------------------------------------------gadegete 7 ini------------------------------------------------------------>
+<!----------------------post 1------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 1------------------------------->
+	<div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b>
+
+<div style="text-align: center;">
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2vj0Rol   "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30707250_1813493762289228_7131631601158455296_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeF3S2nV0CidZM-grzMk69XJbf-So-cuBznx9xQf8T6mGEEA5DboXLGojjXhsZFe8BcXyO-dmVwXU6Y_PfBZ91XTWajrdn7nxU4DfZDyx6V1pQ&oh=b2f7fda57e797fd82f8d65c494d647f7&oe=5B5EE8F7"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Seu Jornal - 18 Abril de 2018</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Veja os destaques de hoje dia 18:<br/>
+Durante a recém-encerrada janela partidária, que permitiu a troca de partidos sem perda de mandato, 93 dos 517 deputados federais mudaram de sigla. Diante desse quadro, acaba de ser lançada a campanha "um novo congresso", que pretende chamar atenção sobre a importância de escolher bem entre os candidatos ao legislativo.
+
+ <br/><a href="  https://bit.ly/2vj0Rol   "rel="nofollow"> Continue lendo...→</a></span>
+</div></div></di/></div>
+
+<!----------------------post 2------------------------------->
+<div style="float:left; width:48%">
+<!----------------------post 2------------------------------->
+	 <div id="mat_olho" itemprop="description" style="background-color: #eaebea; outline: 0px; padding: 3px; text-align: -webkit-auto; vertical-align: baseline;">
+<span style="color: #2f4456; font-size: 16px;"><b> 
+<div style="text-align: center;"> 
+<div id="mat_olho" itemprop="description" style="background-color: #eaebea;  font-size: 15px; outline: 0px; padding: 0px; text-align: -webkit-auto; vertical-align: baseline;"><!.......cor fim........>
+<a href="  https://bit.ly/2Hz0Gdv
+ "><img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/30728123_1813916002247004_8184150110553243648_n.jpg?_nc_cat=0&oh=3c10042a06abfb538f167d7640b5e3a0&oe=5B5F6466"border="0" width="97%" height="400" " />
+</a></!.......cor></div></div></b></span></div><div style="float:left; width:97%"><span style="color: black;  font-size: 20px; outline:">
+<b>Cúpula do PSDB será investigada por roubalheira no Metrô paulistano.
+
+</b><br/>
+<span style="color: black;  font-size: 16px; outline:">
+Rombo de perto de R$ 1 bilhão nas contas públicas de governos tucanos compromete Geraldo Alckmin. Ele será o candidato do PSDB à Presidência da República.
+ <br/>
+<a href=" https://bit.ly/2Hz0Gdv "> Continue lendo...→</a></span>
+</div></div>
+<!----------------------post 2------------------------------->
+
+</div></div></div></div></div>
+<br/><br/><br/><br/><p /> <p /> <p /> <p />
+<! -------------------------------------------------------gadegete 7 fim ---------------------------------------------------------->
+<!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>
+<a href="#" style="background-color: #fff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 30px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
+<br/>
+<! -------------------------------------------------------gadegete 7 fim ---------------------------------------------------------->
+
+<br/></div></div></div></div></div>
+<!----------------------------fim post----------------------->
+<!-------------------------ini Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;">Topo da pagina</a></div></div></div></div></div>
+<!-------------------------fim Voltar para Pagina Inicial TV Mundo-------------------------------------->
+<br/><br/><br/><br/><br/><p /> <p />
+<!------------ Histats.com  START  (aync)------------>
+<!---------------- Histats.com  END ---------------->
 <!---------------------------------------------------------rodape-------------------------------------------------------------------->
 <!---------------------------------------------------------rodape-------------------------------------------------------------------->
 <!---------------------------------------------------------rodape-------------------------------------------------------------------->
 <a href="#" style="background-color: #2f4456; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 0px; box-sizing: border-box; color: white; display: inline-block; font-family: Flama; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0px; padding: 1px; text-align: center; text-decoration: none; text-transform: uppercase; vertical-align: baseline; width: 100%;"></a></div>
 <div style="text-align: center;"><br/>
-<span style="color: #000; font-size: 15px;"><b>
+<span style="color: #0000; font-size: 15px;"><b>
 Comunique canais fora do ar através do whatsapp / telegram (55) 84 98780-4100<br/>
 Contato telegram (55) 84 98780-4100<br/>
 Canal telegram @soanatareportagens
  </b></b></span></div></div>
 <br/> <br/><br/> 
+<div style="text-align: center;">
+<!--************CODE revolvermaps.com mapa fixo************-->
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5prom7tstvw&amp;m=0&amp;h=150&amp;c=ff0000&amp;r=0" async="async"></script>
+<!--************CODE revolvermaps.com mapa fixo************-->
+<!------------ cod publicidade -------------->
+<div style="float: left; width:40%"> 
+<!------------ cod publicidade -------------->
+<div style="text-align: center;">
+	xxxxxxxxxx
+<!---------- cod noticias ini --------->
+<div style="float: right; width:20%"><br/>
+<!---------- cod noticias ini --------->
+<!--************CODE GEOCOUNTER************-->
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5s2wsji2ykl&amp;s=220&amp;m=0&amp;v=false&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+</noscript><!--************END CODE GEOCOUNTER************--></div>
+
+<p/><p/>
 <!---------------------------------------------------controle de visitas 2----------------------------------------------------------->
 <!---------------------------------------------------controle de visitas 2----------------------------------------------------------->
-										</section>
-														<!-- Copyright -->			
-	</body>
-</html>
